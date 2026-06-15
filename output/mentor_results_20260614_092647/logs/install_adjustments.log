@@ -1,0 +1,16 @@
+Found existing installation: opencv-python 4.8.1.78
+Uninstalling opencv-python-4.8.1.78:
+  Successfully uninstalled opencv-python-4.8.1.78
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Looking in indexes: https://pypi.org/simple, https://pypi.ngc.nvidia.com
+Collecting opencv-python-headless==4.8.1.78
+  Downloading opencv_python_headless-4.8.1.78-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (19 kB)
+Downloading opencv_python_headless-4.8.1.78-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (49.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 49.1/49.1 MB 126.8 MB/s  0:00:00
+Installing collected packages: opencv-python-headless
+  Attempting uninstall: opencv-python-headless
+    Found existing installation: opencv-python-headless 4.8.1.78
+    Uninstalling opencv-python-headless-4.8.1.78:
+      Successfully uninstalled opencv-python-headless-4.8.1.78
+Successfully installed opencv-python-headless-4.8.1.78
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.

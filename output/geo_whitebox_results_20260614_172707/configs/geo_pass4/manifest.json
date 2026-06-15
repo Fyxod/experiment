@@ -1,0 +1,134 @@
+{
+  "jobs": [
+    {
+      "source": "men51",
+      "prompt": "headshot",
+      "methods": "dct,grid,tps,piecewise",
+      "objective": "hybrid_hidden",
+      "max_disp_px": 1.5,
+      "iters": 80,
+      "lr": 0.006,
+      "seed": 6101,
+      "face_mask": "face",
+      "use_gates": true,
+      "feature_layers": [
+        0,
+        4,
+        8
+      ],
+      "dct_size": 12,
+      "grid_size": 10,
+      "tps_size": 6,
+      "piecewise_size": 6,
+      "lambda_gate_l1": 0.004,
+      "name": "01_men51_headshot_dct_grid_tps_piecewise_hybrid_hidden_1.5px"
+    },
+    {
+      "source": "men51",
+      "prompt": "headshot",
+      "methods": "dct,grid,tps,piecewise,rolling",
+      "objective": "transformer_pred",
+      "max_disp_px": 1.5,
+      "iters": 80,
+      "lr": 0.006,
+      "seed": 6102,
+      "face_mask": "face",
+      "use_gates": true,
+      "dct_size": 12,
+      "grid_size": 10,
+      "tps_size": 6,
+      "piecewise_size": 6,
+      "objective_timesteps": [
+        0,
+        1
+      ],
+      "name": "02_men51_headshot_dct_grid_tps_piecewise_rolling_transformer_pred_1.5px"
+    },
+    {
+      "source": "men66",
+      "prompt": "sunglasses",
+      "methods": "dct,grid,tps,piecewise",
+      "objective": "hybrid_hidden",
+      "max_disp_px": 1.5,
+      "iters": 80,
+      "lr": 0.006,
+      "seed": 6103,
+      "face_mask": "upper_face",
+      "use_gates": true,
+      "feature_layers": [
+        0,
+        4,
+        8
+      ],
+      "dct_size": 12,
+      "grid_size": 10,
+      "tps_size": 6,
+      "piecewise_size": 6,
+      "lambda_gate_l1": 0.004,
+      "name": "03_men66_sunglasses_dct_grid_tps_piecewise_hybrid_hidden_1.5px"
+    },
+    {
+      "source": "men57",
+      "prompt": "older",
+      "methods": "dct,grid,tps,piecewise",
+      "objective": "denoise_latent",
+      "max_disp_px": 1.8,
+      "iters": 20,
+      "lr": 0.004,
+      "seed": 6104,
+      "face_mask": "face",
+      "use_gates": true,
+      "dct_size": 12,
+      "grid_size": 10,
+      "tps_size": 6,
+      "piecewise_size": 6,
+      "name": "04_men57_older_dct_grid_tps_piecewise_denoise_latent_1.8px"
+    },
+    {
+      "source": "men74",
+      "prompt": "smile",
+      "methods": "dct,grid,tps,piecewise",
+      "objective": "hybrid_hidden",
+      "max_disp_px": 1.5,
+      "iters": 80,
+      "lr": 0.006,
+      "seed": 6105,
+      "face_mask": "mouth",
+      "use_gates": true,
+      "feature_layers": [
+        0,
+        4,
+        8
+      ],
+      "dct_size": 12,
+      "grid_size": 10,
+      "tps_size": 6,
+      "piecewise_size": 6,
+      "lambda_gate_l1": 0.004,
+      "name": "05_men74_smile_dct_grid_tps_piecewise_hybrid_hidden_1.5px"
+    },
+    {
+      "source": "men11",
+      "prompt": "headshot",
+      "methods": "dct,grid,tps,piecewise",
+      "objective": "hybrid_hidden",
+      "max_disp_px": 1.8,
+      "iters": 80,
+      "lr": 0.006,
+      "seed": 6106,
+      "face_mask": "face",
+      "use_gates": true,
+      "feature_layers": [
+        0,
+        4,
+        8
+      ],
+      "dct_size": 12,
+      "grid_size": 10,
+      "tps_size": 6,
+      "piecewise_size": 6,
+      "lambda_gate_l1": 0.004,
+      "name": "06_men11_headshot_dct_grid_tps_piecewise_hybrid_hidden_1.8px"
+    }
+  ]
+}

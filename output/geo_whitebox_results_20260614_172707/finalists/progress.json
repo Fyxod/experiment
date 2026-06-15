@@ -1,0 +1,626 @@
+{
+  "rows": [
+    {
+      "rank": 1,
+      "name": "candidate_01_men51_headshot_rolling_dct",
+      "path": "/workspace/output/geo_whitebox_results_20260614_172707/finalists/candidate_01_men51_headshot_rolling_dct",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "assessment": "Best geometry-only headshot attempt; output differs slightly but prompt still succeeds.",
+      "failure": "weak identity/style drift, not a strong failure",
+      "metrics": {
+        "input": {
+          "psnr": 37.21223201943415,
+          "ssim": 0.9787184549913869,
+          "l2": 0.01378441688280817,
+          "mean_abs": 0.006078730337321758,
+          "max_abs": 0.29411762952804565
+        },
+        "output": {
+          "psnr": 35.66935110746457,
+          "ssim": 0.9831948987326925,
+          "l2": 0.01646388957713751,
+          "mean_abs": 0.0058751413598656654,
+          "max_abs": 0.41960784792900085
+        },
+        "displacement": {
+          "max_dx_px": 0.690459132194519,
+          "max_dy_px": 0.5251445770263672,
+          "max_magnitude_px": 0.750669002532959,
+          "mean_magnitude_px": 0.2949090898036957,
+          "p95_magnitude_px": 0.5702787637710571
+        },
+        "jacobian": {
+          "jacobian_det_min": 0.9332541227340698,
+          "jacobian_det_mean": 0.9999980330467224,
+          "foldover_fraction_det_below_0": 0.0,
+          "low_det_fraction_below_0p2": 0.0
+        }
+      },
+      "settings": {
+        "seed": 4105,
+        "max_size": 512,
+        "diffusion_steps": 4,
+        "guidance_scale": 1.0,
+        "max_disp_px": 2.5,
+        "attack_iters": 50,
+        "lr": 0.006,
+        "grid_size": 6,
+        "dct_size": 4,
+        "rbf_size": 5,
+        "padding_mode": "reflection",
+        "edge_falloff_px": 16.0,
+        "lambda_visual": 10.0,
+        "lambda_disp": 0.04,
+        "lambda_smooth": 0.08,
+        "lambda_fold": 5.0,
+        "lambda_method_l1": 0.01,
+        "objective_timesteps": null
+      },
+      "deepface": {
+        "pre": {
+          "mean_match_percent": 99.73056964938166,
+          "min_match_percent": 99.64173693086003,
+          "max_match_percent": 99.83937499999999,
+          "models": {
+            "SFace": {
+              "match_percent": 99.64173693086003,
+              "verified": true,
+              "distance": 0.004249,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.7725,
+              "verified": true,
+              "distance": 0.000455,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.83937499999999,
+              "verified": true,
+              "distance": 0.001285,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 99.66866666666667,
+              "verified": true,
+              "distance": 0.001988,
+              "threshold": 0.3
+            }
+          }
+        },
+        "post": {
+          "mean_match_percent": 99.39127525997752,
+          "min_match_percent": 99.02983333333333,
+          "max_match_percent": 99.80775,
+          "models": {
+            "SFace": {
+              "match_percent": 99.40151770657673,
+              "verified": true,
+              "distance": 0.007098,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.32600000000001,
+              "verified": true,
+              "distance": 0.001348,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.80775,
+              "verified": true,
+              "distance": 0.001538,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 99.02983333333333,
+              "verified": true,
+              "distance": 0.005821,
+              "threshold": 0.3
+            }
+          }
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "name": "candidate_02_men66_sunglasses_dct",
+      "path": "/workspace/output/geo_whitebox_results_20260614_172707/finalists/candidate_02_men66_sunglasses_dct",
+      "source": "/workspace/gender_dataset/men/66.jpg",
+      "prompt": "add sunglasses",
+      "methods": "dct",
+      "objective": "hybrid",
+      "assessment": "Best sunglasses geometry attempt; sunglasses still apply, with only small shape/style variation.",
+      "failure": "minor output variation, not prompt failure",
+      "metrics": {
+        "input": {
+          "psnr": 36.001380507413224,
+          "ssim": 0.9823550109804611,
+          "l2": 0.015846413146422236,
+          "mean_abs": 0.006663927808403969,
+          "max_abs": 0.2549019753932953
+        },
+        "output": {
+          "psnr": 35.941217127543375,
+          "ssim": 0.9800444697273366,
+          "l2": 0.0159565553716767,
+          "mean_abs": 0.007245028391480446,
+          "max_abs": 0.29411765933036804
+        },
+        "displacement": {
+          "max_dx_px": 0.6721563339233398,
+          "max_dy_px": 0.8841809034347534,
+          "max_magnitude_px": 1.0917845964431763,
+          "mean_magnitude_px": 0.34643667936325073,
+          "p95_magnitude_px": 0.6354563236236572
+        },
+        "jacobian": {
+          "jacobian_det_min": 0.9484590291976929,
+          "jacobian_det_mean": 0.9999951124191284,
+          "foldover_fraction_det_below_0": 0.0,
+          "low_det_fraction_below_0p2": 0.0
+        }
+      },
+      "settings": {
+        "seed": 4009,
+        "max_size": 512,
+        "diffusion_steps": 4,
+        "guidance_scale": 1.0,
+        "max_disp_px": 1.5,
+        "attack_iters": 35,
+        "lr": 0.012,
+        "grid_size": 6,
+        "dct_size": 4,
+        "rbf_size": 5,
+        "padding_mode": "reflection",
+        "edge_falloff_px": 16.0,
+        "lambda_visual": 10.0,
+        "lambda_disp": 0.04,
+        "lambda_smooth": 0.08,
+        "lambda_fold": 5.0,
+        "lambda_method_l1": 0.01,
+        "objective_timesteps": null
+      },
+      "deepface": {
+        "pre": {
+          "mean_match_percent": 99.38556689151208,
+          "min_match_percent": 98.8635,
+          "max_match_percent": 99.67293423271501,
+          "models": {
+            "SFace": {
+              "match_percent": 99.67293423271501,
+              "verified": true,
+              "distance": 0.003879,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 98.8635,
+              "verified": true,
+              "distance": 0.002273,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.5265,
+              "verified": true,
+              "distance": 0.003788,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 99.47933333333333,
+              "verified": true,
+              "distance": 0.003124,
+              "threshold": 0.3
+            }
+          }
+        },
+        "post": {
+          "mean_match_percent": 99.4260429138561,
+          "min_match_percent": 99.0275,
+          "max_match_percent": 99.729125,
+          "models": {
+            "SFace": {
+              "match_percent": 99.58971332209107,
+              "verified": true,
+              "distance": 0.004866,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.0275,
+              "verified": true,
+              "distance": 0.001945,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.729125,
+              "verified": true,
+              "distance": 0.002167,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 99.35783333333333,
+              "verified": true,
+              "distance": 0.003853,
+              "threshold": 0.3
+            }
+          }
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "name": "candidate_03_men57_older_grid_dct",
+      "path": "/workspace/output/geo_whitebox_results_20260614_172707/finalists/candidate_03_men57_older_grid_dct",
+      "source": "/workspace/gender_dataset/men/57.jpg",
+      "prompt": "make the person older",
+      "methods": "grid,dct",
+      "objective": "vae",
+      "assessment": "Best clean older-prompt geometry attempt; aging still succeeds.",
+      "failure": "minor output variation, not prompt failure",
+      "metrics": {
+        "input": {
+          "psnr": 39.47140365150006,
+          "ssim": 0.9842459319679963,
+          "l2": 0.010627468280749492,
+          "mean_abs": 0.004850251600146294,
+          "max_abs": 0.2666666805744171
+        },
+        "output": {
+          "psnr": 35.60975595151327,
+          "ssim": 0.9900930202742676,
+          "l2": 0.01657723913462889,
+          "mean_abs": 0.010521398857235909,
+          "max_abs": 0.1607843041419983
+        },
+        "displacement": {
+          "max_dx_px": 0.6684457063674927,
+          "max_dy_px": 0.8513494729995728,
+          "max_magnitude_px": 0.8978301882743835,
+          "mean_magnitude_px": 0.3880799114704132,
+          "p95_magnitude_px": 0.6551558971405029
+        },
+        "jacobian": {
+          "jacobian_det_min": 0.9180657267570496,
+          "jacobian_det_mean": 1.000010371208191,
+          "foldover_fraction_det_below_0": 0.0,
+          "low_det_fraction_below_0p2": 0.0
+        }
+      },
+      "settings": {
+        "seed": 4003,
+        "max_size": 512,
+        "diffusion_steps": 4,
+        "guidance_scale": 1.0,
+        "max_disp_px": 2.0,
+        "attack_iters": 35,
+        "lr": 0.01,
+        "grid_size": 6,
+        "dct_size": 4,
+        "rbf_size": 5,
+        "padding_mode": "reflection",
+        "edge_falloff_px": 16.0,
+        "lambda_visual": 10.0,
+        "lambda_disp": 0.04,
+        "lambda_smooth": 0.08,
+        "lambda_fold": 5.0,
+        "lambda_method_l1": 0.01,
+        "objective_timesteps": null
+      },
+      "deepface": {
+        "pre": {
+          "mean_match_percent": 99.04633289418211,
+          "min_match_percent": 96.94749999999999,
+          "max_match_percent": 99.885625,
+          "models": {
+            "SFace": {
+              "match_percent": 99.7677065767285,
+              "verified": true,
+              "distance": 0.002755,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.58449999999999,
+              "verified": true,
+              "distance": 0.000831,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.885625,
+              "verified": true,
+              "distance": 0.000915,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 96.94749999999999,
+              "verified": true,
+              "distance": 0.018315,
+              "threshold": 0.3
+            }
+          }
+        },
+        "post": {
+          "mean_match_percent": 99.39501637155705,
+          "min_match_percent": 98.82166666666666,
+          "max_match_percent": 99.931,
+          "models": {
+            "SFace": {
+              "match_percent": 99.76989881956155,
+              "verified": true,
+              "distance": 0.002729,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.0575,
+              "verified": true,
+              "distance": 0.001885,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.931,
+              "verified": true,
+              "distance": 0.000552,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 98.82166666666666,
+              "verified": true,
+              "distance": 0.00707,
+              "threshold": 0.3
+            }
+          }
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "name": "candidate_04_men51_headshot_dct",
+      "path": "/workspace/output/geo_whitebox_results_20260614_172707/finalists/candidate_04_men51_headshot_dct",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "dct",
+      "objective": "hybrid",
+      "assessment": "Clean DCT-only headshot attempt; edit still succeeds with minor face/style drift.",
+      "failure": "minor output variation",
+      "metrics": {
+        "input": {
+          "psnr": 36.98834571160239,
+          "ssim": 0.9779619300313223,
+          "l2": 0.014144340882775663,
+          "mean_abs": 0.005985905881971121,
+          "max_abs": 0.34117648005485535
+        },
+        "output": {
+          "psnr": 34.889887530842586,
+          "ssim": 0.9842796907109452,
+          "l2": 0.018009664540875398,
+          "mean_abs": 0.008765287697315216,
+          "max_abs": 0.4431372284889221
+        },
+        "displacement": {
+          "max_dx_px": 0.5708842277526855,
+          "max_dy_px": 0.8139013051986694,
+          "max_magnitude_px": 0.9834837317466736,
+          "mean_magnitude_px": 0.3199586868286133,
+          "p95_magnitude_px": 0.6717850565910339
+        },
+        "jacobian": {
+          "jacobian_det_min": 0.9245418310165405,
+          "jacobian_det_mean": 1.0000057220458984,
+          "foldover_fraction_det_below_0": 0.0,
+          "low_det_fraction_below_0p2": 0.0
+        }
+      },
+      "settings": {
+        "seed": 4007,
+        "max_size": 512,
+        "diffusion_steps": 4,
+        "guidance_scale": 1.0,
+        "max_disp_px": 1.5,
+        "attack_iters": 35,
+        "lr": 0.012,
+        "grid_size": 6,
+        "dct_size": 4,
+        "rbf_size": 5,
+        "padding_mode": "reflection",
+        "edge_falloff_px": 16.0,
+        "lambda_visual": 10.0,
+        "lambda_disp": 0.04,
+        "lambda_smooth": 0.08,
+        "lambda_fold": 5.0,
+        "lambda_method_l1": 0.01,
+        "objective_timesteps": null
+      },
+      "deepface": {
+        "pre": {
+          "mean_match_percent": 99.49155752880831,
+          "min_match_percent": 98.53043844856661,
+          "max_match_percent": 99.885125,
+          "models": {
+            "SFace": {
+              "match_percent": 98.53043844856661,
+              "verified": true,
+              "distance": 0.017429,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.669,
+              "verified": true,
+              "distance": 0.000662,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.885125,
+              "verified": true,
+              "distance": 0.000919,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 99.88166666666667,
+              "verified": true,
+              "distance": 0.00071,
+              "threshold": 0.3
+            }
+          }
+        },
+        "post": {
+          "mean_match_percent": 98.86740935919056,
+          "min_match_percent": 97.59299999999999,
+          "max_match_percent": 99.789,
+          "models": {
+            "SFace": {
+              "match_percent": 99.60463743676222,
+              "verified": true,
+              "distance": 0.004689,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 98.483,
+              "verified": true,
+              "distance": 0.003034,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.789,
+              "verified": true,
+              "distance": 0.001688,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 97.59299999999999,
+              "verified": true,
+              "distance": 0.014442,
+              "threshold": 0.3
+            }
+          }
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "name": "candidate_05_men66_denoise_latent_lowinit",
+      "path": "/workspace/output/geo_whitebox_results_20260614_172707/finalists/candidate_05_men66_denoise_latent_lowinit",
+      "source": "/workspace/gender_dataset/men/66.jpg",
+      "prompt": "add sunglasses",
+      "methods": "dct",
+      "objective": "denoise_latent",
+      "assessment": "Cleanest denoise-latent trajectory attempt; edit still succeeds.",
+      "failure": "no meaningful failure",
+      "metrics": {
+        "input": {
+          "psnr": 46.23132620050519,
+          "ssim": 0.9979964523575413,
+          "l2": 0.004880155831554059,
+          "mean_abs": 0.0017413693713024259,
+          "max_abs": 0.10980391502380371
+        },
+        "output": {
+          "psnr": 42.156473208736585,
+          "ssim": 0.9950145217217233,
+          "l2": 0.007801468145768578,
+          "mean_abs": 0.0029568825848400593,
+          "max_abs": 0.21960783004760742
+        },
+        "displacement": {
+          "max_dx_px": 0.3888207972049713,
+          "max_dy_px": 0.35429278016090393,
+          "max_magnitude_px": 0.39840421080589294,
+          "mean_magnitude_px": 0.11485360562801361,
+          "p95_magnitude_px": 0.24035009741783142
+        },
+        "jacobian": {
+          "jacobian_det_min": 0.9627682566642761,
+          "jacobian_det_mean": 1.000003695487976,
+          "foldover_fraction_det_below_0": 0.0,
+          "low_det_fraction_below_0p2": 0.0
+        }
+      },
+      "settings": {
+        "seed": 5202,
+        "max_size": 512,
+        "diffusion_steps": 4,
+        "guidance_scale": 1.0,
+        "max_disp_px": 2.0,
+        "attack_iters": 12,
+        "lr": 0.0005,
+        "grid_size": 6,
+        "dct_size": 5,
+        "rbf_size": 5,
+        "padding_mode": "reflection",
+        "edge_falloff_px": 16.0,
+        "lambda_visual": 4.0,
+        "lambda_disp": 0.03,
+        "lambda_smooth": 0.05,
+        "lambda_fold": 5.0,
+        "lambda_method_l1": 0.005,
+        "objective_timesteps": [
+          0
+        ]
+      },
+      "deepface": {
+        "pre": {
+          "mean_match_percent": 99.9732029756886,
+          "min_match_percent": 99.96350000000001,
+          "max_match_percent": 99.983625,
+          "models": {
+            "SFace": {
+              "match_percent": 99.9660202360877,
+              "verified": true,
+              "distance": 0.000403,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.96350000000001,
+              "verified": true,
+              "distance": 7.3e-05,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.983625,
+              "verified": true,
+              "distance": 0.000131,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 99.97966666666667,
+              "verified": true,
+              "distance": 0.000122,
+              "threshold": 0.3
+            }
+          }
+        },
+        "post": {
+          "mean_match_percent": 99.87671001967396,
+          "min_match_percent": 99.82849999999999,
+          "max_match_percent": 99.92200674536257,
+          "models": {
+            "SFace": {
+              "match_percent": 99.92200674536257,
+              "verified": true,
+              "distance": 0.000925,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.86,
+              "verified": true,
+              "distance": 0.00028,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.82849999999999,
+              "verified": true,
+              "distance": 0.001372,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 99.89633333333333,
+              "verified": true,
+              "distance": 0.000622,
+              "threshold": 0.3
+            }
+          }
+        }
+      }
+    }
+  ]
+}

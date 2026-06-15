@@ -1,0 +1,92 @@
+{
+  "jobs": [
+    {
+      "name": "01_men57_older_rolling_dct_hybrid_2.5px",
+      "source": "men57",
+      "prompt": "older",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "max_disp_px": 2.5,
+      "iters": 50,
+      "lr": 0.006,
+      "seed": 4101
+    },
+    {
+      "name": "02_men57_older_grid_dct_transformer_pred_2.5px",
+      "source": "men57",
+      "prompt": "older",
+      "methods": "grid,dct",
+      "objective": "transformer_pred",
+      "max_disp_px": 2.5,
+      "iters": 50,
+      "lr": 0.006,
+      "seed": 4102
+    },
+    {
+      "name": "03_men58_headshot_rolling_dct_hybrid_2.5px",
+      "source": "men58",
+      "prompt": "headshot",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "max_disp_px": 2.5,
+      "iters": 50,
+      "lr": 0.006,
+      "seed": 4103
+    },
+    {
+      "name": "04_men58_headshot_grid_dct_transformer_pred_2.5px",
+      "source": "men58",
+      "prompt": "headshot",
+      "methods": "grid,dct",
+      "objective": "transformer_pred",
+      "max_disp_px": 2.5,
+      "iters": 50,
+      "lr": 0.006,
+      "seed": 4104
+    },
+    {
+      "name": "05_men51_headshot_rolling_dct_hybrid_2.5px",
+      "source": "men51",
+      "prompt": "headshot",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "max_disp_px": 2.5,
+      "iters": 50,
+      "lr": 0.006,
+      "seed": 4105
+    },
+    {
+      "name": "06_men51_headshot_grid_dct_transformer_pred_2.5px",
+      "source": "men51",
+      "prompt": "headshot",
+      "methods": "grid,dct",
+      "objective": "transformer_pred",
+      "max_disp_px": 2.5,
+      "iters": 50,
+      "lr": 0.006,
+      "seed": 4106
+    },
+    {
+      "name": "07_men66_sunglasses_rolling_dct_hybrid_2.5px",
+      "source": "men66",
+      "prompt": "sunglasses",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "max_disp_px": 2.5,
+      "iters": 50,
+      "lr": 0.006,
+      "seed": 4107
+    },
+    {
+      "name": "08_men66_sunglasses_grid_dct_transformer_pred_2.5px",
+      "source": "men66",
+      "prompt": "sunglasses",
+      "methods": "grid,dct",
+      "objective": "transformer_pred",
+      "max_disp_px": 2.5,
+      "iters": 50,
+      "lr": 0.006,
+      "seed": 4108
+    }
+  ]
+}

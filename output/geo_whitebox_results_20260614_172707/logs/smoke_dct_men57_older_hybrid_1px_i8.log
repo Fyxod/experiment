@@ -1,0 +1,40 @@
+2026-06-14 17:31:38.521256: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 17:31:38.559911: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 17:31:39.816281: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00,  5.37it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 81.70it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 11.17it/s]
+{
+  "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/smoke/dct_men57_older_hybrid_1px_i8",
+  "metrics": {
+    "input": {
+      "psnr": 40.8806701456139,
+      "ssim": 0.9884792106456913,
+      "l2": 0.00903579756814073,
+      "mean_abs": 0.0039038648828864098,
+      "max_abs": 0.14509806036949158
+    },
+    "output": {
+      "psnr": 42.21366273706434,
+      "ssim": 0.9938356558210927,
+      "l2": 0.00775027054687402,
+      "mean_abs": 0.004128963686525822,
+      "max_abs": 0.1764705926179886
+    },
+    "displacement": {
+      "max_dx_px": 0.8042118549346924,
+      "max_dy_px": 0.7903141379356384,
+      "max_magnitude_px": 1.0000001192092896,
+      "mean_magnitude_px": 0.32994338870048523,
+      "p95_magnitude_px": 0.694735586643219
+    },
+    "jacobian": {
+      "jacobian_det_min": 0.9830280542373657,
+      "jacobian_det_mean": 1.0021097660064697,
+      "foldover_fraction_det_below_0": 0.0,
+      "low_det_fraction_below_0p2": 0.0
+    }
+  },
+  "best_score": 0.009754028171300888
+}

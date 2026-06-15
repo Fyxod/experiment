@@ -1,0 +1,120 @@
+2026-06-14 18:41:58.189816: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 18:41:58.226662: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 18:41:59.314745: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00,  7.42it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 86.28it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 13.93it/s]
+[1/6] 01_men51_headshot_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_hidden_2px
+[2/6] 02_men51_studio_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_2px
+[3/6] 03_men66_sunglasses_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_hidden_2px
+[4/6] 04_men74_smile_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_hidden_2px
+[5/6] 05_men57_older_dct_grid_tps_piecewise_rolling_affine_radial_denoise_latent_2.2px
+[6/6] 06_men11_headshot_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_hidden_2.2px
+{
+  "sheet": "/workspace/output/geo_whitebox_results_20260614_172707/geo_pass5_scaled_sheet.jpg",
+  "top": [
+    {
+      "name": "02_men51_studio_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_2px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass5_scaled/02_men51_studio_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_2px",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "make the person look like a studio portrait",
+      "methods": "dct,grid,tps,piecewise,rolling,affine,radial",
+      "objective": "hybrid",
+      "score": 0.2551765016065032,
+      "input_psnr": 39.20937514712271,
+      "input_ssim": 0.9904930437433072,
+      "output_ssim": 0.9658016831319888,
+      "output_l2": 0.023676646826891662,
+      "max_disp": 0.7857407927513123,
+      "mean_disp": 0.09018345922231674,
+      "ok": true,
+      "rank": 1
+    },
+    {
+      "name": "01_men51_headshot_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_hidden_2px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass5_scaled/01_men51_headshot_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_hidden_2px",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "dct,grid,tps,piecewise,rolling,affine,radial",
+      "objective": "hybrid_hidden",
+      "score": 0.16163203612540816,
+      "input_psnr": 46.16416880683947,
+      "input_ssim": 0.9975083938294658,
+      "output_ssim": 0.9825641682953975,
+      "output_l2": 0.01837774186139963,
+      "max_disp": 0.47055965662002563,
+      "mean_disp": 0.04882298782467842,
+      "ok": true,
+      "rank": 2
+    },
+    {
+      "name": "06_men11_headshot_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_hidden_2.2px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass5_scaled/06_men11_headshot_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_hidden_2.2px",
+      "source": "/workspace/gender_dataset/men/11.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "dct,grid,tps,piecewise,rolling,affine,radial",
+      "objective": "hybrid_hidden",
+      "score": 0.13958568206460528,
+      "input_psnr": 39.79143013076242,
+      "input_ssim": 0.9931261689826941,
+      "output_ssim": 0.986977482995333,
+      "output_l2": 0.0174991228091875,
+      "max_disp": 0.6440386772155762,
+      "mean_disp": 0.1202886700630188,
+      "ok": true,
+      "rank": 3
+    },
+    {
+      "name": "03_men66_sunglasses_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_hidden_2px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass5_scaled/03_men66_sunglasses_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_hidden_2px",
+      "source": "/workspace/gender_dataset/men/66.jpg",
+      "prompt": "add sunglasses",
+      "methods": "dct,grid,tps,piecewise,rolling,affine,radial",
+      "objective": "hybrid_hidden",
+      "score": 0.1174694532490503,
+      "input_psnr": 39.23553674468651,
+      "input_ssim": 0.9921982016873917,
+      "output_ssim": 0.988394346547513,
+      "output_l2": 0.01420936788782047,
+      "max_disp": 0.81951504945755,
+      "mean_disp": 0.13888832926750183,
+      "ok": true,
+      "rank": 4
+    },
+    {
+      "name": "05_men57_older_dct_grid_tps_piecewise_rolling_affine_radial_denoise_latent_2.2px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass5_scaled/05_men57_older_dct_grid_tps_piecewise_rolling_affine_radial_denoise_latent_2.2px",
+      "source": "/workspace/gender_dataset/men/57.jpg",
+      "prompt": "make the person older",
+      "methods": "dct,grid,tps,piecewise,rolling,affine,radial",
+      "objective": "denoise_latent",
+      "score": 0.08010960792933902,
+      "input_psnr": 41.458789151099076,
+      "input_ssim": 0.9905613398021278,
+      "output_ssim": 0.9926920716812068,
+      "output_l2": 0.010175578930833219,
+      "max_disp": 0.8671000599861145,
+      "mean_disp": 0.18096618354320526,
+      "ok": true,
+      "rank": 5
+    },
+    {
+      "name": "04_men74_smile_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_hidden_2px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass5_scaled/04_men74_smile_dct_grid_tps_piecewise_rolling_affine_radial_hybrid_hidden_2px",
+      "source": "/workspace/gender_dataset/men/74.jpg",
+      "prompt": "make the person smile",
+      "methods": "dct,grid,tps,piecewise,rolling,affine,radial",
+      "objective": "hybrid_hidden",
+      "score": 0.0,
+      "input_psnr": Infinity,
+      "input_ssim": 1.0,
+      "output_ssim": 1.0,
+      "output_l2": 0.0,
+      "max_disp": 0.0,
+      "mean_disp": 0.0,
+      "ok": true,
+      "rank": 6
+    }
+  ]
+}

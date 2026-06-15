@@ -1,0 +1,58 @@
+{
+  "generation": 3,
+  "elite_rows": [
+    {
+      "name": "cand_030_g03_m06",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_030_g03_m06",
+      "generation": 3,
+      "score": 0.20725732853101733,
+      "valid": true,
+      "input_psnr": 41.26223959877098,
+      "input_ssim": 0.9928633633290276,
+      "output_ssim": 0.9798167102661601,
+      "output_l2": 0.02530483391913157,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21812293741677422,
+      "max_disp": 0.595319926738739,
+      "mean_disp": 0.08783872425556183,
+      "p95_disp": 0.49904993176460266,
+      "rank": 5
+    },
+    {
+      "name": "cand_027_g03_m03",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_027_g03_m03",
+      "generation": 3,
+      "score": 0.20576490899553332,
+      "valid": true,
+      "input_psnr": 39.95431263367615,
+      "input_ssim": 0.9904522014896561,
+      "output_ssim": 0.9796043932601591,
+      "output_l2": 0.024836496407233972,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21813945204561055,
+      "max_disp": 0.9595475196838379,
+      "mean_disp": 0.09070981293916702,
+      "p95_disp": 0.5559400916099548,
+      "rank": 6
+    },
+    {
+      "name": "cand_029_g03_m05",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_029_g03_m05",
+      "generation": 3,
+      "score": 0.19072775955383958,
+      "valid": true,
+      "input_psnr": 40.84446837276806,
+      "input_ssim": 0.9921967586580228,
+      "output_ssim": 0.9820189749790494,
+      "output_l2": 0.023654902986754097,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21774396996355194,
+      "max_disp": 0.718803346157074,
+      "mean_disp": 0.0833316296339035,
+      "p95_disp": 0.5161027312278748,
+      "rank": 13
+    }
+  ],
+  "mean_abs": 0.13581036031246185,
+  "std_mean": 0.11163610219955444
+}

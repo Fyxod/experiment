@@ -1,0 +1,38 @@
+{
+  "input": "/workspace/gender_dataset/men/66.jpg",
+  "prompt": "add sunglasses",
+  "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass1/09_men66_sunglasses_dct_hybrid_1.5px",
+  "seed": 4009,
+  "max_size": 512,
+  "diffusion_steps": 4,
+  "guidance_scale": 1.0,
+  "max_sequence_length": 512,
+  "text_encoder_out_layers": [
+    9,
+    18,
+    27
+  ],
+  "torch_dtype": "bfloat16",
+  "methods": [
+    "dct"
+  ],
+  "objective": "hybrid",
+  "attack_iters": 35,
+  "lr": 0.012,
+  "max_disp_px": 1.5,
+  "init_scale_px": 0.08,
+  "grid_size": 6,
+  "dct_size": 4,
+  "rbf_size": 5,
+  "rbf_sigma": 0.55,
+  "padding_mode": "reflection",
+  "lambda_visual": 10.0,
+  "lambda_disp": 0.04,
+  "lambda_smooth": 0.08,
+  "lambda_fold": 5.0,
+  "lambda_method_l1": 0.01,
+  "hybrid_vae_weight": 0.2,
+  "objective_timestep": 0,
+  "edge_falloff_px": 16.0,
+  "save_theta": true
+}

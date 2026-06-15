@@ -1,0 +1,50 @@
+{
+  "image_a": "samples/sample_face_a.png",
+  "image_b": "samples/sample_face_b.png",
+  "detector_backend": "skip",
+  "distance_metric": "cosine",
+  "execution": {
+    "allow_parallel": false,
+    "requested_workers": 1,
+    "enabled_models": 2,
+    "cpu_count": 224,
+    "total_memory_gb": 2015.56,
+    "available_memory_gb": 1902.45,
+    "resolved_workers": 1,
+    "parallel": false
+  },
+  "models": {
+    "SFace": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.025846,
+      "threshold": 0.593,
+      "match_percent": 97.82074198988195,
+      "elapsed_seconds": 3.4267293121665716
+    },
+    "OpenFace": {
+      "enabled": false,
+      "skipped": true
+    },
+    "Facenet": {
+      "enabled": false,
+      "skipped": true
+    },
+    "Facenet512": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.040123,
+      "threshold": 0.3,
+      "match_percent": 93.31283333333333,
+      "elapsed_seconds": 7.682690603891388
+    }
+  },
+  "summary": {
+    "successful_models": 2,
+    "mean_match_percent": 95.56678766160763,
+    "min_match_percent": 93.31283333333333,
+    "max_match_percent": 97.82074198988195
+  }
+}

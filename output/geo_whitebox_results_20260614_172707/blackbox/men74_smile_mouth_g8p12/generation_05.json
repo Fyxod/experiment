@@ -1,0 +1,58 @@
+{
+  "generation": 5,
+  "elite_rows": [
+    {
+      "name": "cand_059_g05_m11",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_059_g05_m11",
+      "generation": 5,
+      "score": 0.10074764168978784,
+      "valid": true,
+      "input_psnr": 38.73774303919569,
+      "input_ssim": 0.9826676250400234,
+      "output_ssim": 0.9879583368147943,
+      "output_l2": 0.009562186061906225,
+      "clean_edit_l2": 0.05377714887769222,
+      "pert_edit_l2": 0.05258463421783376,
+      "max_disp": 1.7206674814224243,
+      "mean_disp": 0.22190718352794647,
+      "p95_disp": 1.335995078086853,
+      "rank": 1
+    },
+    {
+      "name": "cand_052_g05_m04",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_052_g05_m04",
+      "generation": 5,
+      "score": 0.0817944904343536,
+      "valid": true,
+      "input_psnr": 39.65404767769565,
+      "input_ssim": 0.9846091534545923,
+      "output_ssim": 0.9906475927511007,
+      "output_l2": 0.007884113188538584,
+      "clean_edit_l2": 0.05377714887769222,
+      "pert_edit_l2": 0.052536075003676345,
+      "max_disp": 1.5481648445129395,
+      "mean_disp": 0.23005838692188263,
+      "p95_disp": 1.3293581008911133,
+      "rank": 3
+    },
+    {
+      "name": "cand_054_g05_m06",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_054_g05_m06",
+      "generation": 5,
+      "score": 0.08045293535452601,
+      "valid": true,
+      "input_psnr": 40.939248325253466,
+      "input_ssim": 0.988636220028838,
+      "output_ssim": 0.9910665840183629,
+      "output_l2": 0.008176138637049699,
+      "clean_edit_l2": 0.05377714887769222,
+      "pert_edit_l2": 0.05281750431700995,
+      "max_disp": 1.5411858558654785,
+      "mean_disp": 0.1741376519203186,
+      "p95_disp": 1.1196531057357788,
+      "rank": 4
+    }
+  ],
+  "mean_abs": 0.17877554893493652,
+  "std_mean": 0.09506426006555557
+}

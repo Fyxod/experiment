@@ -1,0 +1,127 @@
+{
+  "config": {
+    "input": "/workspace/geometric-v1/samples/image.png",
+    "prompt": "change the hairstyle",
+    "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/12_sample_hair_eps4",
+    "seed": 1249,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "epsilon": 0.01568627450980392,
+    "alpha": 0.00392156862745098,
+    "attack_iters": 8,
+    "attack": "transformer",
+    "objective_timestep": 0,
+    "highpass_sigma": 0.0,
+    "random_start": true,
+    "save_delta": false
+  },
+  "model_id": "black-forest-labs/FLUX.2-klein-4B",
+  "device": "cuda:0",
+  "elapsed_seconds": 3.675416058860719,
+  "metrics": {
+    "input": {
+      "psnr": 39.1437345481401,
+      "ssim": 0.9237166354904951,
+      "l2": 0.011036040169942484,
+      "mean_abs": 0.009656344540417194,
+      "max_abs": 0.01568630337715149
+    },
+    "output": {
+      "psnr": 23.15212130818416,
+      "ssim": 0.78125773672204,
+      "l2": 0.06956550378581958,
+      "mean_abs": 0.027884110808372498,
+      "max_abs": 0.9490196108818054
+    },
+    "delta": {
+      "linf": 0.01568630337715149,
+      "mean_abs": 0.009657604619860649,
+      "epsilon": 0.01568627450980392
+    }
+  },
+  "attack": {
+    "history": [
+      {
+        "iter": 1.0,
+        "score": 0.2566896975040436,
+        "pred_mse": 0.2566896975040436,
+        "latent_mse": 0.21429547667503357,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008286746218800545
+      },
+      {
+        "iter": 2.0,
+        "score": 0.8295549750328064,
+        "pred_mse": 0.8295549750328064,
+        "latent_mse": 0.5937718152999878,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008547395467758179
+      },
+      {
+        "iter": 3.0,
+        "score": 1.354549765586853,
+        "pred_mse": 1.354549765586853,
+        "latent_mse": 0.9317445755004883,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008805167861282825
+      },
+      {
+        "iter": 4.0,
+        "score": 1.8298938274383545,
+        "pred_mse": 1.8298938274383545,
+        "latent_mse": 1.2790273427963257,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009087582118809223
+      },
+      {
+        "iter": 5.0,
+        "score": 2.1802334785461426,
+        "pred_mse": 2.1802334785461426,
+        "latent_mse": 1.4846824407577515,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009305275976657867
+      },
+      {
+        "iter": 6.0,
+        "score": 2.4173014163970947,
+        "pred_mse": 2.4173014163970947,
+        "latent_mse": 1.6135592460632324,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.00952660758048296
+      },
+      {
+        "iter": 7.0,
+        "score": 2.533855676651001,
+        "pred_mse": 2.533855676651001,
+        "latent_mse": 1.6648309230804443,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009657604619860649
+      },
+      {
+        "iter": 8.0,
+        "score": 2.656165599822998,
+        "pred_mse": 2.656165599822998,
+        "latent_mse": 1.7551358938217163,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009794676676392555
+      }
+    ],
+    "best_score": 2.656165599822998
+  },
+  "outputs": {
+    "original": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/12_sample_hair_eps4/original.png",
+    "perturbed": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/12_sample_hair_eps4/perturbed.png",
+    "original_diffused": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/12_sample_hair_eps4/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/12_sample_hair_eps4/perturbed_diffused.png",
+    "report": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/12_sample_hair_eps4/report.json",
+    "sheet": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/12_sample_hair_eps4/sheet.jpg"
+  }
+}

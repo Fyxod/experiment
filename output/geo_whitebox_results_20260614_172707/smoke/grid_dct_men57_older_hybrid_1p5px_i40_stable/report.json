@@ -1,0 +1,139 @@
+{
+  "config": {
+    "input": "/workspace/gender_dataset/men/57.jpg",
+    "prompt": "make the person older",
+    "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/smoke/grid_dct_men57_older_hybrid_1p5px_i40_stable",
+    "seed": 3103,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "methods": [
+      "grid",
+      "dct"
+    ],
+    "objective": "hybrid",
+    "attack_iters": 40,
+    "lr": 0.04,
+    "max_disp_px": 1.5,
+    "init_scale_px": 0.08,
+    "grid_size": 6,
+    "dct_size": 5,
+    "rbf_size": 5,
+    "rbf_sigma": 0.55,
+    "padding_mode": "reflection",
+    "lambda_visual": 35.0,
+    "lambda_disp": 0.12,
+    "lambda_smooth": 0.25,
+    "lambda_fold": 5.0,
+    "lambda_method_l1": 0.03,
+    "hybrid_vae_weight": 0.2,
+    "objective_timestep": 0,
+    "edge_falloff_px": 16.0,
+    "save_theta": true
+  },
+  "model_id": "black-forest-labs/FLUX.2-klein-4B",
+  "device": "cuda:0",
+  "elapsed_seconds": 2.5975466661620885,
+  "metrics": {
+    "input": {
+      "psnr": 41.83518538737738,
+      "ssim": 0.9899428132643456,
+      "l2": 0.00809544507591516,
+      "mean_abs": 0.0034618505742400885,
+      "max_abs": 0.23137256503105164
+    },
+    "output": {
+      "psnr": 42.5865777815767,
+      "ssim": 0.9948235331724066,
+      "l2": 0.007424566661570911,
+      "mean_abs": 0.004979281686246395,
+      "max_abs": 0.10980391502380371
+    },
+    "displacement": {
+      "max_dx_px": 1.050066590309143,
+      "max_dy_px": 1.038417100906372,
+      "max_magnitude_px": 1.2971786260604858,
+      "mean_magnitude_px": 0.33755290508270264,
+      "p95_magnitude_px": 0.7800552248954773
+    },
+    "jacobian": {
+      "jacobian_det_min": 0.9268629550933838,
+      "jacobian_det_mean": 0.9999909996986389,
+      "foldover_fraction_det_below_0": 0.0,
+      "low_det_fraction_below_0p2": 0.0
+    }
+  },
+  "attack": {
+    "history": [
+      {
+        "iter": 1,
+        "loss": 0.0032518766820430756,
+        "objective": 0.012844227254390717,
+        "pred_mse": 0.008422449231147766,
+        "vae_mse": 0.0221088919788599,
+        "visual_mse": 6.476052658399567e-05,
+        "disp_penalty": 0.07406681776046753,
+        "smooth": 0.009349057450890541,
+        "fold": 0.0,
+        "method_l1": 0.0868067666888237,
+        "max_dx_px": 1.050066590309143,
+        "max_dy_px": 1.038417100906372,
+        "max_magnitude_px": 1.2971786260604858,
+        "mean_magnitude_px": 0.33755290508270264,
+        "p95_magnitude_px": 0.7800552248954773,
+        "jacobian_det_min": 0.9268629550933838,
+        "jacobian_det_mean": 0.9999909996986389,
+        "foldover_fraction_det_below_0": 0.0,
+        "low_det_fraction_below_0p2": 0.0
+      },
+      {
+        "iter": 2,
+        "stopped": true,
+        "reason": "non_finite_loss_or_geometry"
+      }
+    ],
+    "best_score": 0.012844227254390717,
+    "best_displacement": {
+      "max_dx_px": 1.050066590309143,
+      "max_dy_px": 1.038417100906372,
+      "max_magnitude_px": 1.2971786260604858,
+      "mean_magnitude_px": 0.33755290508270264,
+      "p95_magnitude_px": 0.7800552248954773
+    },
+    "best_method_displacement": {
+      "grid": {
+        "max_dx_px": 0.21227651834487915,
+        "max_dy_px": 0.2730174958705902,
+        "max_magnitude_px": 0.3014747202396393,
+        "mean_magnitude_px": 0.07726236432790756,
+        "p95_magnitude_px": 0.20473584532737732
+      },
+      "dct": {
+        "max_dx_px": 1.0372891426086426,
+        "max_dy_px": 0.986656129360199,
+        "max_magnitude_px": 1.2648749351501465,
+        "mean_magnitude_px": 0.32467350363731384,
+        "p95_magnitude_px": 0.7623159885406494
+      }
+    },
+    "rolling_params": {}
+  },
+  "outputs": {
+    "original": "/workspace/output/geo_whitebox_results_20260614_172707/smoke/grid_dct_men57_older_hybrid_1p5px_i40_stable/original.png",
+    "perturbed": "/workspace/output/geo_whitebox_results_20260614_172707/smoke/grid_dct_men57_older_hybrid_1p5px_i40_stable/perturbed.png",
+    "original_diffused": "/workspace/output/geo_whitebox_results_20260614_172707/smoke/grid_dct_men57_older_hybrid_1p5px_i40_stable/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/geo_whitebox_results_20260614_172707/smoke/grid_dct_men57_older_hybrid_1p5px_i40_stable/perturbed_diffused.png",
+    "flow": "/workspace/output/geo_whitebox_results_20260614_172707/smoke/grid_dct_men57_older_hybrid_1p5px_i40_stable/flow.png",
+    "displacement_x16": "/workspace/output/geo_whitebox_results_20260614_172707/smoke/grid_dct_men57_older_hybrid_1p5px_i40_stable/displacement_x16.png",
+    "report": "/workspace/output/geo_whitebox_results_20260614_172707/smoke/grid_dct_men57_older_hybrid_1p5px_i40_stable/report.json",
+    "effective_config": "/workspace/output/geo_whitebox_results_20260614_172707/smoke/grid_dct_men57_older_hybrid_1p5px_i40_stable/effective_config.json",
+    "sheet": "/workspace/output/geo_whitebox_results_20260614_172707/smoke/grid_dct_men57_older_hybrid_1p5px_i40_stable/sheet.jpg"
+  }
+}

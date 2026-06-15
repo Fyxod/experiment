@@ -1,0 +1,100 @@
+2026-06-14 18:49:48.816490: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 18:49:48.854980: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 18:49:50.101474: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  8.51it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 85.51it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 11.76it/s]
+{
+  "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_studio_pass5_64",
+  "top": [
+    {
+      "seed": 7029,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_studio_pass5_64/seed_7029",
+      "score": 0.5488201949778547,
+      "output_ssim": 0.9136376358257362,
+      "output_l2": 0.040674147656159905,
+      "clean_edit_l2": 0.2369151273422023,
+      "pert_edit_l2": 0.23801284275095363,
+      "prompt_failure": 0.0,
+      "rank": 1
+    },
+    {
+      "seed": 7041,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_studio_pass5_64/seed_7041",
+      "score": 0.523471799607701,
+      "output_ssim": 0.9244729908727339,
+      "output_l2": 0.04427275261972734,
+      "clean_edit_l2": 0.16177080026279494,
+      "pert_edit_l2": 0.1632220904851833,
+      "prompt_failure": 0.0,
+      "rank": 2
+    },
+    {
+      "seed": 7014,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_studio_pass5_64/seed_7014",
+      "score": 0.46209666665758686,
+      "output_ssim": 0.9286949934245835,
+      "output_l2": 0.035375328071184174,
+      "clean_edit_l2": 0.19969294715221617,
+      "pert_edit_l2": 0.20055434434130354,
+      "prompt_failure": 0.0,
+      "rank": 3
+    },
+    {
+      "seed": 7004,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_studio_pass5_64/seed_7004",
+      "score": 0.44540416766572394,
+      "output_ssim": 0.9313836947904278,
+      "output_l2": 0.03418778936548704,
+      "clean_edit_l2": 0.1891847262675388,
+      "pert_edit_l2": 0.19521316863462904,
+      "prompt_failure": 0.0,
+      "rank": 4
+    },
+    {
+      "seed": 7060,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_studio_pass5_64/seed_7060",
+      "score": 0.4226378881798829,
+      "output_ssim": 0.937577563670264,
+      "output_l2": 0.034589628572187794,
+      "clean_edit_l2": 0.27258591878851074,
+      "pert_edit_l2": 0.27774884632894203,
+      "prompt_failure": 0.0,
+      "rank": 5
+    },
+    {
+      "seed": 7059,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_studio_pass5_64/seed_7059",
+      "score": 0.4118801496975927,
+      "output_ssim": 0.9377627290018605,
+      "output_l2": 0.032586213141006966,
+      "clean_edit_l2": 0.3191950425966795,
+      "pert_edit_l2": 0.31955541132304116,
+      "prompt_failure": 0.0,
+      "rank": 6
+    },
+    {
+      "seed": 7025,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_studio_pass5_64/seed_7025",
+      "score": 0.394182683757899,
+      "output_ssim": 0.9436897103051715,
+      "output_l2": 0.03378830499571697,
+      "clean_edit_l2": 0.2652367671808113,
+      "pert_edit_l2": 0.26618008956124184,
+      "prompt_failure": 0.0,
+      "rank": 7
+    },
+    {
+      "seed": 7027,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_studio_pass5_64/seed_7027",
+      "score": 0.3940062094957124,
+      "output_ssim": 0.9487229849489416,
+      "output_l2": 0.03402498178776745,
+      "clean_edit_l2": 0.169225141276006,
+      "pert_edit_l2": 0.16453183118784562,
+      "prompt_failure": 0.004693310088160374,
+      "rank": 8
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "batch": "pass3",
+  "items": [
+    {
+      "name": "01_sample_sunglasses_strong",
+      "source": "/workspace/geometric-v1/samples/image.png",
+      "prompt": "add sunglasses",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass3/01_sample_sunglasses_strong_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass3_01_sample_sunglasses_strong.log"
+    },
+    {
+      "name": "02_sample_hair_strong",
+      "source": "/workspace/geometric-v1/samples/image.png",
+      "prompt": "change the hairstyle",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass3/02_sample_hair_strong_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass3_02_sample_hair_strong.log"
+    },
+    {
+      "name": "03_sample_older_strong",
+      "source": "/workspace/geometric-v1/samples/image.png",
+      "prompt": "make the person older",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass3/03_sample_older_strong_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass3_03_sample_older_strong.log"
+    },
+    {
+      "name": "04_men11_hair_strong",
+      "source": "/workspace/gender_dataset/men/11.jpg",
+      "prompt": "change the hairstyle",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass3/04_men11_hair_strong_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass3_04_men11_hair_strong.log"
+    },
+    {
+      "name": "05_men16_sunglasses_strong",
+      "source": "/workspace/gender_dataset/men/16.jpg",
+      "prompt": "add sunglasses",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass3/05_men16_sunglasses_strong_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass3_05_men16_sunglasses_strong.log"
+    },
+    {
+      "name": "06_men32_smile_strong",
+      "source": "/workspace/gender_dataset/men/32.jpg",
+      "prompt": "make the person smile",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass3/06_men32_smile_strong_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass3_06_men32_smile_strong.log"
+    }
+  ]
+}

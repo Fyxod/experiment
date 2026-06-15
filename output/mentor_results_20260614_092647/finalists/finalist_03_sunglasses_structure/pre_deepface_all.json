@@ -1,0 +1,60 @@
+{
+  "image_a": "/workspace/output/mentor_results_20260614_092647/finalists/finalist_03_sunglasses_structure/original.png",
+  "image_b": "/workspace/output/mentor_results_20260614_092647/finalists/finalist_03_sunglasses_structure/perturbed.png",
+  "detector_backend": "skip",
+  "distance_metric": "cosine",
+  "execution": {
+    "allow_parallel": false,
+    "requested_workers": 1,
+    "enabled_models": 4,
+    "cpu_count": 224,
+    "total_memory_gb": 2015.56,
+    "available_memory_gb": 1909.64,
+    "resolved_workers": 1,
+    "parallel": false
+  },
+  "models": {
+    "SFace": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.121575,
+      "threshold": 0.593,
+      "match_percent": 89.7491568296796,
+      "elapsed_seconds": 0.16140464693307877
+    },
+    "OpenFace": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.041067,
+      "threshold": 0.1,
+      "match_percent": 79.4665,
+      "elapsed_seconds": 1.2333599720150232
+    },
+    "Facenet": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.155719,
+      "threshold": 0.4,
+      "match_percent": 80.535125,
+      "elapsed_seconds": 2.1477693989872932
+    },
+    "Facenet512": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.061189,
+      "threshold": 0.3,
+      "match_percent": 89.80183333333333,
+      "elapsed_seconds": 2.2670566320884973
+    }
+  },
+  "summary": {
+    "successful_models": 4,
+    "mean_match_percent": 84.88815379075324,
+    "min_match_percent": 79.4665,
+    "max_match_percent": 89.80183333333333
+  }
+}

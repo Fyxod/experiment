@@ -1,0 +1,1147 @@
+{
+  "evaluations": [
+    {
+      "iteration": 1,
+      "label": "restart_0_initial",
+      "loss": -5.723739167636057,
+      "metrics": {
+        "input_stealth": {
+          "psnr": 26.45316205243752,
+          "ssim": 0.8538877129922623
+        },
+        "output_disruption": {
+          "pixel_l2": 0.04083947505267414,
+          "ssim": 0.94176324589131,
+          "ssim_drop": 0.05823675410869
+        },
+        "identity": {
+          "pre": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.50784455297328,
+                "distance_percent": 1.4921554470267182,
+                "raw_distance": 0.029843108940534546,
+                "threshold": null,
+                "embedding_l2": 0.10424203060648944
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 99.53832741878469,
+                "distance_percent": 0.46167258121531063,
+                "raw_distance": 0.009233451624306221,
+                "threshold": null,
+                "embedding_l2": 0.06579374995873531
+              }
+            },
+            "mean_similarity_percent": 99.02308598587899,
+            "mean_distance_percent": 0.9769140141210144,
+            "ok_model_count": 2
+          },
+          "post": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.94250001262589,
+                "distance_percent": 1.0574999873741149,
+                "raw_distance": 0.02114999974748233,
+                "threshold": null,
+                "embedding_l2": 0.10437775928636138
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.73301065334226,
+                "distance_percent": 1.2669893466577378,
+                "raw_distance": 0.025339786933154862,
+                "threshold": null,
+                "embedding_l2": 0.11187267201349566
+              }
+            },
+            "mean_similarity_percent": 98.83775533298407,
+            "mean_distance_percent": 1.1622446670159263,
+            "ok_model_count": 2
+          }
+        },
+        "vae_latent": {
+          "output": {
+            "l2": 0.5532218428080439,
+            "cosine_distance": 0.06146822528743212
+          }
+        },
+        "flux_transformer": {
+          "enabled": false,
+          "available": false,
+          "loss_contribution": null
+        }
+      },
+      "parameters": {
+        "homography": {
+          "strength": 0.006
+        },
+        "thin-plate-spline": {
+          "strength": 0.0015,
+          "grid": 7
+        },
+        "delaunay": {
+          "strength": 0.0035000000000000005,
+          "grid": 8
+        },
+        "fft-phase": {
+          "strength": 0.35,
+          "coefficients": 8
+        },
+        "elastic": {
+          "strength": 0.0025,
+          "sigma": 12.0
+        },
+        "rolling-shutter": {
+          "strength": 0.0025,
+          "rolling_frequency": 1.4,
+          "rolling_shear": 0.012,
+          "rolling_acceleration": 0.0
+        }
+      },
+      "path": "/workspace/output/mentor_results_20260614_092647/search/pass2/03_sample_headshot_relaxed/embedding_loss_run_20260614_095901/iterations/iter_000001"
+    },
+    {
+      "iteration": 2,
+      "label": "restart_0_random_1",
+      "loss": 42.637150337291004,
+      "metrics": {
+        "input_stealth": {
+          "psnr": 22.812274667996597,
+          "ssim": 0.7899784769271004
+        },
+        "output_disruption": {
+          "pixel_l2": 0.1005864323645731,
+          "ssim": 0.8999403228272649,
+          "ssim_drop": 0.10005967717273512
+        },
+        "identity": {
+          "pre": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 95.24601321129919,
+                "distance_percent": 4.753986788700814,
+                "raw_distance": 0.0950797357740163,
+                "threshold": null,
+                "embedding_l2": 0.18295786541660183
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 97.34619797366626,
+                "distance_percent": 2.653802026333736,
+                "raw_distance": 0.053076040526674806,
+                "threshold": null,
+                "embedding_l2": 0.156391704114638
+              }
+            },
+            "mean_similarity_percent": 96.29610559248272,
+            "mean_distance_percent": 3.703894407517275,
+            "ok_model_count": 2
+          },
+          "post": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.01206838035775,
+                "distance_percent": 1.9879316196422536,
+                "raw_distance": 0.03975863239284516,
+                "threshold": null,
+                "embedding_l2": 0.14246089309896748
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.47154530651025,
+                "distance_percent": 1.5284546934897492,
+                "raw_distance": 0.030569093869795116,
+                "threshold": null,
+                "embedding_l2": 0.1256692167928072
+              }
+            },
+            "mean_similarity_percent": 98.241806843434,
+            "mean_distance_percent": 1.7581931565660014,
+            "ok_model_count": 2
+          }
+        },
+        "vae_latent": {
+          "output": {
+            "l2": 0.8043052392051627,
+            "cosine_distance": 0.13072009703077636
+          }
+        },
+        "flux_transformer": {
+          "enabled": false,
+          "available": false,
+          "loss_contribution": null
+        }
+      },
+      "parameters": {
+        "homography": {
+          "strength": 0.011865198827539244
+        },
+        "thin-plate-spline": {
+          "strength": 0.0007491035026149209,
+          "grid": 10
+        },
+        "delaunay": {
+          "strength": 0.0010553839158729081,
+          "grid": 8
+        },
+        "fft-phase": {
+          "strength": 1.7218046083018823,
+          "coefficients": 6
+        },
+        "elastic": {
+          "strength": 0.01187181462409709,
+          "sigma": 14.273084477593597
+        },
+        "rolling-shutter": {
+          "strength": 0.004077032592509386,
+          "rolling_frequency": 0.739101448108612,
+          "rolling_shear": 0.054458137606984966,
+          "rolling_acceleration": -0.028766696701875517
+        }
+      },
+      "path": "/workspace/output/mentor_results_20260614_092647/search/pass2/03_sample_headshot_relaxed/embedding_loss_run_20260614_095901/iterations/iter_000002"
+    },
+    {
+      "iteration": 3,
+      "label": "restart_0_random_2",
+      "loss": 11.94088530594364,
+      "metrics": {
+        "input_stealth": {
+          "psnr": 24.37532491085404,
+          "ssim": 0.8178911879691597
+        },
+        "output_disruption": {
+          "pixel_l2": 0.05450730688815951,
+          "ssim": 0.9292672107263164,
+          "ssim_drop": 0.07073278927368365
+        },
+        "identity": {
+          "pre": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 97.71621126319674,
+                "distance_percent": 2.2837887368032597,
+                "raw_distance": 0.04567577473606532,
+                "threshold": null,
+                "embedding_l2": 0.1290726009758669
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 99.11602523323597,
+                "distance_percent": 0.8839747667640268,
+                "raw_distance": 0.01767949533528068,
+                "threshold": null,
+                "embedding_l2": 0.09295527934586778
+              }
+            },
+            "mean_similarity_percent": 98.41611824821635,
+            "mean_distance_percent": 1.5838817517836432,
+            "ok_model_count": 2
+          },
+          "post": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.4703508370339,
+                "distance_percent": 1.5296491629660949,
+                "raw_distance": 0.030592983259322026,
+                "threshold": null,
+                "embedding_l2": 0.1252210876856099
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.45945191557804,
+                "distance_percent": 1.5405480844219568,
+                "raw_distance": 0.03081096168843911,
+                "threshold": null,
+                "embedding_l2": 0.1496490828588051
+              }
+            },
+            "mean_similarity_percent": 98.46490137630597,
+            "mean_distance_percent": 1.5350986236940258,
+            "ok_model_count": 2
+          }
+        },
+        "vae_latent": {
+          "output": {
+            "l2": 0.7771394995203094,
+            "cosine_distance": 0.12366898866927856
+          }
+        },
+        "flux_transformer": {
+          "enabled": false,
+          "available": false,
+          "loss_contribution": null
+        }
+      },
+      "parameters": {
+        "homography": {
+          "strength": 0.017977182090175695
+        },
+        "thin-plate-spline": {
+          "strength": 0.003793593680570163,
+          "grid": 10
+        },
+        "delaunay": {
+          "strength": 0.011081700269143631,
+          "grid": 8
+        },
+        "fft-phase": {
+          "strength": 0.43632722160613113,
+          "coefficients": 10
+        },
+        "elastic": {
+          "strength": 0.0028298779455787383,
+          "sigma": 6.340622752104618
+        },
+        "rolling-shutter": {
+          "strength": 0.0007624267315913711,
+          "rolling_frequency": 0.7398704011769546,
+          "rolling_shear": 0.018517525762310208,
+          "rolling_acceleration": -0.01796801185709723
+        }
+      },
+      "path": "/workspace/output/mentor_results_20260614_092647/search/pass2/03_sample_headshot_relaxed/embedding_loss_run_20260614_095901/iterations/iter_000003"
+    },
+    {
+      "iteration": 4,
+      "label": "restart_0_random_3",
+      "loss": 15.870618298498357,
+      "metrics": {
+        "input_stealth": {
+          "psnr": 24.381679371291526,
+          "ssim": 0.817415783390557
+        },
+        "output_disruption": {
+          "pixel_l2": 0.04374456845442162,
+          "ssim": 0.9309334436252898,
+          "ssim_drop": 0.06906655637471015
+        },
+        "identity": {
+          "pre": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 97.52370957567575,
+                "distance_percent": 2.4762904243242474,
+                "raw_distance": 0.04952580848648502,
+                "threshold": null,
+                "embedding_l2": 0.13377420424639017
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.6514508511595,
+                "distance_percent": 1.3485491488405046,
+                "raw_distance": 0.02697098297681,
+                "threshold": null,
+                "embedding_l2": 0.11140519333908838
+              }
+            },
+            "mean_similarity_percent": 98.08758021341762,
+            "mean_distance_percent": 1.912419786582376,
+            "ok_model_count": 2
+          },
+          "post": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 99.12844204763346,
+                "distance_percent": 0.871557952366544,
+                "raw_distance": 0.017431159047330835,
+                "threshold": null,
+                "embedding_l2": 0.09604263244444117
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 99.32645465734421,
+                "distance_percent": 0.6735453426557854,
+                "raw_distance": 0.013470906853115694,
+                "threshold": null,
+                "embedding_l2": 0.08407377739175459
+              }
+            },
+            "mean_similarity_percent": 99.22744835248884,
+            "mean_distance_percent": 0.7725516475111647,
+            "ok_model_count": 2
+          }
+        },
+        "vae_latent": {
+          "output": {
+            "l2": 0.5876709281710422,
+            "cosine_distance": 0.06981658915099398
+          }
+        },
+        "flux_transformer": {
+          "enabled": false,
+          "available": false,
+          "loss_contribution": null
+        }
+      },
+      "parameters": {
+        "homography": {
+          "strength": 0.00011751608883025243
+        },
+        "thin-plate-spline": {
+          "strength": 0.004785865919481625,
+          "grid": 5
+        },
+        "delaunay": {
+          "strength": 0.0013146683676452003,
+          "grid": 10
+        },
+        "fft-phase": {
+          "strength": 0.683101247072287,
+          "coefficients": 8
+        },
+        "elastic": {
+          "strength": 0.008588396070126595,
+          "sigma": 15.489807385100509
+        },
+        "rolling-shutter": {
+          "strength": 0.011147394454840875,
+          "rolling_frequency": 0.7733513489473758,
+          "rolling_shear": 0.005321991051292932,
+          "rolling_acceleration": 0.011426155221151847
+        }
+      },
+      "path": "/workspace/output/mentor_results_20260614_092647/search/pass2/03_sample_headshot_relaxed/embedding_loss_run_20260614_095901/iterations/iter_000004"
+    },
+    {
+      "iteration": 5,
+      "label": "restart_0_random_4",
+      "loss": 90.36659242386541,
+      "metrics": {
+        "input_stealth": {
+          "psnr": 21.14729384426468,
+          "ssim": 0.7712067317311461
+        },
+        "output_disruption": {
+          "pixel_l2": 0.0707788419388871,
+          "ssim": 0.8990850264651442,
+          "ssim_drop": 0.10091497353485579
+        },
+        "identity": {
+          "pre": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 94.64709817117712,
+                "distance_percent": 5.35290182882288,
+                "raw_distance": 0.10705803657645752,
+                "threshold": null,
+                "embedding_l2": 0.19751809795686767
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 97.31173226390072,
+                "distance_percent": 2.6882677360992773,
+                "raw_distance": 0.05376535472198529,
+                "threshold": null,
+                "embedding_l2": 0.15556897908639053
+              }
+            },
+            "mean_similarity_percent": 95.97941521753893,
+            "mean_distance_percent": 4.0205847824610785,
+            "ok_model_count": 2
+          },
+          "post": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.15988340226505,
+                "distance_percent": 1.8401165977349478,
+                "raw_distance": 0.03680233195469884,
+                "threshold": null,
+                "embedding_l2": 0.1370924939715105
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 97.313872469499,
+                "distance_percent": 2.686127530500997,
+                "raw_distance": 0.05372255061001996,
+                "threshold": null,
+                "embedding_l2": 0.19909672680896878
+              }
+            },
+            "mean_similarity_percent": 97.73687793588203,
+            "mean_distance_percent": 2.2631220641179723,
+            "ok_model_count": 2
+          }
+        },
+        "vae_latent": {
+          "output": {
+            "l2": 0.8339916563692018,
+            "cosine_distance": 0.14124018913259306
+          }
+        },
+        "flux_transformer": {
+          "enabled": false,
+          "available": false,
+          "loss_contribution": null
+        }
+      },
+      "parameters": {
+        "homography": {
+          "strength": 0.009607436504751187
+        },
+        "thin-plate-spline": {
+          "strength": 0.005948674486620921,
+          "grid": 8
+        },
+        "delaunay": {
+          "strength": 0.00114530347796897,
+          "grid": 10
+        },
+        "fft-phase": {
+          "strength": 1.655234300332945,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.006619449478094599,
+          "sigma": 12.94943621477593
+        },
+        "rolling-shutter": {
+          "strength": 0.008426565325388763,
+          "rolling_frequency": 1.8300819046984855,
+          "rolling_shear": 0.059217835212959674,
+          "rolling_acceleration": -0.02889769879527321
+        }
+      },
+      "path": "/workspace/output/mentor_results_20260614_092647/search/pass2/03_sample_headshot_relaxed/embedding_loss_run_20260614_095901/iterations/iter_000005"
+    },
+    {
+      "iteration": 6,
+      "label": "restart_0_random_5",
+      "loss": -5.337621795767079,
+      "metrics": {
+        "input_stealth": {
+          "psnr": 27.81377227884663,
+          "ssim": 0.8847816553015363
+        },
+        "output_disruption": {
+          "pixel_l2": 0.03713217530774781,
+          "ssim": 0.9455148716803728,
+          "ssim_drop": 0.05448512831962715
+        },
+        "identity": {
+          "pre": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 97.03978465388828,
+                "distance_percent": 2.960215346111724,
+                "raw_distance": 0.05920430692223455,
+                "threshold": null,
+                "embedding_l2": 0.15287368208701174
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 99.15784928965617,
+                "distance_percent": 0.8421507103438302,
+                "raw_distance": 0.016843014206876727,
+                "threshold": null,
+                "embedding_l2": 0.08845602045961319
+              }
+            },
+            "mean_similarity_percent": 98.09881697177222,
+            "mean_distance_percent": 1.901183028227777,
+            "ok_model_count": 2
+          },
+          "post": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 99.07343282499626,
+                "distance_percent": 0.9265671750037399,
+                "raw_distance": 0.018531343500074904,
+                "threshold": null,
+                "embedding_l2": 0.09874956324031177
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 99.16196889041464,
+                "distance_percent": 0.8380311095853585,
+                "raw_distance": 0.016760622191707042,
+                "threshold": null,
+                "embedding_l2": 0.09280540568077843
+              }
+            },
+            "mean_similarity_percent": 99.11770085770544,
+            "mean_distance_percent": 0.8822991422945492,
+            "ok_model_count": 2
+          }
+        },
+        "vae_latent": {
+          "output": {
+            "l2": 0.6989240147739407,
+            "cosine_distance": 0.09891211621583018
+          }
+        },
+        "flux_transformer": {
+          "enabled": false,
+          "available": false,
+          "loss_contribution": null
+        }
+      },
+      "parameters": {
+        "homography": {
+          "strength": 0.001984961105338015
+        },
+        "thin-plate-spline": {
+          "strength": 0.0012280955724007548,
+          "grid": 6
+        },
+        "delaunay": {
+          "strength": 0.0064432191525578405,
+          "grid": 9
+        },
+        "fft-phase": {
+          "strength": 0.7343053109094337,
+          "coefficients": 14
+        },
+        "elastic": {
+          "strength": 0.003732375318780066,
+          "sigma": 13.828991605753595
+        },
+        "rolling-shutter": {
+          "strength": 0.0020468493211502265,
+          "rolling_frequency": 1.581445492805254,
+          "rolling_shear": 0.0012886021797777869,
+          "rolling_acceleration": 0.005111074511241279
+        }
+      },
+      "path": "/workspace/output/mentor_results_20260614_092647/search/pass2/03_sample_headshot_relaxed/embedding_loss_run_20260614_095901/iterations/iter_000006"
+    },
+    {
+      "iteration": 7,
+      "label": "restart_0_random_6",
+      "loss": 12.18061438396112,
+      "metrics": {
+        "input_stealth": {
+          "psnr": 24.57379517099307,
+          "ssim": 0.8198431508473952
+        },
+        "output_disruption": {
+          "pixel_l2": 0.048285553925665275,
+          "ssim": 0.9278743599153773,
+          "ssim_drop": 0.07212564008462274
+        },
+        "identity": {
+          "pre": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.08515331486993,
+                "distance_percent": 1.9148466851300725,
+                "raw_distance": 0.03829693370260123,
+                "threshold": null,
+                "embedding_l2": 0.11813608164640435
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 99.09161767840195,
+                "distance_percent": 0.9083823215980544,
+                "raw_distance": 0.018167646431961115,
+                "threshold": null,
+                "embedding_l2": 0.09272999604698218
+              }
+            },
+            "mean_similarity_percent": 98.58838549663594,
+            "mean_distance_percent": 1.4116145033640635,
+            "ok_model_count": 2
+          },
+          "post": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.85709958758756,
+                "distance_percent": 1.1429004124124447,
+                "raw_distance": 0.022858008248249018,
+                "threshold": null,
+                "embedding_l2": 0.10846988174562897
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 99.31812838065079,
+                "distance_percent": 0.6818716193492094,
+                "raw_distance": 0.013637432386984116,
+                "threshold": null,
+                "embedding_l2": 0.1003354096985481
+              }
+            },
+            "mean_similarity_percent": 99.08761398411917,
+            "mean_distance_percent": 0.912386015880827,
+            "ok_model_count": 2
+          }
+        },
+        "vae_latent": {
+          "output": {
+            "l2": 0.6574072573646779,
+            "cosine_distance": 0.08669542618883186
+          }
+        },
+        "flux_transformer": {
+          "enabled": false,
+          "available": false,
+          "loss_contribution": null
+        }
+      },
+      "parameters": {
+        "homography": {
+          "strength": 0.012652413428266706
+        },
+        "thin-plate-spline": {
+          "strength": 0.00216531003574787,
+          "grid": 6
+        },
+        "delaunay": {
+          "strength": 0.004756274346406086,
+          "grid": 7
+        },
+        "fft-phase": {
+          "strength": 1.8126520362816523,
+          "coefficients": 8
+        },
+        "elastic": {
+          "strength": 0.01051620827703642,
+          "sigma": 19.890352081394802
+        },
+        "rolling-shutter": {
+          "strength": 0.008666009737315133,
+          "rolling_frequency": 0.5242711073284683,
+          "rolling_shear": 0.0315732817994498,
+          "rolling_acceleration": 0.013086249065483092
+        }
+      },
+      "path": "/workspace/output/mentor_results_20260614_092647/search/pass2/03_sample_headshot_relaxed/embedding_loss_run_20260614_095901/iterations/iter_000007"
+    },
+    {
+      "iteration": 8,
+      "label": "restart_0_random_7",
+      "loss": 32.39779042213325,
+      "metrics": {
+        "input_stealth": {
+          "psnr": 23.441246665205526,
+          "ssim": 0.8011663222651491
+        },
+        "output_disruption": {
+          "pixel_l2": 0.049631617522054465,
+          "ssim": 0.9175952416059322,
+          "ssim_drop": 0.0824047583940678
+        },
+        "identity": {
+          "pre": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 97.54459263359504,
+                "distance_percent": 2.4554073664049554,
+                "raw_distance": 0.049108147328099205,
+                "threshold": null,
+                "embedding_l2": 0.13306392002028633
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.96966834296018,
+                "distance_percent": 1.0303316570398238,
+                "raw_distance": 0.02060663314079636,
+                "threshold": null,
+                "embedding_l2": 0.0973941659687315
+              }
+            },
+            "mean_similarity_percent": 98.25713048827761,
+            "mean_distance_percent": 1.7428695117223896,
+            "ok_model_count": 2
+          },
+          "post": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.59356515811369,
+                "distance_percent": 1.406434841886309,
+                "raw_distance": 0.02812869683772612,
+                "threshold": null,
+                "embedding_l2": 0.12195774553529805
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 99.55963445462744,
+                "distance_percent": 0.4403655453725577,
+                "raw_distance": 0.008807310907451127,
+                "threshold": null,
+                "embedding_l2": 0.07397301992328113
+              }
+            },
+            "mean_similarity_percent": 99.07659980637057,
+            "mean_distance_percent": 0.9234001936294334,
+            "ok_model_count": 2
+          }
+        },
+        "vae_latent": {
+          "output": {
+            "l2": 0.7191344057254886,
+            "cosine_distance": 0.10437139768990233
+          }
+        },
+        "flux_transformer": {
+          "enabled": false,
+          "available": false,
+          "loss_contribution": null
+        }
+      },
+      "parameters": {
+        "homography": {
+          "strength": 0.0033907248624556567
+        },
+        "thin-plate-spline": {
+          "strength": 0.0020047349053254836,
+          "grid": 8
+        },
+        "delaunay": {
+          "strength": 0.001095092019689786,
+          "grid": 8
+        },
+        "fft-phase": {
+          "strength": 1.9904166741837925,
+          "coefficients": 16
+        },
+        "elastic": {
+          "strength": 0.00932629236978583,
+          "sigma": 12.388485168470947
+        },
+        "rolling-shutter": {
+          "strength": 0.0011375688490105494,
+          "rolling_frequency": 0.6315001273053527,
+          "rolling_shear": 0.044930735390517035,
+          "rolling_acceleration": -0.026664483768000145
+        }
+      },
+      "path": "/workspace/output/mentor_results_20260614_092647/search/pass2/03_sample_headshot_relaxed/embedding_loss_run_20260614_095901/iterations/iter_000008"
+    },
+    {
+      "iteration": 9,
+      "label": "restart_0_random_8",
+      "loss": 21.93804166107313,
+      "metrics": {
+        "input_stealth": {
+          "psnr": 23.785969485770202,
+          "ssim": 0.8229815196717783
+        },
+        "output_disruption": {
+          "pixel_l2": 0.05265501385637323,
+          "ssim": 0.915315110442387,
+          "ssim_drop": 0.084684889557613
+        },
+        "identity": {
+          "pre": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 96.0702796931558,
+                "distance_percent": 3.929720306844203,
+                "raw_distance": 0.07859440613688384,
+                "threshold": null,
+                "embedding_l2": 0.17212830628967632
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.14135210044975,
+                "distance_percent": 1.858647899550249,
+                "raw_distance": 0.03717295799100495,
+                "threshold": null,
+                "embedding_l2": 0.13095676859975758
+              }
+            },
+            "mean_similarity_percent": 97.10581589680277,
+            "mean_distance_percent": 2.894184103197226,
+            "ok_model_count": 2
+          },
+          "post": {
+            "models": {
+              "SFace": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.30336098268444,
+                "distance_percent": 1.6966390173155617,
+                "raw_distance": 0.0339327803463112,
+                "threshold": null,
+                "embedding_l2": 0.13487758120445742
+              },
+              "OpenFace": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet": {
+                "enabled": false,
+                "skipped": true
+              },
+              "Facenet512": {
+                "enabled": true,
+                "ok": true,
+                "source": "direct_embedding",
+                "similarity_percent": 98.47357714915405,
+                "distance_percent": 1.5264228508459468,
+                "raw_distance": 0.030528457016918864,
+                "threshold": null,
+                "embedding_l2": 0.11839497381866014
+              }
+            },
+            "mean_similarity_percent": 98.38846906591925,
+            "mean_distance_percent": 1.6115309340807542,
+            "ok_model_count": 2
+          }
+        },
+        "vae_latent": {
+          "output": {
+            "l2": 0.6812501241608214,
+            "cosine_distance": 0.09316406507215469
+          }
+        },
+        "flux_transformer": {
+          "enabled": false,
+          "available": false,
+          "loss_contribution": null
+        }
+      },
+      "parameters": {
+        "homography": {
+          "strength": 0.01155467402365484
+        },
+        "thin-plate-spline": {
+          "strength": 0.0024476590618129593,
+          "grid": 10
+        },
+        "delaunay": {
+          "strength": 0.009995068510830159,
+          "grid": 11
+        },
+        "fft-phase": {
+          "strength": 1.3691160348526996,
+          "coefficients": 7
+        },
+        "elastic": {
+          "strength": 0.0063881493338670175,
+          "sigma": 16.568456647817946
+        },
+        "rolling-shutter": {
+          "strength": 0.009074875035328394,
+          "rolling_frequency": 0.6151155722153163,
+          "rolling_shear": 0.004249557466503297,
+          "rolling_acceleration": 0.008186658699399392
+        }
+      },
+      "path": "/workspace/output/mentor_results_20260614_092647/search/pass2/03_sample_headshot_relaxed/embedding_loss_run_20260614_095901/iterations/iter_000009"
+    }
+  ]
+}

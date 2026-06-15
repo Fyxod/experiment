@@ -1,0 +1,160 @@
+{
+  "config": {
+    "input": "/workspace/gender_dataset/men/74.jpg",
+    "prompt": "make the person smile",
+    "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12",
+    "seed": 7701,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "methods": [
+      "tps",
+      "piecewise",
+      "dct",
+      "grid",
+      "rolling"
+    ],
+    "objective": "final_edit_blackbox",
+    "attack_iters": 0,
+    "lr": 0.08,
+    "max_disp_px": 2.0,
+    "init_scale_px": 0.0,
+    "grid_size": 6,
+    "dct_size": 4,
+    "rbf_size": 5,
+    "rbf_sigma": 0.55,
+    "tps_size": 5,
+    "piecewise_size": 5,
+    "padding_mode": "reflection",
+    "face_mask": "mouth",
+    "face_center_x": 0.525,
+    "face_center_y": 0.41046875,
+    "face_radius_x": 0.33599999999999997,
+    "face_radius_y": 0.3075,
+    "use_gates": true,
+    "gate_init": 2.0,
+    "lambda_visual": 30.0,
+    "lambda_disp": 0.1,
+    "lambda_smooth": 0.2,
+    "lambda_fold": 5.0,
+    "lambda_method_l1": 0.02,
+    "lambda_gate_l1": 0.01,
+    "hybrid_vae_weight": 0.2,
+    "feature_layers": [
+      0,
+      4,
+      8
+    ],
+    "feature_source": "blocks",
+    "objective_timestep": 0,
+    "objective_timesteps": [
+      0
+    ],
+    "edge_falloff_px": 16.0,
+    "save_theta": true
+  },
+  "projected_parameters_finite": true,
+  "metrics": {
+    "input": {
+      "psnr": 50.283093091798186,
+      "ssim": 0.9985777578558626,
+      "l2": 0.00306087324624268,
+      "mean_abs": 0.0006898488500155509,
+      "max_abs": 0.10980391502380371
+    },
+    "output": {
+      "psnr": 50.129460745810135,
+      "ssim": 0.9974853563601909,
+      "l2": 0.0031154943121096427,
+      "mean_abs": 0.0012270601000636816,
+      "max_abs": 0.07450979948043823
+    },
+    "clean_edit": {
+      "psnr": 25.388044532960432,
+      "ssim": 0.9410846748368386,
+      "l2": 0.05377714887769222,
+      "mean_abs": 0.044717803597450256,
+      "max_abs": 0.7372549176216125
+    },
+    "perturbed_edit": {
+      "psnr": 25.476284248586765,
+      "ssim": 0.9416972495150668,
+      "l2": 0.0532335939455019,
+      "mean_abs": 0.044252850115299225,
+      "max_abs": 0.7333333492279053
+    },
+    "displacement": {
+      "max_dx_px": 0.5111265778541565,
+      "max_dy_px": 0.542107343673706,
+      "max_magnitude_px": 0.5536028742790222,
+      "mean_magnitude_px": 0.05814182385802269,
+      "p95_magnitude_px": 0.3475601375102997
+    },
+    "score_terms": {
+      "prompt_failure": 0.0005435549321903196,
+      "output_diverge": 0.025636046119784747,
+      "stealth_penalty": 0.0
+    }
+  },
+  "score": 0.027810265848546026,
+  "valid": true,
+  "method_displacement": {
+    "rolling": {
+      "max_dx_px": 0.27971717715263367,
+      "max_dy_px": 0.0,
+      "max_magnitude_px": 0.27971717715263367,
+      "mean_magnitude_px": 0.03309433162212372,
+      "p95_magnitude_px": 0.2195337861776352
+    },
+    "grid": {
+      "max_dx_px": 0.2219976931810379,
+      "max_dy_px": 0.2091805338859558,
+      "max_magnitude_px": 0.23691873252391815,
+      "mean_magnitude_px": 0.022112980484962463,
+      "p95_magnitude_px": 0.14213667809963226
+    },
+    "dct": {
+      "max_dx_px": 0.5206028819084167,
+      "max_dy_px": 0.6463860869407654,
+      "max_magnitude_px": 0.7858147621154785,
+      "mean_magnitude_px": 0.06978683173656464,
+      "p95_magnitude_px": 0.42363113164901733
+    },
+    "tps": {
+      "max_dx_px": 0.21032041311264038,
+      "max_dy_px": 0.2300673872232437,
+      "max_magnitude_px": 0.24717918038368225,
+      "mean_magnitude_px": 0.027732867747545242,
+      "p95_magnitude_px": 0.17677944898605347
+    },
+    "piecewise": {
+      "max_dx_px": 0.16358134150505066,
+      "max_dy_px": 0.21536944806575775,
+      "max_magnitude_px": 0.247397780418396,
+      "mean_magnitude_px": 0.02714953012764454,
+      "p95_magnitude_px": 0.16549041867256165
+    }
+  },
+  "gate_values": {
+    "tps": 0.867891252040863,
+    "piecewise": 0.8902097940444946,
+    "dct": 0.8555571436882019,
+    "grid": 0.9231276512145996,
+    "rolling": 0.8331283926963806
+  },
+  "outputs": {
+    "original": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_005_g01_m05/original.png",
+    "perturbed": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_005_g01_m05/perturbed.png",
+    "original_diffused": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_005_g01_m05/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_005_g01_m05/perturbed_diffused.png",
+    "flow": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_005_g01_m05/flow.png",
+    "report": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_005_g01_m05/report.json"
+  }
+}

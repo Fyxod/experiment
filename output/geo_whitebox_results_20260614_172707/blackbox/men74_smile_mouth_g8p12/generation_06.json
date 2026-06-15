@@ -1,0 +1,58 @@
+{
+  "generation": 6,
+  "elite_rows": [
+    {
+      "name": "cand_070_g06_m10",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_070_g06_m10",
+      "generation": 6,
+      "score": 0.09886005888353835,
+      "valid": true,
+      "input_psnr": 39.153262270020605,
+      "input_ssim": 0.9839034150628015,
+      "output_ssim": 0.9883133213205156,
+      "output_l2": 0.009387956020154202,
+      "clean_edit_l2": 0.05377714887769222,
+      "pert_edit_l2": 0.05248375786148475,
+      "max_disp": 1.8857396841049194,
+      "mean_disp": 0.21467329561710358,
+      "p95_disp": 1.2458000183105469,
+      "rank": 2
+    },
+    {
+      "name": "cand_067_g06_m07",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_067_g06_m07",
+      "generation": 6,
+      "score": 0.09629220661624824,
+      "valid": true,
+      "input_psnr": 38.73874692306739,
+      "input_ssim": 0.9821936037055385,
+      "output_ssim": 0.9886685137792042,
+      "output_l2": 0.00908006893962343,
+      "clean_edit_l2": 0.05377714887769222,
+      "pert_edit_l2": 0.05238566961895528,
+      "max_disp": 1.9957561492919922,
+      "mean_disp": 0.24141868948936462,
+      "p95_disp": 1.4651758670806885,
+      "rank": 3
+    },
+    {
+      "name": "cand_069_g06_m09",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_069_g06_m09",
+      "generation": 6,
+      "score": 0.09600738956405444,
+      "valid": true,
+      "input_psnr": 39.37994928174925,
+      "input_ssim": 0.9844649854131128,
+      "output_ssim": 0.9884023127922731,
+      "output_l2": 0.009283621681049655,
+      "clean_edit_l2": 0.05377714887769222,
+      "pert_edit_l2": 0.05297751579571759,
+      "max_disp": 1.746679663658142,
+      "mean_disp": 0.20443479716777802,
+      "p95_disp": 1.2126543521881104,
+      "rank": 4
+    }
+  ],
+  "mean_abs": 0.18673652410507202,
+  "std_mean": 0.09150691330432892
+}

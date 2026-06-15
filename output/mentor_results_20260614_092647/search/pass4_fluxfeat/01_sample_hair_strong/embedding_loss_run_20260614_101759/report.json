@@ -1,0 +1,837 @@
+{
+  "status": "completed",
+  "config_path": "/workspace/output/mentor_results_20260614_092647/configs/pass4_fluxfeat/01_sample_hair_strong_embedding.json",
+  "input": "/workspace/geometric-v1/samples/image.png",
+  "prompt": "change the hairstyle",
+  "output_dir": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/01_sample_hair_strong/embedding_loss_run_20260614_101759",
+  "configured_seed": 7001,
+  "seed": 7001,
+  "randomize_seed": false,
+  "random_seed_range": [
+    1,
+    2147483647
+  ],
+  "best_iteration": 6,
+  "best_parameters": {
+    "homography": {
+      "strength": 0.02021361536327045
+    },
+    "thin-plate-spline": {
+      "strength": 0.006000704106403975,
+      "grid": 6
+    },
+    "delaunay": {
+      "strength": 0.010696679080567649,
+      "grid": 11
+    },
+    "fft-phase": {
+      "strength": 0.471689154571045,
+      "coefficients": 4
+    },
+    "elastic": {
+      "strength": 0.0066502269646822165,
+      "sigma": 9.597849227851297
+    },
+    "rolling-shutter": {
+      "strength": 0.010534954679173963,
+      "rolling_frequency": 2.070010750480561,
+      "rolling_shear": 0.03651164818193228,
+      "rolling_acceleration": -0.04386521559751723
+    }
+  },
+  "best_loss": -45.912955226178994,
+  "best_metrics": {
+    "input_stealth": {
+      "psnr": 21.369464338333408,
+      "ssim": 0.7827046319208302
+    },
+    "output_disruption": {
+      "pixel_l2": 0.09760473471695078,
+      "ssim": 0.7774507300977724,
+      "ssim_drop": 0.22254926990222756
+    },
+    "identity": {
+      "pre": {
+        "models": {
+          "SFace": {
+            "enabled": true,
+            "ok": true,
+            "source": "direct_embedding",
+            "similarity_percent": 94.80661895926004,
+            "distance_percent": 5.193381040739965,
+            "raw_distance": 0.10386762081479917,
+            "threshold": null,
+            "embedding_l2": 0.19077094839354736
+          },
+          "OpenFace": {
+            "enabled": false,
+            "skipped": true
+          },
+          "Facenet": {
+            "enabled": false,
+            "skipped": true
+          },
+          "Facenet512": {
+            "enabled": true,
+            "ok": true,
+            "source": "direct_embedding",
+            "similarity_percent": 97.2883838493514,
+            "distance_percent": 2.711616150648595,
+            "raw_distance": 0.054232323012971984,
+            "threshold": null,
+            "embedding_l2": 0.15623813066511996
+          }
+        },
+        "mean_similarity_percent": 96.04750140430572,
+        "mean_distance_percent": 3.95249859569428,
+        "ok_model_count": 2
+      },
+      "post": {
+        "models": {
+          "SFace": {
+            "enabled": true,
+            "ok": true,
+            "source": "direct_embedding",
+            "similarity_percent": 94.72404667526241,
+            "distance_percent": 5.275953324737586,
+            "raw_distance": 0.10551906649475173,
+            "threshold": null,
+            "embedding_l2": 0.18939466061442278
+          },
+          "OpenFace": {
+            "enabled": false,
+            "skipped": true
+          },
+          "Facenet": {
+            "enabled": false,
+            "skipped": true
+          },
+          "Facenet512": {
+            "enabled": true,
+            "ok": true,
+            "source": "direct_embedding",
+            "similarity_percent": 93.59847083071703,
+            "distance_percent": 6.401529169282966,
+            "raw_distance": 0.1280305833856591,
+            "threshold": null,
+            "embedding_l2": 0.27255791116328915
+          }
+        },
+        "mean_similarity_percent": 94.16125875298972,
+        "mean_distance_percent": 5.838741247010276,
+        "ok_model_count": 2
+      }
+    },
+    "vae_latent": {
+      "output": {
+        "l2": 1.2387312400531176,
+        "cosine_distance": 0.31428346243528504
+      }
+    },
+    "flux_transformer": {
+      "enabled": true,
+      "available": true,
+      "capture_method": "forward_hook",
+      "distance_type": "cosine",
+      "weight": 1.0,
+      "use_input_features": false,
+      "use_denoising_features": true,
+      "original": {
+        "enabled": true,
+        "available": true,
+        "capture_method": "forward_hook",
+        "use_input_features": false,
+        "use_denoising_features": true,
+        "requested_layers": [
+          "auto"
+        ],
+        "layers_captured": [
+          "single_transformer_blocks.19",
+          "single_transformer_blocks.7",
+          "transformer_blocks.0"
+        ],
+        "requested_timesteps": [
+          "early",
+          "middle"
+        ],
+        "timesteps_captured": [
+          "early",
+          "middle"
+        ],
+        "feature_shapes": [
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              1,
+              512,
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.19",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              1,
+              512,
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "single_transformer_blocks.19",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              1,
+              512,
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "middle"
+          }
+        ],
+        "pooled_feature_shapes": [
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.19",
+            "shape": [
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "single_transformer_blocks.19",
+            "shape": [
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              3072
+            ],
+            "timestep": "middle"
+          }
+        ],
+        "captured_call_count": 12,
+        "included_feature_count": 8,
+        "warnings": [
+          "Timestep labels are approximated from forward-hook call order."
+        ]
+      },
+      "candidate": {
+        "enabled": true,
+        "available": true,
+        "capture_method": "forward_hook",
+        "use_input_features": false,
+        "use_denoising_features": true,
+        "requested_layers": [
+          "auto"
+        ],
+        "layers_captured": [
+          "single_transformer_blocks.19",
+          "single_transformer_blocks.7",
+          "transformer_blocks.0"
+        ],
+        "requested_timesteps": [
+          "early",
+          "middle"
+        ],
+        "timesteps_captured": [
+          "early",
+          "middle"
+        ],
+        "feature_shapes": [
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              1,
+              512,
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.19",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              1,
+              512,
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "single_transformer_blocks.19",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              1,
+              512,
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "middle"
+          }
+        ],
+        "pooled_feature_shapes": [
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.19",
+            "shape": [
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "single_transformer_blocks.19",
+            "shape": [
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              3072
+            ],
+            "timestep": "middle"
+          }
+        ],
+        "captured_call_count": 12,
+        "included_feature_count": 8,
+        "warnings": [
+          "Timestep labels are approximated from forward-hook call order."
+        ]
+      },
+      "warnings": [
+        "Timestep labels are approximated from forward-hook call order."
+      ],
+      "distance": 0.00350206514703566,
+      "layers_captured": [
+        "single_transformer_blocks.19",
+        "single_transformer_blocks.7",
+        "transformer_blocks.0"
+      ],
+      "timesteps_captured": [
+        "early",
+        "middle"
+      ],
+      "loss_contribution": -0.00350206514703566
+    }
+  },
+  "optimizer": {
+    "type": "random_search",
+    "iterations": 6,
+    "learning_rate": 0.05,
+    "finite_difference_epsilon": 0.07,
+    "spsa_delta": 0.07,
+    "patience": 0,
+    "random_restarts": 1,
+    "save_every": 1,
+    "stop": {
+      "loss_below": null,
+      "post_identity_distance_above": null,
+      "output_disruption_above": null
+    }
+  },
+  "objective": {
+    "input_stealth": {
+      "enabled": true,
+      "use_psnr": true,
+      "use_ssim": true,
+      "use_lpips": false,
+      "psnr": {
+        "target": 23.0,
+        "weight": 1.2
+      },
+      "ssim": {
+        "target": 0.76,
+        "weight": 12.0
+      },
+      "lpips": {
+        "target": 0.25,
+        "weight": 2.0
+      }
+    },
+    "identity": {
+      "enabled": true,
+      "use_pre_identity": true,
+      "use_post_identity": true,
+      "pre_identity_target": 90.0,
+      "pre_identity_weight": 4.0,
+      "post_identity_distance_weight": 8.0,
+      "models": {
+        "SFace": true,
+        "OpenFace": false,
+        "Facenet": false,
+        "Facenet512": true
+      },
+      "strict": false
+    },
+    "vae_latent": {
+      "enabled": true,
+      "use_input_vae": false,
+      "use_output_vae": true,
+      "input_distance_weight": 0.0,
+      "output_distance_weight": 1.0,
+      "strict": false
+    },
+    "clip_image": {
+      "enabled": false,
+      "use_input_clip": false,
+      "use_output_clip": true,
+      "input_distance_weight": 0.0,
+      "output_distance_weight": 1.0,
+      "model_id": "openai/clip-vit-base-patch32",
+      "strict": false
+    },
+    "flux_transformer": {
+      "enabled": true,
+      "strict": false,
+      "capture_mode": "forward_hook",
+      "compare": "original_vs_perturbed",
+      "use_input_features": false,
+      "use_denoising_features": true,
+      "layers": [
+        "auto"
+      ],
+      "timesteps": [
+        "early",
+        "middle"
+      ],
+      "pooling": "mean",
+      "distance": "cosine",
+      "weight": 1.0,
+      "max_feature_elements": 262144,
+      "cache_original_features": true
+    },
+    "output_disruption": {
+      "enabled": true,
+      "use_pixel_l2": true,
+      "use_ssim_drop": true,
+      "use_lpips": false,
+      "pixel_l2_distance_weight": 3.0,
+      "ssim_drop_weight": 4.0,
+      "lpips_distance_weight": 1.0
+    },
+    "parameter_regularization": {
+      "enabled": true,
+      "weight": 0.02
+    }
+  },
+  "diffusion": {
+    "cpu": false,
+    "device": "auto",
+    "gpu_index": 0,
+    "selected_model": "flux2_klein",
+    "selected_model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "num_inference_steps": 4,
+    "guidance_scale": 1.0,
+    "image_guidance_scale": 1.0,
+    "max_size": 768,
+    "seed": 7001,
+    "instruct_pix2pix": {
+      "enabled": false,
+      "model_id": "timbrooks/instruct-pix2pix",
+      "num_inference_steps": 20,
+      "guidance_scale": 7.5,
+      "image_guidance_scale": 1.0,
+      "max_size": 768,
+      "seed": 7001
+    },
+    "flux2_klein": {
+      "enabled": true,
+      "model_id": "black-forest-labs/FLUX.2-klein-4B",
+      "num_inference_steps": 4,
+      "guidance_scale": 1.0,
+      "max_size": 768,
+      "height": null,
+      "width": null,
+      "max_sequence_length": 512,
+      "text_encoder_out_layers": [
+        9,
+        18,
+        27
+      ],
+      "torch_dtype": "bfloat16",
+      "cpu_offload": false,
+      "sigmas": null,
+      "seed": 7001
+    },
+    "used_model": "flux2_klein",
+    "used_model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "resolved_device": "cuda:0"
+  },
+  "embedding_backends": {
+    "identity": {
+      "models": {
+        "SFace": true,
+        "OpenFace": false,
+        "Facenet": false,
+        "Facenet512": true
+      },
+      "detector_backend": "skip",
+      "direct_embedding": true,
+      "fallback": "verify_distance"
+    },
+    "output_vae": {
+      "ok": true,
+      "source": "diffusion_pipeline_vae",
+      "device": "cuda:0",
+      "selected_model": "flux2_klein"
+    },
+    "flux_transformer": {
+      "enabled": true,
+      "capture_mode": "forward_hook",
+      "compare": "original_vs_perturbed",
+      "use_input_features": false,
+      "use_denoising_features": true,
+      "original_capture": {
+        "enabled": true,
+        "available": true,
+        "capture_method": "forward_hook",
+        "use_input_features": false,
+        "use_denoising_features": true,
+        "requested_layers": [
+          "auto"
+        ],
+        "layers_captured": [
+          "single_transformer_blocks.19",
+          "single_transformer_blocks.7",
+          "transformer_blocks.0"
+        ],
+        "requested_timesteps": [
+          "early",
+          "middle"
+        ],
+        "timesteps_captured": [
+          "early",
+          "middle"
+        ],
+        "feature_shapes": [
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              1,
+              512,
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.19",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              1,
+              512,
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "single_transformer_blocks.19",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              1,
+              512,
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              1,
+              1856,
+              3072
+            ],
+            "timestep": "middle"
+          }
+        ],
+        "pooled_feature_shapes": [
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.19",
+            "shape": [
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              3072
+            ],
+            "timestep": "early"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "single_transformer_blocks.19",
+            "shape": [
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "transformer_blocks.0",
+            "shape": [
+              3072
+            ],
+            "timestep": "middle"
+          },
+          {
+            "layer": "single_transformer_blocks.7",
+            "shape": [
+              3072
+            ],
+            "timestep": "middle"
+          }
+        ],
+        "captured_call_count": 12,
+        "included_feature_count": 8,
+        "warnings": [
+          "Timestep labels are approximated from forward-hook call order."
+        ]
+      }
+    }
+  },
+  "flux_transformer": {
+    "enabled": true,
+    "available": true,
+    "capture_method": "forward_hook",
+    "selected_layers": [
+      "single_transformer_blocks.19",
+      "single_transformer_blocks.7",
+      "transformer_blocks.0"
+    ],
+    "selected_timesteps": [
+      "early",
+      "middle"
+    ],
+    "distance_type": "cosine",
+    "best_distance": 0.00350206514703566,
+    "errors": [],
+    "warnings": [
+      "Timestep labels are approximated from forward-hook call order."
+    ],
+    "strict": false
+  },
+  "evaluations": 7,
+  "outputs": {
+    "embedding_loss_config": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/01_sample_hair_strong/embedding_loss_run_20260614_101759/embedding_loss_config.json",
+    "original": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/01_sample_hair_strong/embedding_loss_run_20260614_101759/original.png",
+    "original_diffused": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/01_sample_hair_strong/embedding_loss_run_20260614_101759/original_diffused.png",
+    "best": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/01_sample_hair_strong/embedding_loss_run_20260614_101759/best",
+    "iterations": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/01_sample_hair_strong/embedding_loss_run_20260614_101759/iterations",
+    "embedding_loss_history": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/01_sample_hair_strong/embedding_loss_run_20260614_101759/embedding_loss_history.json",
+    "report": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/01_sample_hair_strong/embedding_loss_run_20260614_101759/report.json"
+  },
+  "elapsed_seconds": 32.36445894790813
+}

@@ -1,0 +1,126 @@
+{
+  "config": {
+    "input": "/workspace/gender_dataset/men/51.jpg",
+    "prompt": "turn the image into a professional headshot",
+    "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12",
+    "seed": 7301,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "methods": [
+      "tps",
+      "piecewise",
+      "dct",
+      "rolling"
+    ],
+    "objective": "final_edit_blackbox",
+    "attack_iters": 0,
+    "lr": 0.08,
+    "max_disp_px": 2.5,
+    "init_scale_px": 0.0,
+    "grid_size": 6,
+    "dct_size": 4,
+    "rbf_size": 5,
+    "rbf_sigma": 0.55,
+    "tps_size": 5,
+    "piecewise_size": 5,
+    "padding_mode": "reflection",
+    "face_mask": "face",
+    "face_center_x": 0.4208984375,
+    "face_center_y": 0.2930952380952381,
+    "face_radius_x": 0.22,
+    "face_radius_y": 0.3,
+    "use_gates": true,
+    "gate_init": 2.0,
+    "lambda_visual": 30.0,
+    "lambda_disp": 0.1,
+    "lambda_smooth": 0.2,
+    "lambda_fold": 5.0,
+    "lambda_method_l1": 0.02,
+    "lambda_gate_l1": 0.01,
+    "hybrid_vae_weight": 0.2,
+    "feature_layers": [
+      0,
+      4,
+      8
+    ],
+    "feature_source": "blocks",
+    "objective_timestep": 0,
+    "objective_timesteps": [
+      0
+    ],
+    "edge_falloff_px": 16.0,
+    "save_theta": true
+  },
+  "projected_parameters_finite": true,
+  "metrics": {
+    "input": {
+      "psnr": 31.310180085875302,
+      "ssim": 0.9552298004740173,
+      "l2": 0.027195121014550194,
+      "mean_abs": 0.006121356971561909,
+      "max_abs": 0.658823549747467
+    },
+    "displacement": {
+      "max_dx_px": 1.9389642477035522,
+      "max_dy_px": 2.447714328765869,
+      "max_magnitude_px": 2.500000476837158,
+      "mean_magnitude_px": 0.31880468130111694,
+      "p95_magnitude_px": 2.060360908508301
+    },
+    "skip_reason": "failed_pre_diffusion_visual_gate"
+  },
+  "score": -10.0,
+  "valid": false,
+  "method_displacement": {
+    "rolling": {
+      "max_dx_px": 0.7627825140953064,
+      "max_dy_px": 0.0,
+      "max_magnitude_px": 0.7627825140953064,
+      "mean_magnitude_px": 0.11277879774570465,
+      "p95_magnitude_px": 0.6841590404510498
+    },
+    "dct": {
+      "max_dx_px": 1.7231979370117188,
+      "max_dy_px": 2.1707379817962646,
+      "max_magnitude_px": 2.418912410736084,
+      "mean_magnitude_px": 0.3831052780151367,
+      "p95_magnitude_px": 2.190586805343628
+    },
+    "tps": {
+      "max_dx_px": 0.9859709143638611,
+      "max_dy_px": 0.9172833561897278,
+      "max_magnitude_px": 1.1935927867889404,
+      "mean_magnitude_px": 0.13115853071212769,
+      "p95_magnitude_px": 0.7924860119819641
+    },
+    "piecewise": {
+      "max_dx_px": 0.6153860092163086,
+      "max_dy_px": 1.3980861902236938,
+      "max_magnitude_px": 1.5270826816558838,
+      "mean_magnitude_px": 0.10144738852977753,
+      "p95_magnitude_px": 0.665377140045166
+    }
+  },
+  "gate_values": {
+    "tps": 0.8904933929443359,
+    "piecewise": 0.901782214641571,
+    "dct": 0.8932033777236938,
+    "rolling": 0.9283234477043152
+  },
+  "outputs": {
+    "original": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12/cand_049_g05_m01/original.png",
+    "perturbed": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12/cand_049_g05_m01/perturbed.png",
+    "original_diffused": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12/cand_049_g05_m01/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12/cand_049_g05_m01/perturbed_diffused.png",
+    "flow": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12/cand_049_g05_m01/flow.png",
+    "report": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12/cand_049_g05_m01/report.json"
+  }
+}

@@ -1,0 +1,172 @@
+2026-06-14 12:48:54.952732: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 12:48:54.992401: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 12:48:56.255363: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 12.33it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 84.87it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 13.24it/s]
+[1/16] 01_men66_sunglasses_eps2_i12_hp0p0
+[2/16] 02_men66_sunglasses_eps3_i12_hp0p0
+[3/16] 03_men66_sunglasses_eps3_i16_hp0p8
+[4/16] 04_men57_older_eps2_i12_hp0p0
+[5/16] 05_men57_older_eps3_i12_hp0p0
+[6/16] 06_men57_older_eps4_i12_hp0p0
+[7/16] 07_men74_smile_eps2_i12_hp0p0
+[8/16] 08_men74_smile_eps3_i12_hp0p0
+[9/16] 09_men74_smile_eps4_i12_hp0p0
+[10/16] 10_men11_headshot_eps3_i12_hp0p0
+[11/16] 11_men11_headshot_eps4_i12_hp0p0
+[12/16] 12_men58_headshot_eps3_i12_hp0p0
+[13/16] 13_men58_headshot_eps4_i12_hp0p0
+[14/16] 14_men51_headshot_eps3_i12_hp0p0
+[15/16] 15_men20_sunglasses_eps3_i12_hp0p0
+[16/16] 16_men80_older_eps3_i12_hp0p0
+{
+  "ranked": [
+    {
+      "name": "13_men58_headshot_eps4_i12_hp0p0",
+      "source": "/workspace/gender_dataset/men/58.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/13_men58_headshot_eps4_i12_hp0p0",
+      "score": 2.669310392691733,
+      "input_psnr": 39.41527084295871,
+      "input_ssim": 0.9305111517737412,
+      "input_mean_abs": 0.009287495166063309,
+      "input_max_abs": 0.01568630337715149,
+      "output_ssim": 0.538483610164997,
+      "output_l2": 0.32119030579668106,
+      "output_psnr": 9.864751422446378,
+      "epsilon_255": 4,
+      "attack_iters": 12,
+      "ok": true,
+      "rank": 1
+    },
+    {
+      "name": "11_men11_headshot_eps4_i12_hp0p0",
+      "source": "/workspace/gender_dataset/men/11.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/11_men11_headshot_eps4_i12_hp0p0",
+      "score": 2.601707299687761,
+      "input_psnr": 39.1668595084371,
+      "input_ssim": 0.9346463362342402,
+      "input_mean_abs": 0.00968049094080925,
+      "input_max_abs": 0.01568630337715149,
+      "output_ssim": 0.5098206332031451,
+      "output_l2": 0.28279229982429904,
+      "output_psnr": 10.970648403114165,
+      "epsilon_255": 4,
+      "attack_iters": 12,
+      "ok": true,
+      "rank": 2
+    },
+    {
+      "name": "05_men57_older_eps3_i12_hp0p0",
+      "source": "/workspace/gender_dataset/men/57.jpg",
+      "prompt": "make the person older",
+      "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/05_men57_older_eps3_i12_hp0p0",
+      "score": 2.5273703968557637,
+      "input_psnr": 40.879249988018955,
+      "input_ssim": 0.9551848659944978,
+      "input_mean_abs": 0.008126788772642612,
+      "input_max_abs": 0.011764734983444214,
+      "output_ssim": 0.532124197974596,
+      "output_l2": 0.28093574769488794,
+      "output_psnr": 11.027859908823762,
+      "epsilon_255": 3,
+      "attack_iters": 12,
+      "ok": true,
+      "rank": 3
+    },
+    {
+      "name": "10_men11_headshot_eps3_i12_hp0p0",
+      "source": "/workspace/gender_dataset/men/11.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/10_men11_headshot_eps3_i12_hp0p0",
+      "score": 2.255412375132834,
+      "input_psnr": 41.12960553394768,
+      "input_ssim": 0.9583780978207367,
+      "input_mean_abs": 0.007825393229722977,
+      "input_max_abs": 0.011764734983444214,
+      "output_ssim": 0.5878631384192098,
+      "output_l2": 0.25475044759761584,
+      "output_psnr": 11.877700885272414,
+      "epsilon_255": 3,
+      "attack_iters": 12,
+      "ok": true,
+      "rank": 4
+    },
+    {
+      "name": "06_men57_older_eps4_i12_hp0p0",
+      "source": "/workspace/gender_dataset/men/57.jpg",
+      "prompt": "make the person older",
+      "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/06_men57_older_eps4_i12_hp0p0",
+      "score": 2.2554087601309294,
+      "input_psnr": 38.904826253665995,
+      "input_ssim": 0.93078874579587,
+      "input_mean_abs": 0.01002925168722868,
+      "input_max_abs": 0.01568630337715149,
+      "output_ssim": 0.5544351399806627,
+      "output_l2": 0.2296785450182294,
+      "output_psnr": 12.777591433964526,
+      "epsilon_255": 4,
+      "attack_iters": 12,
+      "ok": true,
+      "rank": 5
+    },
+    {
+      "name": "12_men58_headshot_eps3_i12_hp0p0",
+      "source": "/workspace/gender_dataset/men/58.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/12_men58_headshot_eps3_i12_hp0p0",
+      "score": 2.1313866650606776,
+      "input_psnr": 41.21516278986075,
+      "input_ssim": 0.9532602686676421,
+      "input_mean_abs": 0.007700826041400433,
+      "input_max_abs": 0.011764734983444214,
+      "output_ssim": 0.6146416270433633,
+      "output_l2": 0.24382788654769194,
+      "output_psnr": 12.25833251404177,
+      "epsilon_255": 3,
+      "attack_iters": 12,
+      "ok": true,
+      "rank": 6
+    },
+    {
+      "name": "14_men51_headshot_eps3_i12_hp0p0",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/14_men51_headshot_eps3_i12_hp0p0",
+      "score": 2.0532320526795185,
+      "input_psnr": 41.1179516637564,
+      "input_ssim": 0.9593516703105993,
+      "input_mean_abs": 0.00782861653715372,
+      "input_max_abs": 0.011764734983444214,
+      "output_ssim": 0.6122832297357709,
+      "output_l2": 0.22252043547170777,
+      "output_psnr": 13.052601976352157,
+      "epsilon_255": 3,
+      "attack_iters": 12,
+      "ok": true,
+      "rank": 7
+    },
+    {
+      "name": "04_men57_older_eps2_i12_hp0p0",
+      "source": "/workspace/gender_dataset/men/57.jpg",
+      "prompt": "make the person older",
+      "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/04_men57_older_eps2_i12_hp0p0",
+      "score": 1.9612895141659137,
+      "input_psnr": 44.04211606360703,
+      "input_ssim": 0.9775942960322604,
+      "input_mean_abs": 0.005651446990668774,
+      "input_max_abs": 0.007843166589736938,
+      "output_ssim": 0.6245638513283516,
+      "output_l2": 0.20874526703774213,
+      "output_psnr": 13.607667253193224,
+      "epsilon_255": 2,
+      "attack_iters": 12,
+      "ok": true,
+      "rank": 8
+    }
+  ],
+  "sheet": "/workspace/output/mentor_results_20260614_123821/stealth_pass2_sheet.jpg"
+}

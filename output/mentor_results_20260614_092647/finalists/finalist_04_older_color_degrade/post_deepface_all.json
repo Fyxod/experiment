@@ -1,0 +1,60 @@
+{
+  "image_a": "/workspace/output/mentor_results_20260614_092647/finalists/finalist_04_older_color_degrade/original_diffused.png",
+  "image_b": "/workspace/output/mentor_results_20260614_092647/finalists/finalist_04_older_color_degrade/perturbed_diffused.png",
+  "detector_backend": "skip",
+  "distance_metric": "cosine",
+  "execution": {
+    "allow_parallel": false,
+    "requested_workers": 1,
+    "enabled_models": 4,
+    "cpu_count": 224,
+    "total_memory_gb": 2015.56,
+    "available_memory_gb": 1908.96,
+    "resolved_workers": 1,
+    "parallel": false
+  },
+  "models": {
+    "SFace": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.219488,
+      "threshold": 0.593,
+      "match_percent": 81.49342327150084,
+      "elapsed_seconds": 0.15041889809072018
+    },
+    "OpenFace": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.077834,
+      "threshold": 0.1,
+      "match_percent": 61.083,
+      "elapsed_seconds": 1.184789335122332
+    },
+    "Facenet": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.018397,
+      "threshold": 0.4,
+      "match_percent": 97.700375,
+      "elapsed_seconds": 2.240775699960068
+    },
+    "Facenet512": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.064592,
+      "threshold": 0.3,
+      "match_percent": 89.23466666666667,
+      "elapsed_seconds": 2.2359669050201774
+    }
+  },
+  "summary": {
+    "successful_models": 4,
+    "mean_match_percent": 82.37786623454188,
+    "min_match_percent": 61.083,
+    "max_match_percent": 97.700375
+  }
+}

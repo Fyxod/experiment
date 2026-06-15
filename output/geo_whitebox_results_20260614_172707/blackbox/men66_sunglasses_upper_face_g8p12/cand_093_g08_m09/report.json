@@ -1,0 +1,160 @@
+{
+  "config": {
+    "input": "/workspace/gender_dataset/men/66.jpg",
+    "prompt": "add sunglasses",
+    "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12",
+    "seed": 7601,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "methods": [
+      "tps",
+      "piecewise",
+      "dct",
+      "grid",
+      "rolling"
+    ],
+    "objective": "final_edit_blackbox",
+    "attack_iters": 0,
+    "lr": 0.08,
+    "max_disp_px": 2.2,
+    "init_scale_px": 0.0,
+    "grid_size": 6,
+    "dct_size": 4,
+    "rbf_size": 5,
+    "rbf_sigma": 0.55,
+    "tps_size": 5,
+    "piecewise_size": 5,
+    "padding_mode": "reflection",
+    "face_mask": "upper_face",
+    "face_center_x": 0.5178571428571429,
+    "face_center_y": 0.5237499999999999,
+    "face_radius_x": 0.48,
+    "face_radius_y": 0.46765625,
+    "use_gates": true,
+    "gate_init": 2.0,
+    "lambda_visual": 30.0,
+    "lambda_disp": 0.1,
+    "lambda_smooth": 0.2,
+    "lambda_fold": 5.0,
+    "lambda_method_l1": 0.02,
+    "lambda_gate_l1": 0.01,
+    "hybrid_vae_weight": 0.2,
+    "feature_layers": [
+      0,
+      4,
+      8
+    ],
+    "feature_source": "blocks",
+    "objective_timestep": 0,
+    "objective_timesteps": [
+      0
+    ],
+    "edge_falloff_px": 16.0,
+    "save_theta": true
+  },
+  "projected_parameters_finite": true,
+  "metrics": {
+    "input": {
+      "psnr": 39.58210349913861,
+      "ssim": 0.98712427307276,
+      "l2": 0.010492882872364542,
+      "mean_abs": 0.003770669689401984,
+      "max_abs": 0.24705883860588074
+    },
+    "output": {
+      "psnr": 39.80865828100822,
+      "ssim": 0.9863162319755157,
+      "l2": 0.010222734601178259,
+      "mean_abs": 0.004515824839472771,
+      "max_abs": 0.2392156720161438
+    },
+    "clean_edit": {
+      "psnr": 17.45610150731252,
+      "ssim": 0.8925686597067154,
+      "l2": 0.1340278110218611,
+      "mean_abs": 0.045276228338479996,
+      "max_abs": 0.9450980424880981
+    },
+    "perturbed_edit": {
+      "psnr": 17.523188324427696,
+      "ssim": 0.8965218800628009,
+      "l2": 0.1329966138474995,
+      "mean_abs": 0.04374466463923454,
+      "max_abs": 0.9372549057006836
+    },
+    "displacement": {
+      "max_dx_px": 0.744947612285614,
+      "max_dy_px": 0.8960520029067993,
+      "max_magnitude_px": 0.9332400560379028,
+      "mean_magnitude_px": 0.19585371017456055,
+      "p95_magnitude_px": 0.7165631651878357
+    },
+    "score_terms": {
+      "prompt_failure": 0.0010311971743615922,
+      "output_diverge": 0.10584874510382866,
+      "stealth_penalty": 0.0
+    }
+  },
+  "score": 0.10997353380127503,
+  "valid": true,
+  "method_displacement": {
+    "rolling": {
+      "max_dx_px": 0.2193274348974228,
+      "max_dy_px": 0.0,
+      "max_magnitude_px": 0.2193274348974228,
+      "mean_magnitude_px": 0.041684869676828384,
+      "p95_magnitude_px": 0.15052661299705505
+    },
+    "grid": {
+      "max_dx_px": 0.4689602851867676,
+      "max_dy_px": 0.5311493277549744,
+      "max_magnitude_px": 0.5894567370414734,
+      "mean_magnitude_px": 0.1182643473148346,
+      "p95_magnitude_px": 0.4156339764595032
+    },
+    "dct": {
+      "max_dx_px": 0.9420149326324463,
+      "max_dy_px": 0.703053891658783,
+      "max_magnitude_px": 0.9462507963180542,
+      "mean_magnitude_px": 0.21832263469696045,
+      "p95_magnitude_px": 0.6871060729026794
+    },
+    "tps": {
+      "max_dx_px": 0.4257427752017975,
+      "max_dy_px": 0.2435818612575531,
+      "max_magnitude_px": 0.4539850950241089,
+      "mean_magnitude_px": 0.07592621445655823,
+      "p95_magnitude_px": 0.3423478901386261
+    },
+    "piecewise": {
+      "max_dx_px": 0.3924451172351837,
+      "max_dy_px": 0.47104814648628235,
+      "max_magnitude_px": 0.5427772402763367,
+      "mean_magnitude_px": 0.0754588320851326,
+      "p95_magnitude_px": 0.3072977364063263
+    }
+  },
+  "gate_values": {
+    "tps": 0.8705836534500122,
+    "piecewise": 0.9067500829696655,
+    "dct": 0.8386817574501038,
+    "grid": 0.9006298780441284,
+    "rolling": 0.8806563019752502
+  },
+  "outputs": {
+    "original": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_093_g08_m09/original.png",
+    "perturbed": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_093_g08_m09/perturbed.png",
+    "original_diffused": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_093_g08_m09/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_093_g08_m09/perturbed_diffused.png",
+    "flow": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_093_g08_m09/flow.png",
+    "report": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_093_g08_m09/report.json"
+  }
+}

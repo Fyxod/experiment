@@ -1,0 +1,58 @@
+{
+  "generation": 2,
+  "elite_rows": [
+    {
+      "name": "cand_013_g02_m01",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12/cand_013_g02_m01",
+      "generation": 2,
+      "score": -10.0,
+      "valid": false,
+      "input_psnr": 30.561633739949965,
+      "input_ssim": 0.9440809657779745,
+      "output_ssim": 1.0,
+      "output_l2": 0.0,
+      "clean_edit_l2": 0.0,
+      "pert_edit_l2": 0.0,
+      "max_disp": 2.500000476837158,
+      "mean_disp": 0.419052392244339,
+      "p95_disp": 2.499999761581421,
+      "rank": 13
+    },
+    {
+      "name": "cand_014_g02_m02",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12/cand_014_g02_m02",
+      "generation": 2,
+      "score": -10.0,
+      "valid": false,
+      "input_psnr": 29.918180933208166,
+      "input_ssim": 0.9397521641296467,
+      "output_ssim": 1.0,
+      "output_l2": 0.0,
+      "clean_edit_l2": 0.0,
+      "pert_edit_l2": 0.0,
+      "max_disp": 2.500000476837158,
+      "mean_disp": 0.4256243109703064,
+      "p95_disp": 2.5,
+      "rank": 14
+    },
+    {
+      "name": "cand_015_g02_m03",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12/cand_015_g02_m03",
+      "generation": 2,
+      "score": -10.0,
+      "valid": false,
+      "input_psnr": 30.778486884194784,
+      "input_ssim": 0.9485583181224687,
+      "output_ssim": 1.0,
+      "output_l2": 0.0,
+      "clean_edit_l2": 0.0,
+      "pert_edit_l2": 0.0,
+      "max_disp": 2.500000476837158,
+      "mean_disp": 0.3826753497123718,
+      "p95_disp": 2.5,
+      "rank": 15
+    }
+  ],
+  "mean_abs": 0.5941783785820007,
+  "std_mean": 0.5995391011238098
+}

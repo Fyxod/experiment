@@ -1,0 +1,31 @@
+2026-06-14 12:43:19.803485: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 12:43:19.842187: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 12:43:21.092669: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00,  6.16it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 84.51it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 12.55it/s]
+{
+  "output_dir": "/workspace/output/mentor_results_20260614_123821/smoke_transformer_men66_sunglasses",
+  "metrics": {
+    "input": {
+      "psnr": 40.7002306023163,
+      "ssim": 0.952640315395309,
+      "l2": 0.009225469340639197,
+      "mean_abs": 0.0077688321471214294,
+      "max_abs": 0.01568630337715149
+    },
+    "output": {
+      "psnr": 27.75388930227325,
+      "ssim": 0.9576321383636598,
+      "l2": 0.04095486841234957,
+      "mean_abs": 0.023164115846157074,
+      "max_abs": 0.7803921699523926
+    },
+    "delta": {
+      "linf": 0.01568630337715149,
+      "mean_abs": 0.007768714800477028,
+      "epsilon": 0.01568627450980392
+    }
+  }
+}

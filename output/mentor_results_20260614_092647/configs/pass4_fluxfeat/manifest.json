@@ -1,0 +1,19 @@
+{
+  "batch": "pass4_fluxfeat",
+  "items": [
+    {
+      "name": "01_sample_hair_strong",
+      "source": "/workspace/geometric-v1/samples/image.png",
+      "prompt": "change the hairstyle",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass4_fluxfeat/01_sample_hair_strong_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass4_fluxfeat_01_sample_hair_strong.log"
+    },
+    {
+      "name": "02_men32_smile_strong",
+      "source": "/workspace/gender_dataset/men/32.jpg",
+      "prompt": "make the person smile",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass4_fluxfeat/02_men32_smile_strong_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass4_fluxfeat_02_men32_smile_strong.log"
+    }
+  ]
+}

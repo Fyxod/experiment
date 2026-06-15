@@ -1,0 +1,95 @@
+{
+  "input": "/workspace/gender_dataset/men/32.jpg",
+  "output_dir": "/workspace/output/mentor_results_20260614_092647/unused_pipeline_output",
+  "prompt": "make the person smile",
+  "seed": 7008,
+  "perturbations": [
+    {
+      "method": "homography",
+      "enabled": false,
+      "strength": 0.04
+    },
+    {
+      "method": "thin-plate-spline",
+      "enabled": true,
+      "strength": 0.002,
+      "grid": 7
+    },
+    {
+      "method": "delaunay",
+      "enabled": true,
+      "strength": 0.008,
+      "grid": 8
+    },
+    {
+      "method": "fft-phase",
+      "enabled": true,
+      "strength": 50000,
+      "coefficients": 6
+    },
+    {
+      "method": "elastic",
+      "enabled": true,
+      "strength": 0.01,
+      "sigma": 12.0
+    },
+    {
+      "method": "rolling-shutter",
+      "enabled": true,
+      "strength": 0.008,
+      "rolling_frequency": 1.5,
+      "rolling_phase": 0.0,
+      "rolling_shear": 0.02,
+      "rolling_acceleration": 0.0
+    }
+  ],
+  "diffusion": {
+    "cpu": false,
+    "device": "auto",
+    "gpu_index": 0,
+    "models": {
+      "instruct_pix2pix": {
+        "enabled": false,
+        "model_id": "timbrooks/instruct-pix2pix",
+        "num_inference_steps": 20,
+        "guidance_scale": 7.5,
+        "image_guidance_scale": 1.0,
+        "max_size": 768,
+        "seed": 42
+      },
+      "flux2_klein": {
+        "enabled": true,
+        "model_id": "black-forest-labs/FLUX.2-klein-4B",
+        "num_inference_steps": 4,
+        "guidance_scale": 1.0,
+        "max_size": 768,
+        "height": null,
+        "width": null,
+        "max_sequence_length": 512,
+        "text_encoder_out_layers": [
+          9,
+          18,
+          27
+        ],
+        "torch_dtype": "bfloat16",
+        "cpu_offload": false,
+        "sigmas": null,
+        "seed": 7008
+      }
+    }
+  },
+  "deepface": {
+    "enabled": true,
+    "detector_backend": "skip",
+    "distance_metric": "cosine",
+    "enforce_detection": false,
+    "align": false,
+    "workers": 1,
+    "models": {
+      "SFace": true,
+      "OpenFace": false,
+      "Facenet": false,
+      "Facenet512": true
+    }
+  }
+}

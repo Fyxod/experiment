@@ -1,0 +1,58 @@
+{
+  "generation": 2,
+  "elite_rows": [
+    {
+      "name": "cand_019_g02_m07",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_019_g02_m07",
+      "generation": 2,
+      "score": 0.22129151754736634,
+      "valid": true,
+      "input_psnr": 40.22475700253586,
+      "input_ssim": 0.9910398707551412,
+      "output_ssim": 0.9777472004520195,
+      "output_l2": 0.026456063871088835,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21792730532170018,
+      "max_disp": 0.7206860184669495,
+      "mean_disp": 0.08923055976629257,
+      "p95_disp": 0.5137946009635925,
+      "rank": 2
+    },
+    {
+      "name": "cand_014_g02_m02",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_014_g02_m02",
+      "generation": 2,
+      "score": 0.21514980792957855,
+      "valid": true,
+      "input_psnr": 41.12125284705537,
+      "input_ssim": 0.9926227961972147,
+      "output_ssim": 0.9786032857586423,
+      "output_l2": 0.025912590192829557,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21812222864308725,
+      "max_disp": 0.7638201713562012,
+      "mean_disp": 0.08425136655569077,
+      "p95_disp": 0.5327645540237427,
+      "rank": 3
+    },
+    {
+      "name": "cand_015_g02_m03",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_015_g02_m03",
+      "generation": 2,
+      "score": 0.21068467662646614,
+      "valid": true,
+      "input_psnr": 39.99997167063023,
+      "input_ssim": 0.9910118930930928,
+      "output_ssim": 0.9801188125376843,
+      "output_l2": 0.026231985355440662,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21850643051328553,
+      "max_disp": 0.7644082903862,
+      "mean_disp": 0.093136727809906,
+      "p95_disp": 0.5564718842506409,
+      "rank": 4
+    }
+  ],
+  "mean_abs": 0.11300233006477356,
+  "std_mean": 0.12567491829395294
+}

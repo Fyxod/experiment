@@ -1,0 +1,62 @@
+{
+  "input": "/workspace/gender_dataset/men/51.jpg",
+  "prompt": "turn the image into a professional headshot",
+  "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass4_clean/02_men51_headshot_dct_grid_tps_piecewise_rolling_transformer_pred_1.5px",
+  "seed": 6102,
+  "max_size": 512,
+  "diffusion_steps": 4,
+  "guidance_scale": 1.0,
+  "max_sequence_length": 512,
+  "text_encoder_out_layers": [
+    9,
+    18,
+    27
+  ],
+  "torch_dtype": "bfloat16",
+  "methods": [
+    "dct",
+    "grid",
+    "tps",
+    "piecewise",
+    "rolling"
+  ],
+  "objective": "transformer_pred",
+  "attack_iters": 80,
+  "lr": 0.006,
+  "max_disp_px": 1.5,
+  "init_scale_px": 0.08,
+  "grid_size": 10,
+  "dct_size": 4,
+  "rbf_size": 5,
+  "rbf_sigma": 0.55,
+  "tps_size": 6,
+  "piecewise_size": 6,
+  "padding_mode": "reflection",
+  "face_mask": "face",
+  "face_center_x": 0.4208984375,
+  "face_center_y": 0.2930952380952381,
+  "face_radius_x": 0.22,
+  "face_radius_y": 0.3,
+  "use_gates": true,
+  "gate_init": 2.0,
+  "lambda_visual": 10.0,
+  "lambda_disp": 0.04,
+  "lambda_smooth": 0.08,
+  "lambda_fold": 5.0,
+  "lambda_method_l1": 0.01,
+  "lambda_gate_l1": 0.01,
+  "hybrid_vae_weight": 0.2,
+  "feature_layers": [
+    0,
+    4,
+    8
+  ],
+  "feature_source": "blocks",
+  "objective_timestep": 0,
+  "objective_timesteps": [
+    0,
+    1
+  ],
+  "edge_falloff_px": 16.0,
+  "save_theta": true
+}

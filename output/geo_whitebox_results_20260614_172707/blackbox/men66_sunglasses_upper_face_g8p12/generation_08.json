@@ -1,0 +1,58 @@
+{
+  "generation": 8,
+  "elite_rows": [
+    {
+      "name": "cand_090_g08_m06",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_090_g08_m06",
+      "generation": 8,
+      "score": 0.11547359283615069,
+      "valid": true,
+      "input_psnr": 36.07159192494652,
+      "input_ssim": 0.9825905034392767,
+      "output_ssim": 0.9816509428386674,
+      "output_l2": 0.014970996542610141,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.1325801752771513,
+      "max_disp": 1.6894983053207397,
+      "mean_disp": 0.24800559878349304,
+      "p95_disp": 0.9104368090629578,
+      "rank": 3
+    },
+    {
+      "name": "cand_092_g08_m08",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_092_g08_m08",
+      "generation": 8,
+      "score": 0.11230580174012554,
+      "valid": true,
+      "input_psnr": 38.055129617615194,
+      "input_ssim": 0.9859465232160728,
+      "output_ssim": 0.9864307941946425,
+      "output_l2": 0.010735087120723361,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.13293942529309138,
+      "max_disp": 1.3835086822509766,
+      "mean_disp": 0.20280872285366058,
+      "p95_disp": 0.8163744807243347,
+      "rank": 7
+    },
+    {
+      "name": "cand_085_g08_m01",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_085_g08_m01",
+      "generation": 8,
+      "score": 0.1111718381189643,
+      "valid": true,
+      "input_psnr": 38.067678715659,
+      "input_ssim": 0.9890973539639427,
+      "output_ssim": 0.9878655430990642,
+      "output_l2": 0.011860942211418412,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.13319548615732887,
+      "max_disp": 1.2002586126327515,
+      "mean_disp": 0.17720213532447815,
+      "p95_disp": 0.624320924282074,
+      "rank": 8
+    }
+  ],
+  "mean_abs": 0.22208787500858307,
+  "std_mean": 0.09072050452232361
+}

@@ -1,0 +1,159 @@
+{
+  "config": {
+    "input": "/workspace/gender_dataset/men/58.jpg",
+    "prompt": "turn the image into a professional headshot",
+    "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/13_men58_headshot_eps4_i12_hp0p0",
+    "seed": 2271,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "epsilon": 0.01568627450980392,
+    "alpha": 0.00392156862745098,
+    "attack_iters": 12,
+    "attack": "transformer",
+    "objective_timestep": 0,
+    "highpass_sigma": 0.0,
+    "random_start": true,
+    "save_delta": false
+  },
+  "model_id": "black-forest-labs/FLUX.2-klein-4B",
+  "device": "cuda:0",
+  "elapsed_seconds": 4.678023604908958,
+  "metrics": {
+    "input": {
+      "psnr": 39.41527084295871,
+      "ssim": 0.9305111517737412,
+      "l2": 0.010696370999509914,
+      "mean_abs": 0.009287495166063309,
+      "max_abs": 0.01568630337715149
+    },
+    "output": {
+      "psnr": 9.864751422446378,
+      "ssim": 0.538483610164997,
+      "l2": 0.32119030579668106,
+      "mean_abs": 0.2706584930419922,
+      "max_abs": 0.9843137264251709
+    },
+    "delta": {
+      "linf": 0.01568630337715149,
+      "mean_abs": 0.009288235567510128,
+      "epsilon": 0.01568627450980392
+    }
+  },
+  "attack": {
+    "history": [
+      {
+        "iter": 1.0,
+        "score": 0.006429698783904314,
+        "pred_mse": 0.006429698783904314,
+        "latent_mse": 0.16961747407913208,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.00799639243632555
+      },
+      {
+        "iter": 2.0,
+        "score": 0.14577583968639374,
+        "pred_mse": 0.14577583968639374,
+        "latent_mse": 0.3992305099964142,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008196799084544182
+      },
+      {
+        "iter": 3.0,
+        "score": 0.3023252785205841,
+        "pred_mse": 0.3023252785205841,
+        "latent_mse": 0.5032374858856201,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008439755067229271
+      },
+      {
+        "iter": 4.0,
+        "score": 0.42609959840774536,
+        "pred_mse": 0.42609959840774536,
+        "latent_mse": 0.6210464239120483,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008633947931230068
+      },
+      {
+        "iter": 5.0,
+        "score": 0.6503060460090637,
+        "pred_mse": 0.6503060460090637,
+        "latent_mse": 0.6753029823303223,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008744705468416214
+      },
+      {
+        "iter": 6.0,
+        "score": 0.7619533538818359,
+        "pred_mse": 0.7619533538818359,
+        "latent_mse": 0.716758131980896,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.00882053840905428
+      },
+      {
+        "iter": 7.0,
+        "score": 0.9260334968566895,
+        "pred_mse": 0.9260334968566895,
+        "latent_mse": 0.803924560546875,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008857370354235172
+      },
+      {
+        "iter": 8.0,
+        "score": 1.0953725576400757,
+        "pred_mse": 1.0953725576400757,
+        "latent_mse": 0.7851220369338989,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008989451453089714
+      },
+      {
+        "iter": 9.0,
+        "score": 1.232172966003418,
+        "pred_mse": 1.232172966003418,
+        "latent_mse": 0.8927405476570129,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009001378901302814
+      },
+      {
+        "iter": 10.0,
+        "score": 1.2740598917007446,
+        "pred_mse": 1.2740598917007446,
+        "latent_mse": 0.7804816961288452,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009166850708425045
+      },
+      {
+        "iter": 11.0,
+        "score": 1.384404182434082,
+        "pred_mse": 1.384404182434082,
+        "latent_mse": 0.8860905170440674,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009288235567510128
+      },
+      {
+        "iter": 12.0,
+        "score": 1.5048692226409912,
+        "pred_mse": 1.5048692226409912,
+        "latent_mse": 0.9285598993301392,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.00937819853425026
+      }
+    ],
+    "best_score": 1.5048692226409912
+  },
+  "outputs": {
+    "original": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/13_men58_headshot_eps4_i12_hp0p0/original.png",
+    "perturbed": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/13_men58_headshot_eps4_i12_hp0p0/perturbed.png",
+    "original_diffused": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/13_men58_headshot_eps4_i12_hp0p0/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/13_men58_headshot_eps4_i12_hp0p0/perturbed_diffused.png",
+    "report": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/13_men58_headshot_eps4_i12_hp0p0/report.json",
+    "sheet": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/13_men58_headshot_eps4_i12_hp0p0/sheet.jpg"
+  }
+}

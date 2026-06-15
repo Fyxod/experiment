@@ -1,0 +1,6 @@
+python 3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:34:02) [GCC 14.3.0]
+torch 2.7.1+cu118 cuda 11.8 available True
+device NVIDIA H100 80GB HBM3 MIG 3g.40gb
+mem_gib_free_total 39.08917236328125 39.375
+diffusers 0.39.0.dev0
+transformers 4.57.6

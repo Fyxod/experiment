@@ -1,0 +1,160 @@
+2026-06-14 18:21:10.896116: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 18:21:10.932633: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 18:21:12.175081: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00,  7.19it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 84.37it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 13.52it/s]
+[1/12] 01_men66_sunglasses_tps_piecewise_dct_rolling_hybrid_hidden_2px
+[2/12] 02_men66_sunglasses_tps_piecewise_grid_rolling_attention_proxy_2px
+[3/12] 03_men51_headshot_tps_piecewise_dct_rolling_hybrid_hidden_2px
+[4/12] 04_men51_hair_tps_piecewise_dct_grid_hidden_feature_2.3px
+[5/12] 05_men57_older_tps_piecewise_dct_rolling_hybrid_hidden_2.3px
+[6/12] 06_men57_older_tps_piecewise_grid_dct_denoise_latent_2px
+[7/12] 07_men74_smile_tps_piecewise_rolling_dct_hybrid_hidden_2px
+[8/12] 08_men74_smile_tps_piecewise_grid_attention_proxy_2px
+[9/12] 09_men58_headshot_tps_piecewise_dct_rolling_hybrid_hidden_2px
+[10/12] 10_men11_headshot_tps_piecewise_dct_rolling_hidden_feature_2.3px
+[11/12] 11_men66_studio_tps_piecewise_dct_grid_rolling_hybrid_hidden_2.5px
+[12/12] 12_men51_studio_tps_piecewise_dct_grid_rolling_hybrid_2.5px
+{
+  "sheet": "/workspace/output/geo_whitebox_results_20260614_172707/geo_pass3_sheet.jpg",
+  "top": [
+    {
+      "name": "03_men51_headshot_tps_piecewise_dct_rolling_hybrid_hidden_2px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass3/03_men51_headshot_tps_piecewise_dct_rolling_hybrid_hidden_2px",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "tps,piecewise,dct,rolling",
+      "objective": "hybrid_hidden",
+      "score": 0.6861632399510177,
+      "input_psnr": 39.81266473148672,
+      "input_ssim": 0.9902320057390902,
+      "output_ssim": 0.9461176633727213,
+      "output_l2": 0.09412677868838057,
+      "max_disp": 0.9213692545890808,
+      "mean_disp": 0.0935087576508522,
+      "ok": true,
+      "rank": 1
+    },
+    {
+      "name": "10_men11_headshot_tps_piecewise_dct_rolling_hidden_feature_2.3px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass3/10_men11_headshot_tps_piecewise_dct_rolling_hidden_feature_2.3px",
+      "source": "/workspace/gender_dataset/men/11.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "tps,piecewise,dct,rolling",
+      "objective": "hidden_feature",
+      "score": 0.14938711229928575,
+      "input_psnr": 39.48914564513079,
+      "input_ssim": 0.9935119391344149,
+      "output_ssim": 0.9849424116656976,
+      "output_l2": 0.01783135179241525,
+      "max_disp": 0.955134391784668,
+      "mean_disp": 0.12068523466587067,
+      "ok": true,
+      "rank": 2
+    },
+    {
+      "name": "12_men51_studio_tps_piecewise_dct_grid_rolling_hybrid_2.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass3/12_men51_studio_tps_piecewise_dct_grid_rolling_hybrid_2.5px",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "make the person look like a studio portrait",
+      "methods": "tps,piecewise,dct,grid,rolling",
+      "objective": "hybrid",
+      "score": 0.11489848747262538,
+      "input_psnr": 41.46074691715086,
+      "input_ssim": 0.9942656649215151,
+      "output_ssim": 0.9867917405885777,
+      "output_l2": 0.012413089965387201,
+      "max_disp": 0.7405639886856079,
+      "mean_disp": 0.07052074372768402,
+      "ok": true,
+      "rank": 3
+    },
+    {
+      "name": "06_men57_older_tps_piecewise_grid_dct_denoise_latent_2px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass3/06_men57_older_tps_piecewise_grid_dct_denoise_latent_2px",
+      "source": "/workspace/gender_dataset/men/57.jpg",
+      "prompt": "make the person older",
+      "methods": "tps,piecewise,grid,dct",
+      "objective": "denoise_latent",
+      "score": 0.10286230953343642,
+      "input_psnr": 42.825484679243495,
+      "input_ssim": 0.9931729204267502,
+      "output_ssim": 0.9924944216485061,
+      "output_l2": 0.014567999225492161,
+      "max_disp": 0.7912914752960205,
+      "mean_disp": 0.13426780700683594,
+      "ok": true,
+      "rank": 4
+    },
+    {
+      "name": "05_men57_older_tps_piecewise_dct_rolling_hybrid_hidden_2.3px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass3/05_men57_older_tps_piecewise_dct_rolling_hybrid_hidden_2.3px",
+      "source": "/workspace/gender_dataset/men/57.jpg",
+      "prompt": "make the person older",
+      "methods": "tps,piecewise,dct,rolling",
+      "objective": "hybrid_hidden",
+      "score": 0.06671587946222551,
+      "input_psnr": 41.59900050980948,
+      "input_ssim": 0.9900685561425959,
+      "output_ssim": 0.9940307030084236,
+      "output_l2": 0.008567738299183947,
+      "max_disp": 0.6391787528991699,
+      "mean_disp": 0.15405122935771942,
+      "ok": true,
+      "rank": 5
+    },
+    {
+      "name": "04_men51_hair_tps_piecewise_dct_grid_hidden_feature_2.3px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass3/04_men51_hair_tps_piecewise_dct_grid_hidden_feature_2.3px",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "change the hairstyle",
+      "methods": "tps,piecewise,dct,grid",
+      "objective": "hidden_feature",
+      "score": 0.055149625119443914,
+      "input_psnr": 45.28292498160948,
+      "input_ssim": 0.9973310069344749,
+      "output_ssim": 0.9948320083557557,
+      "output_l2": 0.006895531708493337,
+      "max_disp": 0.42536723613739014,
+      "mean_disp": 0.03508523106575012,
+      "ok": true,
+      "rank": 6
+    },
+    {
+      "name": "07_men74_smile_tps_piecewise_rolling_dct_hybrid_hidden_2px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass3/07_men74_smile_tps_piecewise_rolling_dct_hybrid_hidden_2px",
+      "source": "/workspace/gender_dataset/men/74.jpg",
+      "prompt": "make the person smile",
+      "methods": "tps,piecewise,rolling,dct",
+      "objective": "hybrid_hidden",
+      "score": 0.036913458602807404,
+      "input_psnr": 48.13305155670153,
+      "input_ssim": 0.9972645710723902,
+      "output_ssim": 0.9963145837675033,
+      "output_l2": 0.004434358734564088,
+      "max_disp": 0.8786632418632507,
+      "mean_disp": 0.08084763586521149,
+      "ok": true,
+      "rank": 7
+    },
+    {
+      "name": "01_men66_sunglasses_tps_piecewise_dct_rolling_hybrid_hidden_2px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass3/01_men66_sunglasses_tps_piecewise_dct_rolling_hybrid_hidden_2px",
+      "source": "/workspace/gender_dataset/men/66.jpg",
+      "prompt": "add sunglasses",
+      "methods": "tps,piecewise,dct,rolling",
+      "objective": "hybrid_hidden",
+      "score": 0.0,
+      "input_psnr": Infinity,
+      "input_ssim": 1.0,
+      "output_ssim": 1.0,
+      "output_l2": 0.0,
+      "max_disp": 0.0,
+      "mean_disp": 0.0,
+      "ok": true,
+      "rank": 8
+    }
+  ]
+}

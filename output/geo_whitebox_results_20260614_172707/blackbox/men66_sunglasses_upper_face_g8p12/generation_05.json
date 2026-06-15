@@ -1,0 +1,58 @@
+{
+  "generation": 5,
+  "elite_rows": [
+    {
+      "name": "cand_052_g05_m04",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_052_g05_m04",
+      "generation": 5,
+      "score": 0.10654135437466515,
+      "valid": true,
+      "input_psnr": 37.657520996199985,
+      "input_ssim": 0.9863468060975077,
+      "output_ssim": 0.9863486695195748,
+      "output_l2": 0.01126691163543089,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.13341504743390856,
+      "max_disp": 1.345728874206543,
+      "mean_disp": 0.17991508543491364,
+      "p95_disp": 0.6035349369049072,
+      "rank": 3
+    },
+    {
+      "name": "cand_058_g05_m10",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_058_g05_m10",
+      "generation": 5,
+      "score": 0.10446163076064688,
+      "valid": true,
+      "input_psnr": 36.70112242221662,
+      "input_ssim": 0.984185307556329,
+      "output_ssim": 0.9846711139946095,
+      "output_l2": 0.012877333175024416,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.1328435679169535,
+      "max_disp": 1.4702399969100952,
+      "mean_disp": 0.24038900434970856,
+      "p95_disp": 0.9286835193634033,
+      "rank": 4
+    },
+    {
+      "name": "cand_049_g05_m01",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_049_g05_m01",
+      "generation": 5,
+      "score": -10.0,
+      "valid": false,
+      "input_psnr": 33.77377790406697,
+      "input_ssim": 0.9762203440988809,
+      "output_ssim": 1.0,
+      "output_l2": 0.0,
+      "clean_edit_l2": 0.0,
+      "pert_edit_l2": 0.0,
+      "max_disp": 1.8934543132781982,
+      "mean_disp": 0.2782900631427765,
+      "p95_disp": 0.910610020160675,
+      "rank": 52
+    }
+  ],
+  "mean_abs": 0.21103951334953308,
+  "std_mean": 0.10844889283180237
+}

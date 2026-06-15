@@ -1,0 +1,162 @@
+{
+  "rank": 5,
+  "name": "geo_v2_05_men66_sunglasses_seed6010",
+  "path": "/workspace/output/geo_whitebox_results_20260614_172707/finalists_v2/geo_v2_05_men66_sunglasses_seed6010",
+  "source": "/workspace/gender_dataset/men/66.jpg",
+  "prompt": "add sunglasses",
+  "methods": "tps,piecewise,dct,grid,rolling",
+  "failure": "minor sunglasses/style variation; not a prompt failure",
+  "assessment": "Best sunglasses geometry attempt after seed sweep. Included to document that this prompt stayed robust.",
+  "metrics": {
+    "input": {
+      "psnr": 37.482724827289005,
+      "ssim": 0.9871585179593753,
+      "l2": 0.013361762824910351,
+      "mean_abs": 0.004091973416507244,
+      "max_abs": 0.30980393290519714
+    },
+    "output": {
+      "psnr": 34.07782826814068,
+      "ssim": 0.982691351970736,
+      "l2": 0.019774640033747064,
+      "mean_abs": 0.00562638882547617,
+      "max_abs": 0.9333333373069763
+    },
+    "displacement": {
+      "max_dx_px": 0.8074870705604553,
+      "max_dy_px": 1.0376700162887573,
+      "max_magnitude_px": 1.2599793672561646,
+      "mean_magnitude_px": 0.20468638837337494,
+      "p95_magnitude_px": 0.8112539052963257
+    },
+    "jacobian": {}
+  },
+  "base_candidate": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_030_g03_m06",
+  "seed_output": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men66_sunglasses_cand030_64/seed_6010",
+  "config": {
+    "input": "/workspace/gender_dataset/men/66.jpg",
+    "prompt": "add sunglasses",
+    "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12",
+    "seed": 7601,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "methods": [
+      "tps",
+      "piecewise",
+      "dct",
+      "grid",
+      "rolling"
+    ],
+    "objective": "final_edit_blackbox",
+    "attack_iters": 0,
+    "lr": 0.08,
+    "max_disp_px": 2.2,
+    "init_scale_px": 0.0,
+    "grid_size": 6,
+    "dct_size": 4,
+    "rbf_size": 5,
+    "rbf_sigma": 0.55,
+    "tps_size": 5,
+    "piecewise_size": 5,
+    "padding_mode": "reflection",
+    "face_mask": "upper_face",
+    "face_center_x": 0.5178571428571429,
+    "face_center_y": 0.5237499999999999,
+    "face_radius_x": 0.48,
+    "face_radius_y": 0.46765625,
+    "use_gates": true,
+    "gate_init": 2.0,
+    "lambda_visual": 30.0,
+    "lambda_disp": 0.1,
+    "lambda_smooth": 0.2,
+    "lambda_fold": 5.0,
+    "lambda_method_l1": 0.02,
+    "lambda_gate_l1": 0.01,
+    "hybrid_vae_weight": 0.2,
+    "feature_layers": [
+      0,
+      4,
+      8
+    ],
+    "feature_source": "blocks",
+    "objective_timestep": 0,
+    "objective_timesteps": [
+      0
+    ],
+    "edge_falloff_px": 16.0,
+    "save_theta": true
+  },
+  "attack": {},
+  "deepface": {
+    "pre": {
+      "mean_match_percent": 99.66921451658234,
+      "min_match_percent": 99.57316666666667,
+      "max_match_percent": 99.821,
+      "models": {
+        "SFace": {
+          "match_percent": 99.63069139966272,
+          "verified": true,
+          "distance": 0.00438,
+          "threshold": 0.593
+        },
+        "OpenFace": {
+          "match_percent": 99.652,
+          "verified": true,
+          "distance": 0.000696,
+          "threshold": 0.1
+        },
+        "Facenet": {
+          "match_percent": 99.821,
+          "verified": true,
+          "distance": 0.001432,
+          "threshold": 0.4
+        },
+        "Facenet512": {
+          "match_percent": 99.57316666666667,
+          "verified": true,
+          "distance": 0.002561,
+          "threshold": 0.3
+        }
+      }
+    },
+    "post": {
+      "mean_match_percent": 99.52621565837549,
+      "min_match_percent": 99.37633333333333,
+      "max_match_percent": 99.788375,
+      "models": {
+        "SFace": {
+          "match_percent": 99.53465430016864,
+          "verified": true,
+          "distance": 0.005519,
+          "threshold": 0.593
+        },
+        "OpenFace": {
+          "match_percent": 99.4055,
+          "verified": true,
+          "distance": 0.001189,
+          "threshold": 0.1
+        },
+        "Facenet": {
+          "match_percent": 99.788375,
+          "verified": true,
+          "distance": 0.001693,
+          "threshold": 0.4
+        },
+        "Facenet512": {
+          "match_percent": 99.37633333333333,
+          "verified": true,
+          "distance": 0.003742,
+          "threshold": 0.3
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "config": {
+    "input": "/workspace/gender_dataset/men/74.jpg",
+    "prompt": "make the person smile",
+    "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/09_men74_smile_eps4",
+    "seed": 1246,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "epsilon": 0.01568627450980392,
+    "alpha": 0.00392156862745098,
+    "attack_iters": 8,
+    "attack": "transformer",
+    "objective_timestep": 0,
+    "highpass_sigma": 0.0,
+    "random_start": true,
+    "save_delta": false
+  },
+  "model_id": "black-forest-labs/FLUX.2-klein-4B",
+  "device": "cuda:0",
+  "elapsed_seconds": 3.9371594248805195,
+  "metrics": {
+    "input": {
+      "psnr": 39.15867215857588,
+      "ssim": 0.9196541439065308,
+      "l2": 0.011017077184659791,
+      "mean_abs": 0.009643495082855225,
+      "max_abs": 0.01568630337715149
+    },
+    "output": {
+      "psnr": 27.61109771999766,
+      "ssim": 0.8096079783121864,
+      "l2": 0.04163371011484353,
+      "mean_abs": 0.02964303269982338,
+      "max_abs": 0.4705882668495178
+    },
+    "delta": {
+      "linf": 0.01568630337715149,
+      "mean_abs": 0.009643174707889557,
+      "epsilon": 0.01568627450980392
+    }
+  },
+  "attack": {
+    "history": [
+      {
+        "iter": 1.0,
+        "score": 0.09912171959877014,
+        "pred_mse": 0.09912171959877014,
+        "latent_mse": 0.11291660368442535,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008338483050465584
+      },
+      {
+        "iter": 2.0,
+        "score": 0.5232661962509155,
+        "pred_mse": 0.5232661962509155,
+        "latent_mse": 0.4555948078632355,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008632778190076351
+      },
+      {
+        "iter": 3.0,
+        "score": 0.9937491416931152,
+        "pred_mse": 0.9937491416931152,
+        "latent_mse": 0.7917593121528625,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.00890535768121481
+      },
+      {
+        "iter": 4.0,
+        "score": 1.4387173652648926,
+        "pred_mse": 1.4387173652648926,
+        "latent_mse": 1.0931196212768555,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009185180068016052
+      },
+      {
+        "iter": 5.0,
+        "score": 1.9402390718460083,
+        "pred_mse": 1.9402390718460083,
+        "latent_mse": 1.4257421493530273,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009350346401333809
+      },
+      {
+        "iter": 6.0,
+        "score": 2.3510375022888184,
+        "pred_mse": 2.3510375022888184,
+        "latent_mse": 1.6371530294418335,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009532224386930466
+      },
+      {
+        "iter": 7.0,
+        "score": 2.644840717315674,
+        "pred_mse": 2.644840717315674,
+        "latent_mse": 1.8074063062667847,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009643174707889557
+      },
+      {
+        "iter": 8.0,
+        "score": 2.7796471118927,
+        "pred_mse": 2.7796471118927,
+        "latent_mse": 1.8000010251998901,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009769310243427753
+      }
+    ],
+    "best_score": 2.7796471118927
+  },
+  "outputs": {
+    "original": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/09_men74_smile_eps4/original.png",
+    "perturbed": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/09_men74_smile_eps4/perturbed.png",
+    "original_diffused": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/09_men74_smile_eps4/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/09_men74_smile_eps4/perturbed_diffused.png",
+    "report": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/09_men74_smile_eps4/report.json",
+    "sheet": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/09_men74_smile_eps4/sheet.jpg"
+  }
+}

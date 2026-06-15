@@ -1,0 +1,21 @@
+01 post=15.64 pre=89.27 psnr=19.98 ssim=0.793 drop=0.269 make the person smile /workspace/output/mentor_results_20260614_092647/search/pass3/06_men32_smile_strong/embedding_loss_run_20260614_101233
+02 post=12.91 pre=89.13 psnr=17.51 ssim=0.687 drop=0.305 change the hairstyle /workspace/output/mentor_results_20260614_092647/search/pass3/04_men11_hair_strong/embedding_loss_run_20260614_101039
+03 post=9.38 pre=95.43 psnr=22.70 ssim=0.796 drop=0.208 add sunglasses /workspace/output/mentor_results_20260614_092647/search/pass3/05_men16_sunglasses_strong/embedding_loss_run_20260614_101125
+04 post=7.12 pre=93.17 psnr=19.47 ssim=0.747 drop=0.237 make the person older /workspace/output/mentor_results_20260614_092647/search/pass3/03_sample_older_strong/embedding_loss_run_20260614_100941
+05 post=6.35 pre=94.01 psnr=21.19 ssim=0.775 drop=0.226 change the hairstyle /workspace/output/mentor_results_20260614_092647/search/pass3/02_sample_hair_strong/embedding_loss_run_20260614_100843
+06 post=5.28 pre=94.40 psnr=21.58 ssim=0.785 drop=0.226 add sunglasses /workspace/output/mentor_results_20260614_092647/search/pass3/01_sample_sunglasses_strong/embedding_loss_run_20260614_100744
+07 post=3.89 pre=98.03 psnr=25.59 ssim=0.822 drop=0.169 add sunglasses /workspace/output/mentor_results_20260614_092647/search/pass2/06_men16_sunglasses_relaxed/embedding_loss_run_20260614_100047
+08 post=2.69 pre=99.03 psnr=22.27 ssim=0.842 drop=0.142 make the person older /workspace/output/mentor_results_20260614_092647/search/pass2/05_men11_older_relaxed/embedding_loss_run_20260614_100013
+09 post=1.46 pre=99.02 psnr=22.98 ssim=0.830 drop=0.153 make the person look like a studio portrait /workspace/output/mentor_results_20260614_092647/search/pass1/03_men11_studio_stealth/embedding_loss_run_20260614_095316
+10 post=2.68 pre=98.90 psnr=27.06 ssim=0.880 drop=0.120 make the person smile /workspace/output/mentor_results_20260614_092647/search/pass2/08_men32_smile_relaxed/embedding_loss_run_20260614_100207
+11 post=2.01 pre=98.97 psnr=27.72 ssim=0.871 drop=0.130 make the person older /workspace/output/mentor_results_20260614_092647/search/pass2/02_sample_older_relaxed/embedding_loss_run_20260614_095821
+12 post=1.15 pre=98.67 psnr=27.19 ssim=0.863 drop=0.144 add sunglasses /workspace/output/mentor_results_20260614_092647/search/pass2/01_sample_sunglasses_relaxed/embedding_loss_run_20260614_095741
+13 post=2.37 pre=98.77 psnr=27.96 ssim=0.864 drop=0.121 add sunglasses /workspace/output/mentor_results_20260614_092647/search/pass1/04_men16_sunglasses_stealth/embedding_loss_run_20260614_095344
+14 post=1.38 pre=98.94 psnr=24.73 ssim=0.862 drop=0.130 change the hairstyle /workspace/output/mentor_results_20260614_092647/search/pass2/04_men11_hair_relaxed/embedding_loss_run_20260614_095941
+15 post=1.97 pre=98.86 psnr=27.93 ssim=0.894 drop=0.114 make the person smile /workspace/output/mentor_results_20260614_092647/search/pass1/06_men32_smile_stealth/embedding_loss_run_20260614_095443
+16 post=0.77 pre=98.97 psnr=27.42 ssim=0.867 drop=0.136 add sunglasses /workspace/output/mentor_results_20260614_092647/search/pass1/01_sample_sunglasses_stealth/embedding_loss_run_20260614_095216
+17 post=0.87 pre=98.97 psnr=27.71 ssim=0.870 drop=0.122 change the hairstyle /workspace/output/mentor_results_20260614_092647/search/pass1/02_sample_hair_stealth/embedding_loss_run_20260614_095246
+18 post=1.37 pre=98.77 psnr=27.88 ssim=0.859 drop=0.064 turn the image into a professional headshot /workspace/output/mentor_results_20260614_092647/search/pass1/05_men27_headshot_stealth/embedding_loss_run_20260614_095416
+19 post=1.31 pre=98.23 psnr=26.48 ssim=0.848 drop=0.070 make the person look like a studio portrait /workspace/output/mentor_results_20260614_092647/search/pass2/07_men27_studio_relaxed/embedding_loss_run_20260614_100130
+20 post=1.16 pre=99.02 psnr=26.45 ssim=0.854 drop=0.058 turn the image into a professional headshot /workspace/output/mentor_results_20260614_092647/search/pass2/03_sample_headshot_relaxed/embedding_loss_run_20260614_095901
+/workspace/output/mentor_results_20260614_092647/search/candidate_scan.json

@@ -1,0 +1,148 @@
+2026-06-14 18:28:29.570587: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 18:28:29.608846: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 18:28:30.849350: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 85.21it/s]
+Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  6.81it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 10.76it/s]
+{
+  "run_root": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12",
+  "top": [
+    {
+      "name": "cand_055_g05_m07",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_055_g05_m07",
+      "generation": 5,
+      "score": 0.8297290166363662,
+      "valid": true,
+      "input_psnr": 38.24958867776373,
+      "input_ssim": 0.9865358550996087,
+      "output_ssim": 0.9247958681262493,
+      "output_l2": 0.09695025835556126,
+      "clean_edit_l2": 0.21101512187176083,
+      "pert_edit_l2": 0.1999748225308716,
+      "max_disp": 1.0721806287765503,
+      "mean_disp": 0.12195859849452972,
+      "p95_disp": 0.7383174300193787,
+      "rank": 1
+    },
+    {
+      "name": "cand_039_g04_m03",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_039_g04_m03",
+      "generation": 4,
+      "score": 0.8252103271519143,
+      "valid": true,
+      "input_psnr": 38.26089424701906,
+      "input_ssim": 0.9869487982641049,
+      "output_ssim": 0.9262695495671626,
+      "output_l2": 0.09725655777733404,
+      "clean_edit_l2": 0.21101512187176083,
+      "pert_edit_l2": 0.20001368773828723,
+      "max_disp": 0.8969480395317078,
+      "mean_disp": 0.11339519917964935,
+      "p95_disp": 0.6946147680282593,
+      "rank": 2
+    },
+    {
+      "name": "cand_062_g06_m02",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_062_g06_m02",
+      "generation": 6,
+      "score": 0.824286199384421,
+      "valid": true,
+      "input_psnr": 37.77555275702895,
+      "input_ssim": 0.986596609053784,
+      "output_ssim": 0.9258221293730933,
+      "output_l2": 0.09656464349812001,
+      "clean_edit_l2": 0.21101512187176083,
+      "pert_edit_l2": 0.19870501081035702,
+      "max_disp": 1.1254035234451294,
+      "mean_disp": 0.12542130053043365,
+      "p95_disp": 0.7781862616539001,
+      "rank": 3
+    },
+    {
+      "name": "cand_053_g05_m05",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_053_g05_m05",
+      "generation": 5,
+      "score": 0.8232079842526134,
+      "valid": true,
+      "input_psnr": 37.64633877729731,
+      "input_ssim": 0.9850816573623774,
+      "output_ssim": 0.9245921565408328,
+      "output_l2": 0.09696462815044116,
+      "clean_edit_l2": 0.21101512187176083,
+      "pert_edit_l2": 0.20005844834231265,
+      "max_disp": 1.2127079963684082,
+      "mean_disp": 0.12670768797397614,
+      "p95_disp": 0.7717588543891907,
+      "rank": 4
+    },
+    {
+      "name": "cand_064_g06_m04",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_064_g06_m04",
+      "generation": 6,
+      "score": 0.8222509853238583,
+      "valid": true,
+      "input_psnr": 39.103097455067456,
+      "input_ssim": 0.9889419984347261,
+      "output_ssim": 0.9266124698887985,
+      "output_l2": 0.09642636219179589,
+      "clean_edit_l2": 0.21101512187176083,
+      "pert_edit_l2": 0.19937285839174257,
+      "max_disp": 0.9410755634307861,
+      "mean_disp": 0.10852191597223282,
+      "p95_disp": 0.6666914820671082,
+      "rank": 5
+    },
+    {
+      "name": "cand_070_g06_m10",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_070_g06_m10",
+      "generation": 6,
+      "score": 0.8215095928605898,
+      "valid": true,
+      "input_psnr": 38.42898721070429,
+      "input_ssim": 0.9866507876852469,
+      "output_ssim": 0.9266858405304554,
+      "output_l2": 0.09673200983228576,
+      "clean_edit_l2": 0.21101512187176083,
+      "pert_edit_l2": 0.19986689541651514,
+      "max_disp": 1.0954949855804443,
+      "mean_disp": 0.11964043974876404,
+      "p95_disp": 0.7673424482345581,
+      "rank": 6
+    },
+    {
+      "name": "cand_063_g06_m03",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_063_g06_m03",
+      "generation": 6,
+      "score": 0.8214455920004613,
+      "valid": true,
+      "input_psnr": 37.67934731838643,
+      "input_ssim": 0.9870034388974279,
+      "output_ssim": 0.9257587254350392,
+      "output_l2": 0.09681804467054451,
+      "clean_edit_l2": 0.21101512187176083,
+      "pert_edit_l2": 0.19931429086671903,
+      "max_disp": 1.1308813095092773,
+      "mean_disp": 0.11908724159002304,
+      "p95_disp": 0.7252864241600037,
+      "rank": 7
+    },
+    {
+      "name": "cand_068_g06_m08",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_068_g06_m08",
+      "generation": 6,
+      "score": 0.8210228370272876,
+      "valid": true,
+      "input_psnr": 39.070344533825164,
+      "input_ssim": 0.989309372616097,
+      "output_ssim": 0.926118019928554,
+      "output_l2": 0.09665555363764067,
+      "clean_edit_l2": 0.21101512187176083,
+      "pert_edit_l2": 0.20046083473343573,
+      "max_disp": 1.0445157289505005,
+      "mean_disp": 0.10948625206947327,
+      "p95_disp": 0.6588739156723022,
+      "rank": 8
+    }
+  ]
+}

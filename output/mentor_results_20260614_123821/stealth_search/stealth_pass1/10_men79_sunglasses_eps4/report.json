@@ -1,0 +1,127 @@
+{
+  "config": {
+    "input": "/workspace/gender_dataset/men/79.jpg",
+    "prompt": "add sunglasses",
+    "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/10_men79_sunglasses_eps4",
+    "seed": 1247,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "epsilon": 0.01568627450980392,
+    "alpha": 0.00392156862745098,
+    "attack_iters": 8,
+    "attack": "transformer",
+    "objective_timestep": 0,
+    "highpass_sigma": 0.0,
+    "random_start": true,
+    "save_delta": false
+  },
+  "model_id": "black-forest-labs/FLUX.2-klein-4B",
+  "device": "cuda:0",
+  "elapsed_seconds": 2.205143908970058,
+  "metrics": {
+    "input": {
+      "psnr": 38.85775019871191,
+      "ssim": 0.9328863714723741,
+      "l2": 0.011405451709715445,
+      "mean_abs": 0.010046613402664661,
+      "max_abs": 0.01568630337715149
+    },
+    "output": {
+      "psnr": 22.415239801250358,
+      "ssim": 0.7776782060423765,
+      "l2": 0.07572477819850895,
+      "mean_abs": 0.031438373029232025,
+      "max_abs": 0.9215686321258545
+    },
+    "delta": {
+      "linf": 0.01568630337715149,
+      "mean_abs": 0.010048560798168182,
+      "epsilon": 0.01568627450980392
+    }
+  },
+  "attack": {
+    "history": [
+      {
+        "iter": 1.0,
+        "score": 0.09636808186769485,
+        "pred_mse": 0.09636808186769485,
+        "latent_mse": 0.07089792937040329,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008298631757497787
+      },
+      {
+        "iter": 2.0,
+        "score": 0.501884400844574,
+        "pred_mse": 0.501884400844574,
+        "latent_mse": 0.3464561700820923,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008672019466757774
+      },
+      {
+        "iter": 3.0,
+        "score": 0.876693606376648,
+        "pred_mse": 0.876693606376648,
+        "latent_mse": 0.6246325373649597,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008952784352004528
+      },
+      {
+        "iter": 4.0,
+        "score": 1.1607458591461182,
+        "pred_mse": 1.1607458591461182,
+        "latent_mse": 0.7927565574645996,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009269756264984608
+      },
+      {
+        "iter": 5.0,
+        "score": 1.456900954246521,
+        "pred_mse": 1.456900954246521,
+        "latent_mse": 0.9853869080543518,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009617774747312069
+      },
+      {
+        "iter": 6.0,
+        "score": 1.7272828817367554,
+        "pred_mse": 1.7272828817367554,
+        "latent_mse": 1.1601535081863403,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009845957159996033
+      },
+      {
+        "iter": 7.0,
+        "score": 1.9425374269485474,
+        "pred_mse": 1.9425374269485474,
+        "latent_mse": 1.2929030656814575,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.010048560798168182
+      },
+      {
+        "iter": 8.0,
+        "score": 2.1260712146759033,
+        "pred_mse": 2.1260712146759033,
+        "latent_mse": 1.3984622955322266,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.010236912406980991
+      }
+    ],
+    "best_score": 2.1260712146759033
+  },
+  "outputs": {
+    "original": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/10_men79_sunglasses_eps4/original.png",
+    "perturbed": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/10_men79_sunglasses_eps4/perturbed.png",
+    "original_diffused": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/10_men79_sunglasses_eps4/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/10_men79_sunglasses_eps4/perturbed_diffused.png",
+    "report": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/10_men79_sunglasses_eps4/report.json",
+    "sheet": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/10_men79_sunglasses_eps4/sheet.jpg"
+  }
+}

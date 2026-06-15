@@ -1,0 +1,20 @@
+2026-06-14 17:49:24.086799: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 17:49:24.123998: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 17:49:25.156243: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  60%|██████    | 3/5 [00:00<00:00,  9.94it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 83.82it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 13.32it/s]
+Traceback (most recent call last):
+  File "/workspace/output/geo_whitebox_results_20260614_172707/scripts/geo_whitebox_attack.py", line 822, in <module>
+    main()
+  File "/workspace/output/geo_whitebox_results_20260614_172707/scripts/geo_whitebox_attack.py", line 817, in main
+    report = run_with_pipe(cfg, pipe, device)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/output/geo_whitebox_results_20260614_172707/scripts/geo_whitebox_attack.py", line 703, in run_with_pipe
+    perturbed01, disp, attack_report, model = optimize_geometry(pipe, clean01, cfg, device)
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/output/geo_whitebox_results_20260614_172707/scripts/geo_whitebox_attack.py", line 678, in optimize_geometry
+    del warped, disp, pred, condition, loss
+                      ^^^^
+UnboundLocalError: cannot access local variable 'pred' where it is not associated with a value

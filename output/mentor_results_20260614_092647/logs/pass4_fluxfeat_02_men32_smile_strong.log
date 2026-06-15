@@ -1,0 +1,34 @@
+2026-06-14 10:18:38.197749: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 10:18:38.234471: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 10:18:39.306082: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00,  6.18it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 80.66it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 12.67it/s]
+`height` and `width` have to be divisible by 16 but are 768 and 696. Dimensions will be resized accordingly
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.16it/s] 50%|█████     | 2/4 [00:00<00:00,  4.42it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.51it/s]100%|██████████| 4/4 [00:00<00:00,  4.56it/s]100%|██████████| 4/4 [00:00<00:00,  4.50it/s]
+2026-06-14 10:18:48.031818: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1956] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+`height` and `width` have to be divisible by 16 but are 768 and 696. Dimensions will be resized accordingly
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.55it/s] 50%|█████     | 2/4 [00:00<00:00,  4.50it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.55it/s]100%|██████████| 4/4 [00:00<00:00,  4.58it/s]100%|██████████| 4/4 [00:00<00:00,  4.56it/s]
+`height` and `width` have to be divisible by 16 but are 768 and 696. Dimensions will be resized accordingly
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.61it/s] 50%|█████     | 2/4 [00:00<00:00,  4.61it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.62it/s]100%|██████████| 4/4 [00:00<00:00,  4.60it/s]100%|██████████| 4/4 [00:00<00:00,  4.60it/s]
+`height` and `width` have to be divisible by 16 but are 768 and 696. Dimensions will be resized accordingly
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.62it/s] 50%|█████     | 2/4 [00:00<00:00,  4.63it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.61it/s]100%|██████████| 4/4 [00:00<00:00,  4.62it/s]100%|██████████| 4/4 [00:00<00:00,  4.62it/s]
+`height` and `width` have to be divisible by 16 but are 768 and 696. Dimensions will be resized accordingly
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.61it/s] 50%|█████     | 2/4 [00:00<00:00,  4.62it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.62it/s]100%|██████████| 4/4 [00:00<00:00,  4.62it/s]100%|██████████| 4/4 [00:00<00:00,  4.62it/s]
+`height` and `width` have to be divisible by 16 but are 768 and 696. Dimensions will be resized accordingly
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.59it/s] 50%|█████     | 2/4 [00:00<00:00,  4.60it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.62it/s]100%|██████████| 4/4 [00:00<00:00,  4.63it/s]100%|██████████| 4/4 [00:00<00:00,  4.62it/s]
+`height` and `width` have to be divisible by 16 but are 768 and 696. Dimensions will be resized accordingly
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.61it/s] 50%|█████     | 2/4 [00:00<00:00,  4.62it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.62it/s]100%|██████████| 4/4 [00:00<00:00,  4.63it/s]100%|██████████| 4/4 [00:00<00:00,  4.62it/s]
+`height` and `width` have to be divisible by 16 but are 768 and 696. Dimensions will be resized accordingly
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:00<00:00,  4.62it/s] 50%|█████     | 2/4 [00:00<00:00,  4.63it/s] 75%|███████▌  | 3/4 [00:00<00:00,  4.63it/s]100%|██████████| 4/4 [00:00<00:00,  4.63it/s]100%|██████████| 4/4 [00:00<00:00,  4.63it/s]
+{
+  "embedding_loss_config": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/02_men32_smile_strong/embedding_loss_run_20260614_101834/embedding_loss_config.json",
+  "original": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/02_men32_smile_strong/embedding_loss_run_20260614_101834/original.png",
+  "original_diffused": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/02_men32_smile_strong/embedding_loss_run_20260614_101834/original_diffused.png",
+  "best": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/02_men32_smile_strong/embedding_loss_run_20260614_101834/best",
+  "iterations": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/02_men32_smile_strong/embedding_loss_run_20260614_101834/iterations",
+  "embedding_loss_history": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/02_men32_smile_strong/embedding_loss_run_20260614_101834/embedding_loss_history.json",
+  "report": "/workspace/output/mentor_results_20260614_092647/search/pass4_fluxfeat/02_men32_smile_strong/embedding_loss_run_20260614_101834/report.json"
+}

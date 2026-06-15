@@ -1,0 +1,102 @@
+2026-06-14 18:51:56.725183: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 18:51:56.774618: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 18:51:58.094456: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Couldn't connect to the Hub: (MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /api/models/black-forest-labs/FLUX.2-klein-4B (Caused by NameResolutionError("HTTPSConnection(host=\'huggingface.co\', port=443): Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: cfb6f52d-d85e-4653-92b7-ed9f6565afaa)').
+Will try to load from local cache.
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 82.71it/s]
+Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 10.28it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 12.29it/s]
+{
+  "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_hair_pass3_64",
+  "top": [
+    {
+      "seed": 8001,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_hair_pass3_64/seed_8001",
+      "score": 0.10233589929383456,
+      "output_ssim": 0.9906159688497093,
+      "output_l2": 0.01295995493853432,
+      "clean_edit_l2": 0.04186085467857736,
+      "pert_edit_l2": 0.044104498399316336,
+      "prompt_failure": 0.0,
+      "rank": 1
+    },
+    {
+      "seed": 8035,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_hair_pass3_64/seed_8035",
+      "score": 0.09509144795941958,
+      "output_ssim": 0.9909206365422888,
+      "output_l2": 0.011754798825714948,
+      "clean_edit_l2": 0.042029065195896304,
+      "pert_edit_l2": 0.042825909821615,
+      "prompt_failure": 0.0,
+      "rank": 2
+    },
+    {
+      "seed": 8028,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_hair_pass3_64/seed_8028",
+      "score": 0.08652423575041832,
+      "output_ssim": 0.9917685868356751,
+      "output_l2": 0.010494883886947498,
+      "clean_edit_l2": 0.03615960371560218,
+      "pert_edit_l2": 0.035878562801006826,
+      "prompt_failure": 0.0002810409145953541,
+      "rank": 3
+    },
+    {
+      "seed": 8006,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_hair_pass3_64/seed_8006",
+      "score": 0.08345911926085667,
+      "output_ssim": 0.9923232201306601,
+      "output_l2": 0.010550399956699413,
+      "clean_edit_l2": 0.03359241385907736,
+      "pert_edit_l2": 0.03465865070411944,
+      "prompt_failure": 0.0,
+      "rank": 4
+    },
+    {
+      "seed": 8023,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_hair_pass3_64/seed_8023",
+      "score": 0.07957655565828306,
+      "output_ssim": 0.9925882065367397,
+      "output_l2": 0.009985876361048402,
+      "clean_edit_l2": 0.03391202790882669,
+      "pert_edit_l2": 0.03422582951833819,
+      "prompt_failure": 0.0,
+      "rank": 5
+    },
+    {
+      "seed": 8039,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_hair_pass3_64/seed_8039",
+      "score": 0.06856121217246064,
+      "output_ssim": 0.9935799687818315,
+      "output_l2": 0.008576217459957345,
+      "clean_edit_l2": 0.04045632183034541,
+      "pert_edit_l2": 0.04075262781485563,
+      "prompt_failure": 0.0,
+      "rank": 6
+    },
+    {
+      "seed": 8025,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_hair_pass3_64/seed_8025",
+      "score": 0.0685049908068506,
+      "output_ssim": 0.9938216365010248,
+      "output_l2": 0.008237722377922346,
+      "clean_edit_l2": 0.03301884372331158,
+      "pert_edit_l2": 0.032368112492977025,
+      "prompt_failure": 0.0006507312303345586,
+      "rank": 7
+    },
+    {
+      "seed": 8033,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_hair_pass3_64/seed_8033",
+      "score": 0.0677533715427761,
+      "output_ssim": 0.9938614184752331,
+      "output_l2": 0.007962479017959571,
+      "clean_edit_l2": 0.03133061375031409,
+      "pert_edit_l2": 0.030483951161836404,
+      "prompt_failure": 0.0008466625884776847,
+      "rank": 8
+    }
+  ]
+}

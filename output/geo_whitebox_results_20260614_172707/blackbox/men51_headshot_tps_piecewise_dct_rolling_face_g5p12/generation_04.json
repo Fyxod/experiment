@@ -1,0 +1,58 @@
+{
+  "generation": 4,
+  "elite_rows": [
+    {
+      "name": "cand_037_g04_m01",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12/cand_037_g04_m01",
+      "generation": 4,
+      "score": -10.0,
+      "valid": false,
+      "input_psnr": 31.01654760643128,
+      "input_ssim": 0.9489252894577143,
+      "output_ssim": 1.0,
+      "output_l2": 0.0,
+      "clean_edit_l2": 0.0,
+      "pert_edit_l2": 0.0,
+      "max_disp": 2.500000476837158,
+      "mean_disp": 0.35359105467796326,
+      "p95_disp": 2.2709593772888184,
+      "rank": 37
+    },
+    {
+      "name": "cand_038_g04_m02",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12/cand_038_g04_m02",
+      "generation": 4,
+      "score": -10.0,
+      "valid": false,
+      "input_psnr": 30.777674655097876,
+      "input_ssim": 0.9484017857912909,
+      "output_ssim": 1.0,
+      "output_l2": 0.0,
+      "clean_edit_l2": 0.0,
+      "pert_edit_l2": 0.0,
+      "max_disp": 2.500000476837158,
+      "mean_disp": 0.35260871052742004,
+      "p95_disp": 2.392554521560669,
+      "rank": 38
+    },
+    {
+      "name": "cand_039_g04_m03",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_tps_piecewise_dct_rolling_face_g5p12/cand_039_g04_m03",
+      "generation": 4,
+      "score": -10.0,
+      "valid": false,
+      "input_psnr": 31.64830803882461,
+      "input_ssim": 0.9510345259327248,
+      "output_ssim": 1.0,
+      "output_l2": 0.0,
+      "clean_edit_l2": 0.0,
+      "pert_edit_l2": 0.0,
+      "max_disp": 2.500000476837158,
+      "mean_disp": 0.3512135148048401,
+      "p95_disp": 2.056063413619995,
+      "rank": 39
+    }
+  ],
+  "mean_abs": 0.6697360277175903,
+  "std_mean": 0.3800557255744934
+}

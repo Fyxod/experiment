@@ -1,0 +1,127 @@
+{
+  "config": {
+    "input": "/workspace/gender_dataset/men/66.jpg",
+    "prompt": "add sunglasses",
+    "output_dir": "/workspace/output/mentor_results_20260614_123821/smoke_fixed_men66_sunglasses_eps4_i8",
+    "seed": 1234,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "epsilon": 0.01568627450980392,
+    "alpha": 0.00392156862745098,
+    "attack_iters": 8,
+    "attack": "transformer",
+    "objective_timestep": 0,
+    "highpass_sigma": 0.0,
+    "random_start": true,
+    "save_delta": false
+  },
+  "model_id": "black-forest-labs/FLUX.2-klein-4B",
+  "device": "cuda:0",
+  "elapsed_seconds": 17.479205183917657,
+  "metrics": {
+    "input": {
+      "psnr": 38.62853552909804,
+      "ssim": 0.9345225007497123,
+      "l2": 0.011710440277319196,
+      "mean_abs": 0.010419621132314205,
+      "max_abs": 0.01568630337715149
+    },
+    "output": {
+      "psnr": 18.743903641542673,
+      "ssim": 0.8039000283912311,
+      "l2": 0.11555927751044393,
+      "mean_abs": 0.04361554607748985,
+      "max_abs": 0.8745098114013672
+    },
+    "delta": {
+      "linf": 0.01568630337715149,
+      "mean_abs": 0.010421015322208405,
+      "epsilon": 0.01568627450980392
+    }
+  },
+  "attack": {
+    "history": [
+      {
+        "iter": 1.0,
+        "score": 0.1426270306110382,
+        "pred_mse": 0.1426270306110382,
+        "latent_mse": 0.10418365150690079,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.00842224434018135
+      },
+      {
+        "iter": 2.0,
+        "score": 0.5063134431838989,
+        "pred_mse": 0.5063134431838989,
+        "latent_mse": 0.35474076867103577,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.00886557251214981
+      },
+      {
+        "iter": 3.0,
+        "score": 0.8467141389846802,
+        "pred_mse": 0.8467141389846802,
+        "latent_mse": 0.5582477450370789,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009306549094617367
+      },
+      {
+        "iter": 4.0,
+        "score": 1.14020836353302,
+        "pred_mse": 1.14020836353302,
+        "latent_mse": 0.7554457187652588,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009728307835757732
+      },
+      {
+        "iter": 5.0,
+        "score": 1.4236325025558472,
+        "pred_mse": 1.4236325025558472,
+        "latent_mse": 0.9545556306838989,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.010017911903560162
+      },
+      {
+        "iter": 6.0,
+        "score": 1.6630182266235352,
+        "pred_mse": 1.6630182266235352,
+        "latent_mse": 1.1309912204742432,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.010205946862697601
+      },
+      {
+        "iter": 7.0,
+        "score": 1.825544834136963,
+        "pred_mse": 1.825544834136963,
+        "latent_mse": 1.2225958108901978,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.010421015322208405
+      },
+      {
+        "iter": 8.0,
+        "score": 1.9913368225097656,
+        "pred_mse": 1.9913368225097656,
+        "latent_mse": 1.3258953094482422,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.010498653165996075
+      }
+    ],
+    "best_score": 1.9913368225097656
+  },
+  "outputs": {
+    "original": "/workspace/output/mentor_results_20260614_123821/smoke_fixed_men66_sunglasses_eps4_i8/original.png",
+    "perturbed": "/workspace/output/mentor_results_20260614_123821/smoke_fixed_men66_sunglasses_eps4_i8/perturbed.png",
+    "original_diffused": "/workspace/output/mentor_results_20260614_123821/smoke_fixed_men66_sunglasses_eps4_i8/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/mentor_results_20260614_123821/smoke_fixed_men66_sunglasses_eps4_i8/perturbed_diffused.png",
+    "report": "/workspace/output/mentor_results_20260614_123821/smoke_fixed_men66_sunglasses_eps4_i8/report.json",
+    "sheet": "/workspace/output/mentor_results_20260614_123821/smoke_fixed_men66_sunglasses_eps4_i8/sheet.jpg"
+  }
+}

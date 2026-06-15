@@ -1,0 +1,148 @@
+2026-06-14 18:31:10.498093: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 18:31:10.537159: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 18:31:11.794639: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 79.35it/s]
+Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00,  4.95it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 11.06it/s]
+{
+  "run_root": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12",
+  "top": [
+    {
+      "name": "cand_030_g03_m06",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_030_g03_m06",
+      "generation": 3,
+      "score": 0.1266940412447186,
+      "valid": true,
+      "input_psnr": 37.482724827289005,
+      "input_ssim": 0.9871585179593753,
+      "output_ssim": 0.9848055765708038,
+      "output_l2": 0.014068913818379623,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.13254849054929718,
+      "max_disp": 1.2599793672561646,
+      "mean_disp": 0.20468638837337494,
+      "p95_disp": 0.8112539052963257,
+      "rank": 1
+    },
+    {
+      "name": "cand_065_g06_m05",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_065_g06_m05",
+      "generation": 6,
+      "score": 0.11772930052352795,
+      "valid": true,
+      "input_psnr": 36.3438053387289,
+      "input_ssim": 0.983201386295595,
+      "output_ssim": 0.9820998124415347,
+      "output_l2": 0.014749331505690126,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.1326513645252016,
+      "max_disp": 1.2713897228240967,
+      "mean_disp": 0.24222694337368011,
+      "p95_disp": 0.8867648243904114,
+      "rank": 2
+    },
+    {
+      "name": "cand_090_g08_m06",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_090_g08_m06",
+      "generation": 8,
+      "score": 0.11547359283615069,
+      "valid": true,
+      "input_psnr": 36.07159192494652,
+      "input_ssim": 0.9825905034392767,
+      "output_ssim": 0.9816509428386674,
+      "output_l2": 0.014970996542610141,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.1325801752771513,
+      "max_disp": 1.6894983053207397,
+      "mean_disp": 0.24800559878349304,
+      "p95_disp": 0.9104368090629578,
+      "rank": 3
+    },
+    {
+      "name": "cand_042_g04_m06",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_042_g04_m06",
+      "generation": 4,
+      "score": 0.11306337321356016,
+      "valid": true,
+      "input_psnr": 37.782147359117594,
+      "input_ssim": 0.985785613488049,
+      "output_ssim": 0.9858860581545584,
+      "output_l2": 0.011967611840945792,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.13374616116068283,
+      "max_disp": 1.419515609741211,
+      "mean_disp": 0.21708056330680847,
+      "p95_disp": 0.8698405027389526,
+      "rank": 4
+    },
+    {
+      "name": "cand_073_g07_m01",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_073_g07_m01",
+      "generation": 7,
+      "score": 0.11298138205105478,
+      "valid": true,
+      "input_psnr": 37.94941523352977,
+      "input_ssim": 0.9886497699447284,
+      "output_ssim": 0.9872905617351196,
+      "output_l2": 0.011951913468352804,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.1331788717770676,
+      "max_disp": 1.1919199228286743,
+      "mean_disp": 0.18421350419521332,
+      "p95_disp": 0.670278012752533,
+      "rank": 5
+    },
+    {
+      "name": "cand_062_g06_m02",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_062_g06_m02",
+      "generation": 6,
+      "score": 0.11254634109374319,
+      "valid": true,
+      "input_psnr": 37.77750864406164,
+      "input_ssim": 0.9867275506141007,
+      "output_ssim": 0.9865454031679753,
+      "output_l2": 0.011707655179608175,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.13286793477526837,
+      "max_disp": 1.349141001701355,
+      "mean_disp": 0.20506452023983002,
+      "p95_disp": 0.7102840542793274,
+      "rank": 6
+    },
+    {
+      "name": "cand_092_g08_m08",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_092_g08_m08",
+      "generation": 8,
+      "score": 0.11230580174012554,
+      "valid": true,
+      "input_psnr": 38.055129617615194,
+      "input_ssim": 0.9859465232160728,
+      "output_ssim": 0.9864307941946425,
+      "output_l2": 0.010735087120723361,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.13293942529309138,
+      "max_disp": 1.3835086822509766,
+      "mean_disp": 0.20280872285366058,
+      "p95_disp": 0.8163744807243347,
+      "rank": 7
+    },
+    {
+      "name": "cand_085_g08_m01",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_085_g08_m01",
+      "generation": 8,
+      "score": 0.1111718381189643,
+      "valid": true,
+      "input_psnr": 38.067678715659,
+      "input_ssim": 0.9890973539639427,
+      "output_ssim": 0.9878655430990642,
+      "output_l2": 0.011860942211418412,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.13319548615732887,
+      "max_disp": 1.2002586126327515,
+      "mean_disp": 0.17720213532447815,
+      "p95_disp": 0.624320924282074,
+      "rank": 8
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "config": {
+    "input": "/workspace/gender_dataset/men/51.jpg",
+    "prompt": "turn the image into a professional headshot",
+    "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12",
+    "seed": 5203,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "methods": [
+      "tps",
+      "piecewise",
+      "dct",
+      "rolling"
+    ],
+    "objective": "final_edit_blackbox",
+    "attack_iters": 0,
+    "lr": 0.08,
+    "max_disp_px": 2.5,
+    "init_scale_px": 0.0,
+    "grid_size": 6,
+    "dct_size": 4,
+    "rbf_size": 5,
+    "rbf_sigma": 0.55,
+    "tps_size": 5,
+    "piecewise_size": 5,
+    "padding_mode": "reflection",
+    "face_mask": "face",
+    "face_center_x": 0.4208984375,
+    "face_center_y": 0.2930952380952381,
+    "face_radius_x": 0.22,
+    "face_radius_y": 0.3,
+    "use_gates": true,
+    "gate_init": 2.0,
+    "lambda_visual": 30.0,
+    "lambda_disp": 0.1,
+    "lambda_smooth": 0.2,
+    "lambda_fold": 5.0,
+    "lambda_method_l1": 0.02,
+    "lambda_gate_l1": 0.01,
+    "hybrid_vae_weight": 0.2,
+    "feature_layers": [
+      0,
+      4,
+      8
+    ],
+    "feature_source": "blocks",
+    "objective_timestep": 0,
+    "objective_timesteps": [
+      0
+    ],
+    "edge_falloff_px": 16.0,
+    "save_theta": true
+  },
+  "projected_parameters_finite": true,
+  "metrics": {
+    "input": {
+      "psnr": 39.070344533825164,
+      "ssim": 0.989309372616097,
+      "l2": 0.011129682450140718,
+      "mean_abs": 0.0025763255544006824,
+      "max_abs": 0.35686275362968445
+    },
+    "output": {
+      "psnr": 20.29546374426809,
+      "ssim": 0.926118019928554,
+      "l2": 0.09665555363764067,
+      "mean_abs": 0.03048478066921234,
+      "max_abs": 0.9058823585510254
+    },
+    "clean_edit": {
+      "psnr": 13.513728419151365,
+      "ssim": 0.585137327901636,
+      "l2": 0.21101512187176083,
+      "mean_abs": 0.16538751125335693,
+      "max_abs": 0.9411764740943909
+    },
+    "perturbed_edit": {
+      "psnr": 13.959409310815602,
+      "ssim": 0.5912232288473226,
+      "l2": 0.20046083473343573,
+      "mean_abs": 0.1576925665140152,
+      "max_abs": 0.929411768913269
+    },
+    "displacement": {
+      "max_dx_px": 0.7778052091598511,
+      "max_dy_px": 0.7342290282249451,
+      "max_magnitude_px": 1.0445157289505005,
+      "mean_magnitude_px": 0.10948625206947327,
+      "p95_magnitude_px": 0.6588739156723022
+    },
+    "score_terms": {
+      "prompt_failure": 0.010554287138325097,
+      "output_diverge": 0.7788056884739872,
+      "stealth_penalty": 0.0
+    }
+  },
+  "score": 0.8210228370272876,
+  "valid": true,
+  "method_displacement": {
+    "rolling": {
+      "max_dx_px": 0.19272735714912415,
+      "max_dy_px": 0.0,
+      "max_magnitude_px": 0.19272735714912415,
+      "mean_magnitude_px": 0.02424362674355507,
+      "p95_magnitude_px": 0.16627353429794312
+    },
+    "dct": {
+      "max_dx_px": 0.6381793022155762,
+      "max_dy_px": 0.7175673842430115,
+      "max_magnitude_px": 0.7713848352432251,
+      "mean_magnitude_px": 0.10049813985824585,
+      "p95_magnitude_px": 0.660173773765564
+    },
+    "tps": {
+      "max_dx_px": 0.1675291806459427,
+      "max_dy_px": 0.13163185119628906,
+      "max_magnitude_px": 0.169375941157341,
+      "mean_magnitude_px": 0.02024223282933235,
+      "p95_magnitude_px": 0.12404798716306686
+    },
+    "piecewise": {
+      "max_dx_px": 0.16341949999332428,
+      "max_dy_px": 0.14970459043979645,
+      "max_magnitude_px": 0.17767484486103058,
+      "mean_magnitude_px": 0.02010127156972885,
+      "p95_magnitude_px": 0.11943380534648895
+    }
+  },
+  "gate_values": {
+    "tps": 0.4381433129310608,
+    "piecewise": 0.422078937292099,
+    "dct": 0.5284225344657898,
+    "rolling": 0.7024551630020142
+  },
+  "outputs": {
+    "original": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_068_g06_m08/original.png",
+    "perturbed": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_068_g06_m08/perturbed.png",
+    "original_diffused": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_068_g06_m08/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_068_g06_m08/perturbed_diffused.png",
+    "flow": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_068_g06_m08/flow.png",
+    "report": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_seed5203_g6p12/cand_068_g06_m08/report.json"
+  }
+}

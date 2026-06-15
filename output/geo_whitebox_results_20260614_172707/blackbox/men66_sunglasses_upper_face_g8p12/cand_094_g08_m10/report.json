@@ -1,0 +1,135 @@
+{
+  "config": {
+    "input": "/workspace/gender_dataset/men/66.jpg",
+    "prompt": "add sunglasses",
+    "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12",
+    "seed": 7601,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "methods": [
+      "tps",
+      "piecewise",
+      "dct",
+      "grid",
+      "rolling"
+    ],
+    "objective": "final_edit_blackbox",
+    "attack_iters": 0,
+    "lr": 0.08,
+    "max_disp_px": 2.2,
+    "init_scale_px": 0.0,
+    "grid_size": 6,
+    "dct_size": 4,
+    "rbf_size": 5,
+    "rbf_sigma": 0.55,
+    "tps_size": 5,
+    "piecewise_size": 5,
+    "padding_mode": "reflection",
+    "face_mask": "upper_face",
+    "face_center_x": 0.5178571428571429,
+    "face_center_y": 0.5237499999999999,
+    "face_radius_x": 0.48,
+    "face_radius_y": 0.46765625,
+    "use_gates": true,
+    "gate_init": 2.0,
+    "lambda_visual": 30.0,
+    "lambda_disp": 0.1,
+    "lambda_smooth": 0.2,
+    "lambda_fold": 5.0,
+    "lambda_method_l1": 0.02,
+    "lambda_gate_l1": 0.01,
+    "hybrid_vae_weight": 0.2,
+    "feature_layers": [
+      0,
+      4,
+      8
+    ],
+    "feature_source": "blocks",
+    "objective_timestep": 0,
+    "objective_timesteps": [
+      0
+    ],
+    "edge_falloff_px": 16.0,
+    "save_theta": true
+  },
+  "projected_parameters_finite": true,
+  "metrics": {
+    "input": {
+      "psnr": 34.29256424193936,
+      "ssim": 0.9784574860478698,
+      "l2": 0.019291757222779288,
+      "mean_abs": 0.005996976513415575,
+      "max_abs": 0.4431372582912445
+    },
+    "displacement": {
+      "max_dx_px": 1.0447893142700195,
+      "max_dy_px": 0.9983654022216797,
+      "max_magnitude_px": 1.0740985870361328,
+      "mean_magnitude_px": 0.2453801929950714,
+      "p95_magnitude_px": 0.8492122888565063
+    },
+    "skip_reason": "failed_pre_diffusion_visual_gate"
+  },
+  "score": -10.0,
+  "valid": false,
+  "method_displacement": {
+    "rolling": {
+      "max_dx_px": 0.17649336159229279,
+      "max_dy_px": 0.0,
+      "max_magnitude_px": 0.17649336159229279,
+      "mean_magnitude_px": 0.0400112122297287,
+      "p95_magnitude_px": 0.1654617041349411
+    },
+    "grid": {
+      "max_dx_px": 0.5209342241287231,
+      "max_dy_px": 0.4881850481033325,
+      "max_magnitude_px": 0.5378453135490417,
+      "mean_magnitude_px": 0.1169358640909195,
+      "p95_magnitude_px": 0.4537412226200104
+    },
+    "dct": {
+      "max_dx_px": 1.0256627798080444,
+      "max_dy_px": 1.0599445104599,
+      "max_magnitude_px": 1.2875688076019287,
+      "mean_magnitude_px": 0.2822141945362091,
+      "p95_magnitude_px": 0.984153687953949
+    },
+    "tps": {
+      "max_dx_px": 0.5263071060180664,
+      "max_dy_px": 0.24892480671405792,
+      "max_magnitude_px": 0.5721017122268677,
+      "mean_magnitude_px": 0.0820394903421402,
+      "p95_magnitude_px": 0.3817656636238098
+    },
+    "piecewise": {
+      "max_dx_px": 0.31143704056739807,
+      "max_dy_px": 0.3381553292274475,
+      "max_magnitude_px": 0.3772633969783783,
+      "mean_magnitude_px": 0.061800576746463776,
+      "p95_magnitude_px": 0.23273637890815735
+    }
+  },
+  "gate_values": {
+    "tps": 0.8523690700531006,
+    "piecewise": 0.9245859384536743,
+    "dct": 0.8337817192077637,
+    "grid": 0.8956676125526428,
+    "rolling": 0.8618636727333069
+  },
+  "outputs": {
+    "original": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_094_g08_m10/original.png",
+    "perturbed": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_094_g08_m10/perturbed.png",
+    "original_diffused": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_094_g08_m10/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_094_g08_m10/perturbed_diffused.png",
+    "flow": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_094_g08_m10/flow.png",
+    "report": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_094_g08_m10/report.json"
+  }
+}

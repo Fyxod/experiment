@@ -1,0 +1,143 @@
+{
+  "config": {
+    "input": "/workspace/gender_dataset/men/66.jpg",
+    "prompt": "add sunglasses",
+    "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/13_men66_sunglasses_eps5",
+    "seed": 1250,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "epsilon": 0.0196078431372549,
+    "alpha": 0.00392156862745098,
+    "attack_iters": 10,
+    "attack": "transformer",
+    "objective_timestep": 0,
+    "highpass_sigma": 0.0,
+    "random_start": true,
+    "save_delta": false
+  },
+  "model_id": "black-forest-labs/FLUX.2-klein-4B",
+  "device": "cuda:0",
+  "elapsed_seconds": 4.32856100006029,
+  "metrics": {
+    "input": {
+      "psnr": 36.98883979526216,
+      "ssim": 0.9086153419115247,
+      "l2": 0.014143536326277876,
+      "mean_abs": 0.012514229863882065,
+      "max_abs": 0.019607871770858765
+    },
+    "output": {
+      "psnr": 21.076399671812265,
+      "ssim": 0.7825244628943305,
+      "l2": 0.08834460156482019,
+      "mean_abs": 0.03749019652605057,
+      "max_abs": 0.9803921580314636
+    },
+    "delta": {
+      "linf": 0.019607871770858765,
+      "mean_abs": 0.012515856884419918,
+      "epsilon": 0.0196078431372549
+    }
+  },
+  "attack": {
+    "history": [
+      {
+        "iter": 1.0,
+        "score": 0.188801109790802,
+        "pred_mse": 0.188801109790802,
+        "latent_mse": 0.1376001089811325,
+        "delta_linf": 0.019607871770858765,
+        "delta_mean_abs": 0.010312600992619991
+      },
+      {
+        "iter": 2.0,
+        "score": 0.5422915816307068,
+        "pred_mse": 0.5422915816307068,
+        "latent_mse": 0.4039231240749359,
+        "delta_linf": 0.019607871770858765,
+        "delta_mean_abs": 0.010710181668400764
+      },
+      {
+        "iter": 3.0,
+        "score": 0.8365119099617004,
+        "pred_mse": 0.8365119099617004,
+        "latent_mse": 0.5775347352027893,
+        "delta_linf": 0.019607871770858765,
+        "delta_mean_abs": 0.011083967052400112
+      },
+      {
+        "iter": 4.0,
+        "score": 1.1376792192459106,
+        "pred_mse": 1.1376792192459106,
+        "latent_mse": 0.7917090058326721,
+        "delta_linf": 0.019607871770858765,
+        "delta_mean_abs": 0.011401019990444183
+      },
+      {
+        "iter": 5.0,
+        "score": 1.391952633857727,
+        "pred_mse": 1.391952633857727,
+        "latent_mse": 0.9579734802246094,
+        "delta_linf": 0.019607871770858765,
+        "delta_mean_abs": 0.011750107631087303
+      },
+      {
+        "iter": 6.0,
+        "score": 1.6727954149246216,
+        "pred_mse": 1.6727954149246216,
+        "latent_mse": 1.1533294916152954,
+        "delta_linf": 0.019607871770858765,
+        "delta_mean_abs": 0.011970175430178642
+      },
+      {
+        "iter": 7.0,
+        "score": 1.8784511089324951,
+        "pred_mse": 1.8784511089324951,
+        "latent_mse": 1.2624565362930298,
+        "delta_linf": 0.019607871770858765,
+        "delta_mean_abs": 0.012225898914039135
+      },
+      {
+        "iter": 8.0,
+        "score": 2.1081793308258057,
+        "pred_mse": 2.1081793308258057,
+        "latent_mse": 1.4121936559677124,
+        "delta_linf": 0.019607871770858765,
+        "delta_mean_abs": 0.012359878979623318
+      },
+      {
+        "iter": 9.0,
+        "score": 2.2547223567962646,
+        "pred_mse": 2.2547223567962646,
+        "latent_mse": 1.501489520072937,
+        "delta_linf": 0.019607871770858765,
+        "delta_mean_abs": 0.012515856884419918
+      },
+      {
+        "iter": 10.0,
+        "score": 2.383730411529541,
+        "pred_mse": 2.383730411529541,
+        "latent_mse": 1.5660395622253418,
+        "delta_linf": 0.019607871770858765,
+        "delta_mean_abs": 0.012618294917047024
+      }
+    ],
+    "best_score": 2.383730411529541
+  },
+  "outputs": {
+    "original": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/13_men66_sunglasses_eps5/original.png",
+    "perturbed": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/13_men66_sunglasses_eps5/perturbed.png",
+    "original_diffused": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/13_men66_sunglasses_eps5/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/13_men66_sunglasses_eps5/perturbed_diffused.png",
+    "report": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/13_men66_sunglasses_eps5/report.json",
+    "sheet": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/13_men66_sunglasses_eps5/sheet.jpg"
+  }
+}

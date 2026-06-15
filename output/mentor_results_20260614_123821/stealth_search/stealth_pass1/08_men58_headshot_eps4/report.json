@@ -1,0 +1,127 @@
+{
+  "config": {
+    "input": "/workspace/gender_dataset/men/58.jpg",
+    "prompt": "turn the image into a professional headshot",
+    "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/08_men58_headshot_eps4",
+    "seed": 1245,
+    "max_size": 512,
+    "diffusion_steps": 4,
+    "guidance_scale": 1.0,
+    "max_sequence_length": 512,
+    "text_encoder_out_layers": [
+      9,
+      18,
+      27
+    ],
+    "torch_dtype": "bfloat16",
+    "epsilon": 0.01568627450980392,
+    "alpha": 0.00392156862745098,
+    "attack_iters": 8,
+    "attack": "transformer",
+    "objective_timestep": 0,
+    "highpass_sigma": 0.0,
+    "random_start": true,
+    "save_delta": false
+  },
+  "model_id": "black-forest-labs/FLUX.2-klein-4B",
+  "device": "cuda:0",
+  "elapsed_seconds": 3.315102983964607,
+  "metrics": {
+    "input": {
+      "psnr": 39.578954507837466,
+      "ssim": 0.9305094927825776,
+      "l2": 0.01049668766249308,
+      "mean_abs": 0.009088155813515186,
+      "max_abs": 0.01568630337715149
+    },
+    "output": {
+      "psnr": 10.792480628715314,
+      "ssim": 0.6038151479451784,
+      "l2": 0.2886529289088418,
+      "mean_abs": 0.25327447056770325,
+      "max_abs": 0.9372549057006836
+    },
+    "delta": {
+      "linf": 0.01568630337715149,
+      "mean_abs": 0.009086824022233486,
+      "epsilon": 0.01568627450980392
+    }
+  },
+  "attack": {
+    "history": [
+      {
+        "iter": 1.0,
+        "score": 0.008058836683630943,
+        "pred_mse": 0.008058836683630943,
+        "latent_mse": 0.17070434987545013,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008000591769814491
+      },
+      {
+        "iter": 2.0,
+        "score": 0.34956976771354675,
+        "pred_mse": 0.34956976771354675,
+        "latent_mse": 0.38445886969566345,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008200094103813171
+      },
+      {
+        "iter": 3.0,
+        "score": 0.5247200727462769,
+        "pred_mse": 0.5247200727462769,
+        "latent_mse": 0.5048542022705078,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.008454032242298126
+      },
+      {
+        "iter": 4.0,
+        "score": 0.6183441281318665,
+        "pred_mse": 0.6183441281318665,
+        "latent_mse": 0.5405807495117188,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.00874811876565218
+      },
+      {
+        "iter": 5.0,
+        "score": 0.6838414669036865,
+        "pred_mse": 0.6838414669036865,
+        "latent_mse": 0.6560854315757751,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.00881380308419466
+      },
+      {
+        "iter": 6.0,
+        "score": 0.714385986328125,
+        "pred_mse": 0.714385986328125,
+        "latent_mse": 0.6196847558021545,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009077299386262894
+      },
+      {
+        "iter": 7.0,
+        "score": 0.7877026796340942,
+        "pred_mse": 0.7877026796340942,
+        "latent_mse": 0.7225923538208008,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009086824022233486
+      },
+      {
+        "iter": 8.0,
+        "score": 0.8405027985572815,
+        "pred_mse": 0.8405027985572815,
+        "latent_mse": 0.6925315260887146,
+        "delta_linf": 0.01568630337715149,
+        "delta_mean_abs": 0.009272227063775063
+      }
+    ],
+    "best_score": 0.8405027985572815
+  },
+  "outputs": {
+    "original": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/08_men58_headshot_eps4/original.png",
+    "perturbed": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/08_men58_headshot_eps4/perturbed.png",
+    "original_diffused": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/08_men58_headshot_eps4/original_diffused.png",
+    "perturbed_diffused": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/08_men58_headshot_eps4/perturbed_diffused.png",
+    "report": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/08_men58_headshot_eps4/report.json",
+    "sheet": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass1/08_men58_headshot_eps4/sheet.jpg"
+  }
+}

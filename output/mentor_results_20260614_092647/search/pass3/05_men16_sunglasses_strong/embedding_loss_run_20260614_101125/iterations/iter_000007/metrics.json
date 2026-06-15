@@ -1,0 +1,267 @@
+{
+  "iteration": 7,
+  "label": "restart_0_random_6",
+  "loss": -57.63037499646362,
+  "loss_components": {
+    "input_psnr_penalty": 0.06908946709451307,
+    "input_ssim_penalty": 0.0,
+    "pre_identity_penalty": 0.0,
+    "post_identity_reward": -55.24174516811274,
+    "output_vae_distance_reward": -1.4190005140983724,
+    "output_pixel_l2_reward": -0.25697920289915066,
+    "output_ssim_drop_reward": -0.8063729496042122,
+    "parameter_regularization_penalty": 0.024633371156339467
+  },
+  "metrics": {
+    "input_stealth": {
+      "psnr": 22.760053014371728,
+      "ssim": 0.7983931018706237
+    },
+    "output_disruption": {
+      "pixel_l2": 0.08565973429971689,
+      "ssim": 0.7984067625989469,
+      "ssim_drop": 0.20159323740105306
+    },
+    "identity": {
+      "pre": {
+        "models": {
+          "SFace": {
+            "enabled": true,
+            "ok": true,
+            "source": "direct_embedding",
+            "similarity_percent": 96.3048106888835,
+            "distance_percent": 3.6951893111164935,
+            "raw_distance": 0.07390378622233007,
+            "threshold": null,
+            "embedding_l2": 0.17151129304897672
+          },
+          "OpenFace": {
+            "enabled": false,
+            "skipped": true
+          },
+          "Facenet": {
+            "enabled": false,
+            "skipped": true
+          },
+          "Facenet512": {
+            "enabled": true,
+            "ok": true,
+            "source": "direct_embedding",
+            "similarity_percent": 98.59223637235574,
+            "distance_percent": 1.4077636276442576,
+            "raw_distance": 0.02815527255288519,
+            "threshold": null,
+            "embedding_l2": 0.1438026783297329
+          }
+        },
+        "mean_similarity_percent": 97.44852353061962,
+        "mean_distance_percent": 2.5514764693803755,
+        "ok_model_count": 2
+      },
+      "post": {
+        "models": {
+          "SFace": {
+            "enabled": true,
+            "ok": true,
+            "source": "direct_embedding",
+            "similarity_percent": 88.55575527671755,
+            "distance_percent": 11.444244723282452,
+            "raw_distance": 0.22888489446564897,
+            "threshold": null,
+            "embedding_l2": 0.2860635864858224
+          },
+          "OpenFace": {
+            "enabled": false,
+            "skipped": true
+          },
+          "Facenet": {
+            "enabled": false,
+            "skipped": true
+          },
+          "Facenet512": {
+            "enabled": true,
+            "ok": true,
+            "source": "direct_embedding",
+            "similarity_percent": 97.63380843125427,
+            "distance_percent": 2.3661915687457338,
+            "raw_distance": 0.04732383137491469,
+            "threshold": null,
+            "embedding_l2": 0.18437179403420123
+          }
+        },
+        "mean_similarity_percent": 93.0947818539859,
+        "mean_distance_percent": 6.905218146014093,
+        "ok_model_count": 2
+      }
+    },
+    "vae_latent": {
+      "output": {
+        "l2": 1.4190005140983724,
+        "cosine_distance": 0.37596396238061924
+      }
+    },
+    "flux_transformer": {
+      "enabled": false,
+      "available": false,
+      "loss_contribution": null
+    }
+  },
+  "parameters": {
+    "homography": {
+      "strength": 0.00408278993884443
+    },
+    "thin-plate-spline": {
+      "strength": 0.00574716177881629,
+      "grid": 7
+    },
+    "delaunay": {
+      "strength": 0.002693104072623683,
+      "grid": 8
+    },
+    "fft-phase": {
+      "strength": 2.403211133186416,
+      "coefficients": 8
+    },
+    "elastic": {
+      "strength": 0.01391572782957592,
+      "sigma": 11.352744350064935
+    },
+    "rolling-shutter": {
+      "strength": 0.013268483242624736,
+      "rolling_frequency": 1.417708850238473,
+      "rolling_shear": 0.009104313927325683,
+      "rolling_acceleration": 0.02616463522717255
+    }
+  },
+  "normalized_parameters": [
+    0.14581392638730106,
+    0.6385735309795878,
+    0.36652864691994536,
+    0.14961689292353797,
+    0.3048827931098883,
+    0.4806422266372832,
+    0.26717402165002935,
+    0.7730959905319956,
+    0.3736908441214667,
+    0.7371379579235965,
+    0.305902950079491,
+    0.11380392409157103,
+    0.7616463522717255
+  ],
+  "perturbations": [
+    {
+      "method": "homography",
+      "enabled": true,
+      "strength": 0.00408278993884443,
+      "seed": 7012
+    },
+    {
+      "method": "thin-plate-spline",
+      "enabled": true,
+      "strength": 0.00574716177881629,
+      "seed": 7013,
+      "grid": 7
+    },
+    {
+      "method": "delaunay",
+      "enabled": true,
+      "strength": 0.002693104072623683,
+      "seed": 7014,
+      "grid": 8
+    },
+    {
+      "method": "fft-phase",
+      "enabled": true,
+      "strength": 2.403211133186416,
+      "seed": 7015,
+      "coefficients": 8
+    },
+    {
+      "method": "elastic",
+      "enabled": true,
+      "strength": 0.01391572782957592,
+      "seed": 7016,
+      "sigma": 11.352744350064935
+    },
+    {
+      "method": "rolling-shutter",
+      "enabled": true,
+      "strength": 0.013268483242624736,
+      "seed": 7017,
+      "rolling_frequency": 1.417708850238473,
+      "rolling_phase": 0.0,
+      "rolling_shear": 0.009104313927325683,
+      "rolling_acceleration": 0.02616463522717255
+    }
+  ],
+  "diffusion": {
+    "cpu": false,
+    "device": "auto",
+    "gpu_index": 0,
+    "selected_model": "flux2_klein",
+    "selected_model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "num_inference_steps": 4,
+    "guidance_scale": 1.0,
+    "image_guidance_scale": 1.0,
+    "max_size": 768,
+    "seed": 7005,
+    "instruct_pix2pix": {
+      "enabled": false,
+      "model_id": "timbrooks/instruct-pix2pix",
+      "num_inference_steps": 20,
+      "guidance_scale": 7.5,
+      "image_guidance_scale": 1.0,
+      "max_size": 768,
+      "seed": 7005
+    },
+    "flux2_klein": {
+      "enabled": true,
+      "model_id": "black-forest-labs/FLUX.2-klein-4B",
+      "num_inference_steps": 4,
+      "guidance_scale": 1.0,
+      "max_size": 768,
+      "height": null,
+      "width": null,
+      "max_sequence_length": 512,
+      "text_encoder_out_layers": [
+        9,
+        18,
+        27
+      ],
+      "torch_dtype": "bfloat16",
+      "cpu_offload": false,
+      "sigmas": null,
+      "seed": 7005
+    },
+    "used_model": "flux2_klein",
+    "used_model_id": "black-forest-labs/FLUX.2-klein-4B",
+    "resolved_device": "cuda:0"
+  },
+  "embedding_backends": {
+    "identity": {
+      "models": {
+        "SFace": true,
+        "OpenFace": false,
+        "Facenet": false,
+        "Facenet512": true
+      },
+      "detector_backend": "skip",
+      "direct_embedding": true,
+      "fallback": "verify_distance"
+    },
+    "output_vae": {
+      "ok": true,
+      "source": "diffusion_pipeline_vae",
+      "device": "cuda:0",
+      "selected_model": "flux2_klein"
+    }
+  },
+  "errors": {},
+  "outputs": {
+    "perturbed": "/workspace/output/mentor_results_20260614_092647/search/pass3/05_men16_sunglasses_strong/embedding_loss_run_20260614_101125/iterations/iter_000007/perturbed.png",
+    "perturbed_diffused": "/workspace/output/mentor_results_20260614_092647/search/pass3/05_men16_sunglasses_strong/embedding_loss_run_20260614_101125/iterations/iter_000007/perturbed_diffused.png",
+    "metrics": "/workspace/output/mentor_results_20260614_092647/search/pass3/05_men16_sunglasses_strong/embedding_loss_run_20260614_101125/iterations/iter_000007/metrics.json"
+  },
+  "elapsed_seconds": 2.7511770229320973
+}

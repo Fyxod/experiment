@@ -1,0 +1,60 @@
+{
+  "image_a": "/workspace/output/mentor_results_20260614_123821/finalists/finalist_01_older_prompt_failure_eps3/original_diffused.png",
+  "image_b": "/workspace/output/mentor_results_20260614_123821/finalists/finalist_01_older_prompt_failure_eps3/perturbed_diffused.png",
+  "detector_backend": "skip",
+  "distance_metric": "cosine",
+  "execution": {
+    "allow_parallel": false,
+    "requested_workers": 1,
+    "enabled_models": 4,
+    "cpu_count": 224,
+    "total_memory_gb": 2015.56,
+    "available_memory_gb": 1907.39,
+    "resolved_workers": 1,
+    "parallel": false
+  },
+  "models": {
+    "SFace": {
+      "enabled": true,
+      "ok": true,
+      "verified": false,
+      "distance": 0.824822,
+      "threshold": 0.593,
+      "match_percent": 30.453456998313655,
+      "elapsed_seconds": 0.02491524303331971
+    },
+    "OpenFace": {
+      "enabled": true,
+      "ok": true,
+      "verified": false,
+      "distance": 0.391371,
+      "threshold": 0.1,
+      "match_percent": 0.0,
+      "elapsed_seconds": 0.13689187518320978
+    },
+    "Facenet": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.103653,
+      "threshold": 0.4,
+      "match_percent": 87.043375,
+      "elapsed_seconds": 0.3420329191721976
+    },
+    "Facenet512": {
+      "enabled": true,
+      "ok": true,
+      "verified": false,
+      "distance": 0.680358,
+      "threshold": 0.3,
+      "match_percent": 0.0,
+      "elapsed_seconds": 0.32776555116288364
+    }
+  },
+  "summary": {
+    "successful_models": 4,
+    "mean_match_percent": 29.374207999578413,
+    "min_match_percent": 0.0,
+    "max_match_percent": 87.043375
+  }
+}

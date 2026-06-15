@@ -1,0 +1,58 @@
+{
+  "generation": 4,
+  "elite_rows": [
+    {
+      "name": "cand_048_g04_m12",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_048_g04_m12",
+      "generation": 4,
+      "score": 0.08235934623938623,
+      "valid": true,
+      "input_psnr": 40.49146224973875,
+      "input_ssim": 0.9869366971486343,
+      "output_ssim": 0.9905065934878716,
+      "output_l2": 0.008147660248707693,
+      "clean_edit_l2": 0.05377714887769222,
+      "pert_edit_l2": 0.05286529414085866,
+      "max_disp": 1.535114049911499,
+      "mean_disp": 0.19034065306186676,
+      "p95_disp": 1.036559820175171,
+      "rank": 1
+    },
+    {
+      "name": "cand_045_g04_m09",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_045_g04_m09",
+      "generation": 4,
+      "score": 0.06755116755652463,
+      "valid": true,
+      "input_psnr": 41.405691638573394,
+      "input_ssim": 0.9898861172344994,
+      "output_ssim": 0.9926087115378657,
+      "output_l2": 0.007049785286347204,
+      "clean_edit_l2": 0.05377714887769222,
+      "pert_edit_l2": 0.0530928770586294,
+      "max_disp": 1.3011687994003296,
+      "mean_disp": 0.1586063951253891,
+      "p95_disp": 0.9975207448005676,
+      "rank": 4
+    },
+    {
+      "name": "cand_042_g04_m06",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men74_smile_mouth_g8p12/cand_042_g04_m06",
+      "generation": 4,
+      "score": 0.0660289948369514,
+      "valid": true,
+      "input_psnr": 41.52809899691914,
+      "input_ssim": 0.9894035156370217,
+      "output_ssim": 0.9930346664161357,
+      "output_l2": 0.00656172479181682,
+      "clean_edit_l2": 0.05377714887769222,
+      "pert_edit_l2": 0.0524373897420897,
+      "max_disp": 1.5112391710281372,
+      "mean_disp": 0.19108949601650238,
+      "p95_disp": 1.1135451793670654,
+      "rank": 6
+    }
+  ],
+  "mean_abs": 0.16829027235507965,
+  "std_mean": 0.09619644284248352
+}

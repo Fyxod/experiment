@@ -1,0 +1,24 @@
+{
+  "input": "/workspace/gender_dataset/men/58.jpg",
+  "prompt": "turn the image into a professional headshot",
+  "output_dir": "/workspace/output/mentor_results_20260614_123821/stealth_search/stealth_pass2/13_men58_headshot_eps4_i12_hp0p0",
+  "seed": 2271,
+  "max_size": 512,
+  "diffusion_steps": 4,
+  "guidance_scale": 1.0,
+  "max_sequence_length": 512,
+  "text_encoder_out_layers": [
+    9,
+    18,
+    27
+  ],
+  "torch_dtype": "bfloat16",
+  "epsilon": 0.01568627450980392,
+  "alpha": 0.00392156862745098,
+  "attack_iters": 12,
+  "attack": "transformer",
+  "objective_timestep": 0,
+  "highpass_sigma": 0.0,
+  "random_start": true,
+  "save_delta": false
+}

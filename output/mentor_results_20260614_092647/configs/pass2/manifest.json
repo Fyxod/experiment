@@ -1,0 +1,61 @@
+{
+  "batch": "pass2",
+  "items": [
+    {
+      "name": "01_sample_sunglasses_relaxed",
+      "source": "/workspace/geometric-v1/samples/image.png",
+      "prompt": "add sunglasses",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass2/01_sample_sunglasses_relaxed_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass2_01_sample_sunglasses_relaxed.log"
+    },
+    {
+      "name": "02_sample_older_relaxed",
+      "source": "/workspace/geometric-v1/samples/image.png",
+      "prompt": "make the person older",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass2/02_sample_older_relaxed_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass2_02_sample_older_relaxed.log"
+    },
+    {
+      "name": "03_sample_headshot_relaxed",
+      "source": "/workspace/geometric-v1/samples/image.png",
+      "prompt": "turn the image into a professional headshot",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass2/03_sample_headshot_relaxed_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass2_03_sample_headshot_relaxed.log"
+    },
+    {
+      "name": "04_men11_hair_relaxed",
+      "source": "/workspace/gender_dataset/men/11.jpg",
+      "prompt": "change the hairstyle",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass2/04_men11_hair_relaxed_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass2_04_men11_hair_relaxed.log"
+    },
+    {
+      "name": "05_men11_older_relaxed",
+      "source": "/workspace/gender_dataset/men/11.jpg",
+      "prompt": "make the person older",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass2/05_men11_older_relaxed_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass2_05_men11_older_relaxed.log"
+    },
+    {
+      "name": "06_men16_sunglasses_relaxed",
+      "source": "/workspace/gender_dataset/men/16.jpg",
+      "prompt": "add sunglasses",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass2/06_men16_sunglasses_relaxed_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass2_06_men16_sunglasses_relaxed.log"
+    },
+    {
+      "name": "07_men27_studio_relaxed",
+      "source": "/workspace/gender_dataset/men/27.jpg",
+      "prompt": "make the person look like a studio portrait",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass2/07_men27_studio_relaxed_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass2_07_men27_studio_relaxed.log"
+    },
+    {
+      "name": "08_men32_smile_relaxed",
+      "source": "/workspace/gender_dataset/men/32.jpg",
+      "prompt": "make the person smile",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass2/08_men32_smile_relaxed_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass2_08_men32_smile_relaxed.log"
+    }
+  ]
+}

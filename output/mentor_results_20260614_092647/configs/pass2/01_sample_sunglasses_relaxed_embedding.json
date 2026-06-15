@@ -1,0 +1,262 @@
+{
+  "pipeline_config": "/workspace/output/mentor_results_20260614_092647/configs/pass2/01_sample_sunglasses_relaxed_pipeline.json",
+  "input": "/workspace/geometric-v1/samples/image.png",
+  "output_dir": "/workspace/output/mentor_results_20260614_092647/search/pass2/01_sample_sunglasses_relaxed",
+  "prompt": "add sunglasses",
+  "seed": 7001,
+  "randomize_seed": false,
+  "random_seed_range": [
+    1,
+    2147483647
+  ],
+  "perturbations": [
+    {
+      "method": "homography",
+      "enabled": true,
+      "strength": 0.006
+    },
+    {
+      "method": "thin-plate-spline",
+      "enabled": true,
+      "strength": 0.0015,
+      "grid": 7
+    },
+    {
+      "method": "delaunay",
+      "enabled": true,
+      "strength": 0.0035,
+      "grid": 8
+    },
+    {
+      "method": "fft-phase",
+      "enabled": true,
+      "strength": 0.35,
+      "coefficients": 8
+    },
+    {
+      "method": "elastic",
+      "enabled": true,
+      "strength": 0.0025,
+      "sigma": 12.0
+    },
+    {
+      "method": "rolling-shutter",
+      "enabled": true,
+      "strength": 0.0025,
+      "rolling_frequency": 1.4,
+      "rolling_phase": 0.0,
+      "rolling_shear": 0.012,
+      "rolling_acceleration": 0.0
+    }
+  ],
+  "diffusion": {
+    "from_pipeline": true
+  },
+  "identity": {
+    "from_pipeline": true,
+    "overrides": {
+      "models": {
+        "SFace": true,
+        "OpenFace": false,
+        "Facenet": false,
+        "Facenet512": true
+      }
+    }
+  },
+  "optimizer": {
+    "type": "random_search",
+    "iterations": 8,
+    "learning_rate": 0.05,
+    "finite_difference_epsilon": 0.07,
+    "spsa_delta": 0.07,
+    "patience": 0,
+    "random_restarts": 1,
+    "save_every": 1,
+    "stop": {
+      "loss_below": null,
+      "post_identity_distance_above": null,
+      "output_disruption_above": null
+    }
+  },
+  "objective": {
+    "input_stealth": {
+      "enabled": true,
+      "use_psnr": true,
+      "use_ssim": true,
+      "use_lpips": false,
+      "psnr": {
+        "target": 27.0,
+        "weight": 3.0
+      },
+      "ssim": {
+        "target": 0.84,
+        "weight": 30.0
+      },
+      "lpips": {
+        "target": 0.25,
+        "weight": 2.0
+      }
+    },
+    "identity": {
+      "enabled": true,
+      "use_pre_identity": true,
+      "use_post_identity": true,
+      "pre_identity_target": 90.0,
+      "pre_identity_weight": 4.0,
+      "post_identity_distance_weight": 5.0,
+      "models": {
+        "SFace": true,
+        "OpenFace": false,
+        "Facenet": false,
+        "Facenet512": true
+      },
+      "strict": false
+    },
+    "vae_latent": {
+      "enabled": true,
+      "use_input_vae": false,
+      "use_output_vae": true,
+      "input_distance_weight": 0.0,
+      "output_distance_weight": 1.0,
+      "strict": false
+    },
+    "clip_image": {
+      "enabled": false,
+      "use_input_clip": false,
+      "use_output_clip": true,
+      "input_distance_weight": 0.0,
+      "output_distance_weight": 1.0,
+      "model_id": "openai/clip-vit-base-patch32",
+      "strict": false
+    },
+    "flux_transformer": {
+      "enabled": false,
+      "strict": false,
+      "capture_mode": "forward_hook",
+      "compare": "original_vs_perturbed",
+      "use_input_features": false,
+      "use_denoising_features": true,
+      "layers": [
+        "auto"
+      ],
+      "timesteps": [
+        "early",
+        "middle"
+      ],
+      "pooling": "mean",
+      "distance": "cosine",
+      "weight": 1.0,
+      "max_feature_elements": 262144,
+      "cache_original_features": true
+    },
+    "output_disruption": {
+      "enabled": true,
+      "use_pixel_l2": true,
+      "use_ssim_drop": true,
+      "use_lpips": false,
+      "pixel_l2_distance_weight": 2.0,
+      "ssim_drop_weight": 3.0,
+      "lpips_distance_weight": 1.0
+    },
+    "parameter_regularization": {
+      "enabled": true,
+      "weight": 0.02
+    }
+  },
+  "parameters": {
+    "initialization": "fixed",
+    "initial_values": {
+      "thin-plate-spline": {
+        "strength": 0.0015,
+        "grid": 7
+      },
+      "delaunay": {
+        "strength": 0.0035,
+        "grid": 8
+      },
+      "fft-phase": {
+        "strength": 0.35,
+        "coefficients": 8
+      },
+      "elastic": {
+        "strength": 0.0025,
+        "sigma": 12.0
+      },
+      "rolling-shutter": {
+        "strength": 0.0025,
+        "rolling_frequency": 1.4,
+        "rolling_shear": 0.012,
+        "rolling_acceleration": 0.0
+      },
+      "homography": {
+        "strength": 0.006
+      }
+    },
+    "bounds": {
+      "homography": {
+        "strength": [
+          0.0,
+          0.018
+        ]
+      },
+      "thin-plate-spline": {
+        "strength": [
+          0.0,
+          0.006
+        ],
+        "grid": [
+          5,
+          10
+        ]
+      },
+      "delaunay": {
+        "strength": [
+          0.0,
+          0.012
+        ],
+        "grid": [
+          6,
+          12
+        ]
+      },
+      "fft-phase": {
+        "strength": [
+          0.0,
+          2.0
+        ],
+        "coefficients": [
+          4,
+          16
+        ]
+      },
+      "elastic": {
+        "strength": [
+          0.0,
+          0.012
+        ],
+        "sigma": [
+          6.0,
+          20.0
+        ]
+      },
+      "rolling-shutter": {
+        "strength": [
+          0.0,
+          0.012
+        ],
+        "rolling_frequency": [
+          0.5,
+          3.0
+        ],
+        "rolling_shear": [
+          0.0,
+          0.06
+        ],
+        "rolling_acceleration": [
+          -0.035,
+          0.035
+        ]
+      }
+    }
+  }
+}

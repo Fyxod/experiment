@@ -1,0 +1,16 @@
+2026-06-14 09:43:02.831909: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 09:43:02.870754: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 09:43:03.953271: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Fetching 17 files:   0%|          | 0/17 [00:00<?, ?it/s]Fetching 17 files:  12%|█▏        | 2/17 [00:00<00:02,  6.35it/s]Fetching 17 files:  24%|██▎       | 4/17 [02:11<08:23, 38.74s/it]Fetching 17 files:  88%|████████▊ | 15/17 [02:23<00:15,  7.75s/it]Fetching 17 files: 100%|██████████| 17/17 [02:23<00:00,  8.43s/it]
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 85.58it/s]
+Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00, 15.28it/s]Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00,  9.28it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00,  6.43it/s]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  2.92it/s]100%|██████████| 1/1 [00:00<00:00,  2.92it/s]
+{
+  "original": "/workspace/output/mentor_results_20260614_092647/smoke/pipeline_sample/original.png",
+  "perturbed": "/workspace/output/mentor_results_20260614_092647/smoke/pipeline_sample/perturbed.png",
+  "original_diffused": "/workspace/output/mentor_results_20260614_092647/smoke/pipeline_sample/original_diffused.png",
+  "perturbed_diffused": "/workspace/output/mentor_results_20260614_092647/smoke/pipeline_sample/perturbed_diffused.png",
+  "report": "/workspace/output/mentor_results_20260614_092647/smoke/pipeline_sample/report.json"
+}

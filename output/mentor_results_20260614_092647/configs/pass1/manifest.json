@@ -1,0 +1,47 @@
+{
+  "batch": "pass1",
+  "items": [
+    {
+      "name": "01_sample_sunglasses_stealth",
+      "source": "/workspace/geometric-v1/samples/image.png",
+      "prompt": "add sunglasses",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass1/01_sample_sunglasses_stealth_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass1_01_sample_sunglasses_stealth.log"
+    },
+    {
+      "name": "02_sample_hair_stealth",
+      "source": "/workspace/geometric-v1/samples/image.png",
+      "prompt": "change the hairstyle",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass1/02_sample_hair_stealth_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass1_02_sample_hair_stealth.log"
+    },
+    {
+      "name": "03_men11_studio_stealth",
+      "source": "/workspace/gender_dataset/men/11.jpg",
+      "prompt": "make the person look like a studio portrait",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass1/03_men11_studio_stealth_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass1_03_men11_studio_stealth.log"
+    },
+    {
+      "name": "04_men16_sunglasses_stealth",
+      "source": "/workspace/gender_dataset/men/16.jpg",
+      "prompt": "add sunglasses",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass1/04_men16_sunglasses_stealth_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass1_04_men16_sunglasses_stealth.log"
+    },
+    {
+      "name": "05_men27_headshot_stealth",
+      "source": "/workspace/gender_dataset/men/27.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass1/05_men27_headshot_stealth_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass1_05_men27_headshot_stealth.log"
+    },
+    {
+      "name": "06_men32_smile_stealth",
+      "source": "/workspace/gender_dataset/men/32.jpg",
+      "prompt": "make the person smile",
+      "config": "/workspace/output/mentor_results_20260614_092647/configs/pass1/06_men32_smile_stealth_embedding.json",
+      "log": "/workspace/output/mentor_results_20260614_092647/logs/pass1_06_men32_smile_stealth.log"
+    }
+  ]
+}

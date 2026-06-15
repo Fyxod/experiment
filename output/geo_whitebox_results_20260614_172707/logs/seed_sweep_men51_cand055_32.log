@@ -1,0 +1,100 @@
+2026-06-14 18:46:31.559846: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 18:46:31.597808: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 18:46:32.787431: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]Loading pipeline components...:  40%|████      | 2/5 [00:00<00:00,  5.63it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 81.59it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 11.69it/s]
+{
+  "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_headshot_cand055_32",
+  "top": [
+    {
+      "seed": 5007,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_headshot_cand055_32/seed_5007",
+      "score": 0.8445293902688944,
+      "output_ssim": 0.9140321620979593,
+      "output_l2": 0.09826003816851124,
+      "clean_edit_l2": 0.24803015885384028,
+      "pert_edit_l2": 0.2456906968992964,
+      "prompt_failure": 0.0023394619545438755,
+      "rank": 1
+    },
+    {
+      "seed": 5004,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_headshot_cand055_32/seed_5004",
+      "score": 0.8364292284764335,
+      "output_ssim": 0.8930032138302179,
+      "output_l2": 0.07982583835583748,
+      "clean_edit_l2": 0.2889760248896528,
+      "pert_edit_l2": 0.2866478018851234,
+      "prompt_failure": 0.002328223004529395,
+      "rank": 2
+    },
+    {
+      "seed": 5016,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_headshot_cand055_32/seed_5016",
+      "score": 0.6647059135101845,
+      "output_ssim": 0.920651151579873,
+      "output_l2": 0.06946210396593527,
+      "clean_edit_l2": 0.2055152140685551,
+      "pert_edit_l2": 0.21229972552806434,
+      "prompt_failure": 0.0,
+      "rank": 3
+    },
+    {
+      "seed": 5023,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_headshot_cand055_32/seed_5023",
+      "score": 0.6163694281256888,
+      "output_ssim": 0.9148721209577818,
+      "output_l2": 0.05517158239136322,
+      "clean_edit_l2": 0.2225965871682317,
+      "pert_edit_l2": 0.22335732662226349,
+      "prompt_failure": 0.0,
+      "rank": 4
+    },
+    {
+      "seed": 5019,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_headshot_cand055_32/seed_5019",
+      "score": 0.553196566324599,
+      "output_ssim": 0.9461550984437398,
+      "output_l2": 0.06756339201991163,
+      "clean_edit_l2": 0.31779795565562796,
+      "pert_edit_l2": 0.3187665850868574,
+      "prompt_failure": 0.0,
+      "rank": 5
+    },
+    {
+      "seed": 5008,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_headshot_cand055_32/seed_5008",
+      "score": 0.5500960132254961,
+      "output_ssim": 0.948950107729056,
+      "output_l2": 0.0682260268553003,
+      "clean_edit_l2": 0.2194826170652071,
+      "pert_edit_l2": 0.2182910395989025,
+      "prompt_failure": 0.0011915774663046053,
+      "rank": 6
+    },
+    {
+      "seed": 5013,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_headshot_cand055_32/seed_5013",
+      "score": 0.5152318927533386,
+      "output_ssim": 0.9446943497770194,
+      "output_l2": 0.05820760845671007,
+      "clean_edit_l2": 0.30530550221493313,
+      "pert_edit_l2": 0.3045626898204667,
+      "prompt_failure": 0.0007428123944664411,
+      "rank": 7
+    },
+    {
+      "seed": 5029,
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/seed_sweeps/men51_headshot_cand055_32/seed_5029",
+      "score": 0.5091271322803593,
+      "output_ssim": 0.9305610949787835,
+      "output_l2": 0.04627430243909865,
+      "clean_edit_l2": 0.2339884431259261,
+      "pert_edit_l2": 0.23625464912916244,
+      "prompt_failure": 0.0,
+      "rank": 8
+    }
+  ]
+}

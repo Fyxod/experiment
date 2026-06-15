@@ -1,0 +1,100 @@
+2026-06-14 18:34:56.504013: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 18:34:56.541323: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 18:34:58.064401: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 84.89it/s]
+Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 10.83it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 10.83it/s]
+[1/6] 01_men51_headshot_dct_grid_tps_piecewise_hybrid_hidden_1.5px
+[2/6] 02_men51_headshot_dct_grid_tps_piecewise_rolling_transformer_pred_1.5px
+[3/6] 03_men66_sunglasses_dct_grid_tps_piecewise_hybrid_hidden_1.5px
+[4/6] 04_men57_older_dct_grid_tps_piecewise_denoise_latent_1.8px
+[5/6] 05_men74_smile_dct_grid_tps_piecewise_hybrid_hidden_1.5px
+[6/6] 06_men11_headshot_dct_grid_tps_piecewise_hybrid_hidden_1.8px
+{
+  "sheet": "/workspace/output/geo_whitebox_results_20260614_172707/geo_pass4_sheet.jpg",
+  "top": [
+    {
+      "name": "06_men11_headshot_dct_grid_tps_piecewise_hybrid_hidden_1.8px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass4/06_men11_headshot_dct_grid_tps_piecewise_hybrid_hidden_1.8px",
+      "source": "/workspace/gender_dataset/men/11.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "dct,grid,tps,piecewise",
+      "objective": "hybrid_hidden",
+      "score": 0.21771822000187624,
+      "input_psnr": 40.36291717557102,
+      "input_ssim": 0.9942469193552089,
+      "output_ssim": 0.9795858595576109,
+      "output_l2": 0.027212331646463972,
+      "max_disp": 0.5791884660720825,
+      "mean_disp": 0.11130643635988235,
+      "ok": true,
+      "rank": 1
+    },
+    {
+      "name": "05_men74_smile_dct_grid_tps_piecewise_hybrid_hidden_1.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass4/05_men74_smile_dct_grid_tps_piecewise_hybrid_hidden_1.5px",
+      "source": "/workspace/gender_dataset/men/74.jpg",
+      "prompt": "make the person smile",
+      "methods": "dct,grid,tps,piecewise",
+      "objective": "hybrid_hidden",
+      "score": 0.038790455919350805,
+      "input_psnr": 47.09967834365383,
+      "input_ssim": 0.9970026975584213,
+      "output_ssim": 0.9963190169201214,
+      "output_l2": 0.004813304719967257,
+      "max_disp": 0.831062376499176,
+      "mean_disp": 0.08639628440141678,
+      "ok": true,
+      "rank": 2
+    },
+    {
+      "name": "01_men51_headshot_dct_grid_tps_piecewise_hybrid_hidden_1.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass4/01_men51_headshot_dct_grid_tps_piecewise_hybrid_hidden_1.5px",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "dct,grid,tps,piecewise",
+      "objective": "hybrid_hidden",
+      "score": -999.0,
+      "ok": false,
+      "error": "RuntimeError: NVML_SUCCESS == r INTERNAL ASSERT FAILED at \"/pytorch/c10/cuda/CUDACachingAllocator.cpp\":1016, please report a bug to PyTorch. ",
+      "rank": 3
+    },
+    {
+      "name": "02_men51_headshot_dct_grid_tps_piecewise_rolling_transformer_pred_1.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass4/02_men51_headshot_dct_grid_tps_piecewise_rolling_transformer_pred_1.5px",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "dct,grid,tps,piecewise,rolling",
+      "objective": "transformer_pred",
+      "score": -999.0,
+      "ok": false,
+      "error": "RuntimeError: NVML_SUCCESS == r INTERNAL ASSERT FAILED at \"/pytorch/c10/cuda/CUDACachingAllocator.cpp\":1016, please report a bug to PyTorch. ",
+      "rank": 4
+    },
+    {
+      "name": "03_men66_sunglasses_dct_grid_tps_piecewise_hybrid_hidden_1.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass4/03_men66_sunglasses_dct_grid_tps_piecewise_hybrid_hidden_1.5px",
+      "source": "/workspace/gender_dataset/men/66.jpg",
+      "prompt": "add sunglasses",
+      "methods": "dct,grid,tps,piecewise",
+      "objective": "hybrid_hidden",
+      "score": -999.0,
+      "ok": false,
+      "error": "RuntimeError: NVML_SUCCESS == r INTERNAL ASSERT FAILED at \"/pytorch/c10/cuda/CUDACachingAllocator.cpp\":1016, please report a bug to PyTorch. ",
+      "rank": 5
+    },
+    {
+      "name": "04_men57_older_dct_grid_tps_piecewise_denoise_latent_1.8px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass4/04_men57_older_dct_grid_tps_piecewise_denoise_latent_1.8px",
+      "source": "/workspace/gender_dataset/men/57.jpg",
+      "prompt": "make the person older",
+      "methods": "dct,grid,tps,piecewise",
+      "objective": "denoise_latent",
+      "score": -999.0,
+      "ok": false,
+      "error": "RuntimeError: NVML_SUCCESS == r INTERNAL ASSERT FAILED at \"/pytorch/c10/cuda/CUDACachingAllocator.cpp\":1016, please report a bug to PyTorch. ",
+      "rank": 6
+    }
+  ]
+}

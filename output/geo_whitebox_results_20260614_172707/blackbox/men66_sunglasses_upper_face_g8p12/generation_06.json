@@ -1,0 +1,58 @@
+{
+  "generation": 6,
+  "elite_rows": [
+    {
+      "name": "cand_065_g06_m05",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_065_g06_m05",
+      "generation": 6,
+      "score": 0.11772930052352795,
+      "valid": true,
+      "input_psnr": 36.3438053387289,
+      "input_ssim": 0.983201386295595,
+      "output_ssim": 0.9820998124415347,
+      "output_l2": 0.014749331505690126,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.1326513645252016,
+      "max_disp": 1.2713897228240967,
+      "mean_disp": 0.24222694337368011,
+      "p95_disp": 0.8867648243904114,
+      "rank": 2
+    },
+    {
+      "name": "cand_062_g06_m02",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_062_g06_m02",
+      "generation": 6,
+      "score": 0.11254634109374319,
+      "valid": true,
+      "input_psnr": 37.77750864406164,
+      "input_ssim": 0.9867275506141007,
+      "output_ssim": 0.9865454031679753,
+      "output_l2": 0.011707655179608175,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.13286793477526837,
+      "max_disp": 1.349141001701355,
+      "mean_disp": 0.20506452023983002,
+      "p95_disp": 0.7102840542793274,
+      "rank": 4
+    },
+    {
+      "name": "cand_069_g06_m09",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men66_sunglasses_upper_face_g8p12/cand_069_g06_m09",
+      "generation": 6,
+      "score": 0.11095997567982346,
+      "valid": true,
+      "input_psnr": 36.55035184166409,
+      "input_ssim": 0.984380244900486,
+      "output_ssim": 0.983886645405589,
+      "output_l2": 0.013834247747300353,
+      "clean_edit_l2": 0.1340278110218611,
+      "pert_edit_l2": 0.1324457405887621,
+      "max_disp": 1.434056043624878,
+      "mean_disp": 0.22068803012371063,
+      "p95_disp": 0.6974679231643677,
+      "rank": 5
+    }
+  ],
+  "mean_abs": 0.21532224118709564,
+  "std_mean": 0.0990324392914772
+}

@@ -1,0 +1,158 @@
+{
+  "jobs": [
+    {
+      "name": "01_men57_older_dct_hybrid_1.5px",
+      "source": "men57",
+      "prompt": "older",
+      "methods": "dct",
+      "objective": "hybrid",
+      "max_disp_px": 1.5,
+      "iters": 35,
+      "lr": 0.012,
+      "seed": 4001
+    },
+    {
+      "name": "02_men57_older_rolling_dct_hybrid_2px",
+      "source": "men57",
+      "prompt": "older",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "max_disp_px": 2.0,
+      "iters": 35,
+      "lr": 0.01,
+      "seed": 4002
+    },
+    {
+      "name": "03_men57_older_grid_dct_vae_2px",
+      "source": "men57",
+      "prompt": "older",
+      "methods": "grid,dct",
+      "objective": "vae",
+      "max_disp_px": 2.0,
+      "iters": 35,
+      "lr": 0.01,
+      "seed": 4003
+    },
+    {
+      "name": "04_men58_headshot_dct_hybrid_1.5px",
+      "source": "men58",
+      "prompt": "headshot",
+      "methods": "dct",
+      "objective": "hybrid",
+      "max_disp_px": 1.5,
+      "iters": 35,
+      "lr": 0.012,
+      "seed": 4004
+    },
+    {
+      "name": "05_men58_headshot_rolling_dct_hybrid_2px",
+      "source": "men58",
+      "prompt": "headshot",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "max_disp_px": 2.0,
+      "iters": 35,
+      "lr": 0.01,
+      "seed": 4005
+    },
+    {
+      "name": "06_men58_headshot_grid_dct_vae_2px",
+      "source": "men58",
+      "prompt": "headshot",
+      "methods": "grid,dct",
+      "objective": "vae",
+      "max_disp_px": 2.0,
+      "iters": 35,
+      "lr": 0.01,
+      "seed": 4006
+    },
+    {
+      "name": "07_men51_headshot_dct_hybrid_1.5px",
+      "source": "men51",
+      "prompt": "headshot",
+      "methods": "dct",
+      "objective": "hybrid",
+      "max_disp_px": 1.5,
+      "iters": 35,
+      "lr": 0.012,
+      "seed": 4007
+    },
+    {
+      "name": "08_men51_headshot_rolling_dct_hybrid_2px",
+      "source": "men51",
+      "prompt": "headshot",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "max_disp_px": 2.0,
+      "iters": 35,
+      "lr": 0.01,
+      "seed": 4008
+    },
+    {
+      "name": "09_men66_sunglasses_dct_hybrid_1.5px",
+      "source": "men66",
+      "prompt": "sunglasses",
+      "methods": "dct",
+      "objective": "hybrid",
+      "max_disp_px": 1.5,
+      "iters": 35,
+      "lr": 0.012,
+      "seed": 4009
+    },
+    {
+      "name": "10_men66_sunglasses_rolling_dct_hybrid_2px",
+      "source": "men66",
+      "prompt": "sunglasses",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "max_disp_px": 2.0,
+      "iters": 35,
+      "lr": 0.01,
+      "seed": 4010
+    },
+    {
+      "name": "11_men74_smile_dct_hybrid_1.5px",
+      "source": "men74",
+      "prompt": "smile",
+      "methods": "dct",
+      "objective": "hybrid",
+      "max_disp_px": 1.5,
+      "iters": 35,
+      "lr": 0.012,
+      "seed": 4011
+    },
+    {
+      "name": "12_men11_headshot_rolling_dct_hybrid_2px",
+      "source": "men11",
+      "prompt": "headshot",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "max_disp_px": 2.0,
+      "iters": 35,
+      "lr": 0.01,
+      "seed": 4012
+    },
+    {
+      "name": "13_men57_older_rbf_rolling_hybrid_2px",
+      "source": "men57",
+      "prompt": "older",
+      "methods": "rbf,rolling",
+      "objective": "hybrid",
+      "max_disp_px": 2.0,
+      "iters": 35,
+      "lr": 0.01,
+      "seed": 4013
+    },
+    {
+      "name": "14_men58_headshot_rbf_rolling_hybrid_2px",
+      "source": "men58",
+      "prompt": "headshot",
+      "methods": "rbf,rolling",
+      "objective": "hybrid",
+      "max_disp_px": 2.0,
+      "iters": 35,
+      "lr": 0.01,
+      "seed": 4014
+    }
+  ]
+}

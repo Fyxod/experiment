@@ -1,0 +1,60 @@
+{
+  "image_a": "/workspace/output/geo_whitebox_results_20260614_172707/finalists/candidate_01_men51_headshot_rolling_dct/original_diffused.png",
+  "image_b": "/workspace/output/geo_whitebox_results_20260614_172707/finalists/candidate_01_men51_headshot_rolling_dct/perturbed_diffused.png",
+  "detector_backend": "skip",
+  "distance_metric": "cosine",
+  "execution": {
+    "allow_parallel": false,
+    "requested_workers": 1,
+    "enabled_models": 4,
+    "cpu_count": 224,
+    "total_memory_gb": 2015.56,
+    "available_memory_gb": 1906.18,
+    "resolved_workers": 1,
+    "parallel": false
+  },
+  "models": {
+    "SFace": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.007098,
+      "threshold": 0.593,
+      "match_percent": 99.40151770657673,
+      "elapsed_seconds": 0.026384021854028106
+    },
+    "OpenFace": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.001348,
+      "threshold": 0.1,
+      "match_percent": 99.32600000000001,
+      "elapsed_seconds": 0.12935475585982203
+    },
+    "Facenet": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.001538,
+      "threshold": 0.4,
+      "match_percent": 99.80775,
+      "elapsed_seconds": 0.33409269782714546
+    },
+    "Facenet512": {
+      "enabled": true,
+      "ok": true,
+      "verified": true,
+      "distance": 0.005821,
+      "threshold": 0.3,
+      "match_percent": 99.02983333333333,
+      "elapsed_seconds": 0.31190861598588526
+    }
+  },
+  "summary": {
+    "successful_models": 4,
+    "mean_match_percent": 99.39127525997752,
+    "min_match_percent": 99.02983333333333,
+    "max_match_percent": 99.80775
+  }
+}

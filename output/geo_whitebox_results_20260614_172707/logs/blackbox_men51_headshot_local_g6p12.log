@@ -1,0 +1,148 @@
+2026-06-14 18:26:14.667446: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 18:26:14.707479: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 18:26:15.962080: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 85.74it/s]
+Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 35.46it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 12.37it/s]
+{
+  "run_root": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12",
+  "top": [
+    {
+      "name": "cand_001_g01_m01",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_001_g01_m01",
+      "generation": 1,
+      "score": 0.2221717577435985,
+      "valid": true,
+      "input_psnr": 40.22431277116346,
+      "input_ssim": 0.9910225274949852,
+      "output_ssim": 0.9782400156234451,
+      "output_l2": 0.02678513311194847,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21757471742820952,
+      "max_disp": 0.9080725908279419,
+      "mean_disp": 0.08241812139749527,
+      "p95_disp": 0.5131044983863831,
+      "rank": 1
+    },
+    {
+      "name": "cand_019_g02_m07",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_019_g02_m07",
+      "generation": 2,
+      "score": 0.22129151754736634,
+      "valid": true,
+      "input_psnr": 40.22475700253586,
+      "input_ssim": 0.9910398707551412,
+      "output_ssim": 0.9777472004520195,
+      "output_l2": 0.026456063871088835,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21792730532170018,
+      "max_disp": 0.7206860184669495,
+      "mean_disp": 0.08923055976629257,
+      "p95_disp": 0.5137946009635925,
+      "rank": 2
+    },
+    {
+      "name": "cand_071_g06_m11",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_071_g06_m11",
+      "generation": 6,
+      "score": 0.22009519881519346,
+      "valid": true,
+      "input_psnr": 39.22030276741829,
+      "input_ssim": 0.9889367457420355,
+      "output_ssim": 0.978487036133211,
+      "output_l2": 0.02680866866960747,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21840721759535414,
+      "max_disp": 0.8557968139648438,
+      "mean_disp": 0.1012636050581932,
+      "p95_disp": 0.5992437601089478,
+      "rank": 3
+    },
+    {
+      "name": "cand_047_g04_m11",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_047_g04_m11",
+      "generation": 4,
+      "score": 0.21920447493598919,
+      "valid": true,
+      "input_psnr": 40.44732882035107,
+      "input_ssim": 0.991121068305126,
+      "output_ssim": 0.9782985702983064,
+      "output_l2": 0.026479751225842924,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21804711973640598,
+      "max_disp": 0.8651014566421509,
+      "mean_disp": 0.09154652059078217,
+      "p95_disp": 0.5267927050590515,
+      "rank": 4
+    },
+    {
+      "name": "cand_037_g04_m01",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_037_g04_m01",
+      "generation": 4,
+      "score": 0.21829689422234036,
+      "valid": true,
+      "input_psnr": 41.317478265139385,
+      "input_ssim": 0.9930228823588879,
+      "output_ssim": 0.9788933688536057,
+      "output_l2": 0.02677407392735261,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21808162829121655,
+      "max_disp": 0.7072603106498718,
+      "mean_disp": 0.08013373613357544,
+      "p95_disp": 0.4659852087497711,
+      "rank": 5
+    },
+    {
+      "name": "cand_058_g05_m10",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_058_g05_m10",
+      "generation": 5,
+      "score": 0.2164002655529793,
+      "valid": true,
+      "input_psnr": 38.946861101515,
+      "input_ssim": 0.9878081904502506,
+      "output_ssim": 0.9788448692684701,
+      "output_l2": 0.026355948525371976,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21787805994952333,
+      "max_disp": 0.8949259519577026,
+      "mean_disp": 0.12063976377248764,
+      "p95_disp": 0.6985703706741333,
+      "rank": 6
+    },
+    {
+      "name": "cand_044_g04_m08",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_044_g04_m08",
+      "generation": 4,
+      "score": 0.21616651945581278,
+      "valid": true,
+      "input_psnr": 38.290514010148556,
+      "input_ssim": 0.9860151041624721,
+      "output_ssim": 0.9778003716574292,
+      "output_l2": 0.02547360121710589,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.2185786802538558,
+      "max_disp": 0.973036527633667,
+      "mean_disp": 0.11873786896467209,
+      "p95_disp": 0.6850953698158264,
+      "rank": 7
+    },
+    {
+      "name": "cand_014_g02_m02",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/blackbox/men51_headshot_local_from_whitebox_g6p12/cand_014_g02_m02",
+      "generation": 2,
+      "score": 0.21514980792957855,
+      "valid": true,
+      "input_psnr": 41.12125284705537,
+      "input_ssim": 0.9926227961972147,
+      "output_ssim": 0.9786032857586423,
+      "output_l2": 0.025912590192829557,
+      "clean_edit_l2": 0.21787625609761865,
+      "pert_edit_l2": 0.21812222864308725,
+      "max_disp": 0.7638201713562012,
+      "mean_disp": 0.08425136655569077,
+      "p95_disp": 0.5327645540237427,
+      "rank": 8
+    }
+  ]
+}

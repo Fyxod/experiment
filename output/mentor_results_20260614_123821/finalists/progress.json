@@ -1,0 +1,554 @@
+{
+  "rows": [
+    {
+      "rank": 1,
+      "name": "finalist_01_older_prompt_failure_eps3",
+      "path": "/workspace/output/mentor_results_20260614_123821/finalists/finalist_01_older_prompt_failure_eps3",
+      "source": "/workspace/gender_dataset/men/57.jpg",
+      "prompt": "make the person older",
+      "failure": "prompt failure",
+      "why": "Clean Flux makes the person substantially older; the perturbed edit mostly preserves the original age/hair/face instead.",
+      "recommendation": "Best overall: very clean input and obvious edit failure.",
+      "metrics": {
+        "input": {
+          "psnr": 40.879249988018955,
+          "ssim": 0.9551848659944978,
+          "l2": 0.009037275057054643,
+          "mean_abs": 0.008126788772642612,
+          "max_abs": 0.011764734983444214
+        },
+        "output": {
+          "psnr": 11.027859908823762,
+          "ssim": 0.532124197974596,
+          "l2": 0.28093574769488794,
+          "mean_abs": 0.22486060857772827,
+          "max_abs": 0.9019607901573181
+        },
+        "delta": {
+          "linf": 0.011764734983444214,
+          "mean_abs": 0.00812712125480175,
+          "epsilon": 0.011764705882352941
+        }
+      },
+      "settings": {
+        "seed": 2241,
+        "max_size": 512,
+        "diffusion_steps": 4,
+        "guidance_scale": 1.0,
+        "epsilon": 0.011764705882352941,
+        "epsilon_255": 3.0,
+        "alpha": 0.00392156862745098,
+        "alpha_255": 1.0,
+        "attack_iters": 12,
+        "attack": "transformer",
+        "objective_timestep": 0,
+        "highpass_sigma": 0.0,
+        "random_start": true
+      },
+      "deepface": {
+        "pre": {
+          "mean_match_percent": 99.81071344505341,
+          "min_match_percent": 99.63389544688027,
+          "max_match_percent": 99.967125,
+          "models": {
+            "SFace": {
+              "match_percent": 99.63389544688027,
+              "verified": true,
+              "distance": 0.004342,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.839,
+              "verified": true,
+              "distance": 0.000322,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.967125,
+              "verified": true,
+              "distance": 0.000263,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 99.80283333333333,
+              "verified": true,
+              "distance": 0.001183,
+              "threshold": 0.3
+            }
+          }
+        },
+        "post": {
+          "mean_match_percent": 29.374207999578413,
+          "min_match_percent": 0.0,
+          "max_match_percent": 87.043375,
+          "models": {
+            "SFace": {
+              "match_percent": 30.453456998313655,
+              "verified": false,
+              "distance": 0.824822,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 0.0,
+              "verified": false,
+              "distance": 0.391371,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 87.043375,
+              "verified": true,
+              "distance": 0.103653,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 0.0,
+              "verified": false,
+              "distance": 0.680358,
+              "threshold": 0.3
+            }
+          }
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "name": "finalist_02_headshot_prompt_failure_men58_eps4",
+      "path": "/workspace/output/mentor_results_20260614_123821/finalists/finalist_02_headshot_prompt_failure_men58_eps4",
+      "source": "/workspace/gender_dataset/men/58.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "failure": "prompt failure",
+      "why": "Clean Flux turns the image into a suit/headshot; the perturbed edit largely stays in the original casual pose/composition.",
+      "recommendation": "Best headshot demo; the failure is easy to explain visually.",
+      "metrics": {
+        "input": {
+          "psnr": 39.41527084295871,
+          "ssim": 0.9305111517737412,
+          "l2": 0.010696370999509914,
+          "mean_abs": 0.009287495166063309,
+          "max_abs": 0.01568630337715149
+        },
+        "output": {
+          "psnr": 9.864751422446378,
+          "ssim": 0.538483610164997,
+          "l2": 0.32119030579668106,
+          "mean_abs": 0.2706584930419922,
+          "max_abs": 0.9843137264251709
+        },
+        "delta": {
+          "linf": 0.01568630337715149,
+          "mean_abs": 0.009288235567510128,
+          "epsilon": 0.01568627450980392
+        }
+      },
+      "settings": {
+        "seed": 2271,
+        "max_size": 512,
+        "diffusion_steps": 4,
+        "guidance_scale": 1.0,
+        "epsilon": 0.01568627450980392,
+        "epsilon_255": 4.0,
+        "alpha": 0.00392156862745098,
+        "alpha_255": 1.0,
+        "attack_iters": 12,
+        "attack": "transformer",
+        "objective_timestep": 0,
+        "highpass_sigma": 0.0,
+        "random_start": true
+      },
+      "deepface": {
+        "pre": {
+          "mean_match_percent": 99.68308963954469,
+          "min_match_percent": 99.00573355817876,
+          "max_match_percent": 99.942125,
+          "models": {
+            "SFace": {
+              "match_percent": 99.00573355817876,
+              "verified": true,
+              "distance": 0.011792,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.847,
+              "verified": true,
+              "distance": 0.000306,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.942125,
+              "verified": true,
+              "distance": 0.000463,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 99.9375,
+              "verified": true,
+              "distance": 0.000375,
+              "threshold": 0.3
+            }
+          }
+        },
+        "post": {
+          "mean_match_percent": 71.6196837935638,
+          "min_match_percent": 41.5725,
+          "max_match_percent": 90.581125,
+          "models": {
+            "SFace": {
+              "match_percent": 68.90944350758853,
+              "verified": true,
+              "distance": 0.368734,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 41.5725,
+              "verified": false,
+              "distance": 0.116855,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 90.581125,
+              "verified": true,
+              "distance": 0.075351,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 85.41566666666667,
+              "verified": true,
+              "distance": 0.087506,
+              "threshold": 0.3
+            }
+          }
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "name": "finalist_03_headshot_prompt_failure_men51_eps3",
+      "path": "/workspace/output/mentor_results_20260614_123821/finalists/finalist_03_headshot_prompt_failure_men51_eps3",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "failure": "prompt failure",
+      "why": "Clean Flux produces a professional suit headshot; the perturbed edit keeps the plaid shirt and original composition.",
+      "recommendation": "Very clean input and intuitive before/after story.",
+      "metrics": {
+        "input": {
+          "psnr": 41.1179516637564,
+          "ssim": 0.9593516703105993,
+          "l2": 0.008792298353757768,
+          "mean_abs": 0.00782861653715372,
+          "max_abs": 0.011764734983444214
+        },
+        "output": {
+          "psnr": 13.052601976352157,
+          "ssim": 0.6122832297357709,
+          "l2": 0.22252043547170777,
+          "mean_abs": 0.16716431081295013,
+          "max_abs": 0.95686274766922
+        },
+        "delta": {
+          "linf": 0.011764734983444214,
+          "mean_abs": 0.007827982306480408,
+          "epsilon": 0.011764705882352941
+        }
+      },
+      "settings": {
+        "seed": 2280,
+        "max_size": 512,
+        "diffusion_steps": 4,
+        "guidance_scale": 1.0,
+        "epsilon": 0.011764705882352941,
+        "epsilon_255": 3.0,
+        "alpha": 0.00392156862745098,
+        "alpha_255": 1.0,
+        "attack_iters": 12,
+        "attack": "transformer",
+        "objective_timestep": 0,
+        "highpass_sigma": 0.0,
+        "random_start": true
+      },
+      "deepface": {
+        "pre": {
+          "mean_match_percent": 99.74081536326588,
+          "min_match_percent": 99.453,
+          "max_match_percent": 99.95133333333334,
+          "models": {
+            "SFace": {
+              "match_percent": 99.65455311973018,
+              "verified": true,
+              "distance": 0.004097,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.453,
+              "verified": true,
+              "distance": 0.001094,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.904375,
+              "verified": true,
+              "distance": 0.000765,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 99.95133333333334,
+              "verified": true,
+              "distance": 0.000292,
+              "threshold": 0.3
+            }
+          }
+        },
+        "post": {
+          "mean_match_percent": 59.16545947512648,
+          "min_match_percent": 0.0,
+          "max_match_percent": 84.24787500000001,
+          "models": {
+            "SFace": {
+              "match_percent": 82.9039629005059,
+              "verified": true,
+              "distance": 0.202759,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 0.0,
+              "verified": false,
+              "distance": 0.405926,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 84.24787500000001,
+              "verified": true,
+              "distance": 0.126017,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 69.51,
+              "verified": true,
+              "distance": 0.18294,
+              "threshold": 0.3
+            }
+          }
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "name": "finalist_04_sunglasses_prompt_failure_eps3",
+      "path": "/workspace/output/mentor_results_20260614_123821/finalists/finalist_04_sunglasses_prompt_failure_eps3",
+      "source": "/workspace/gender_dataset/men/66.jpg",
+      "prompt": "add sunglasses",
+      "failure": "prompt failure",
+      "why": "Clean Flux replaces regular glasses with dark sunglasses; the perturbed edit mostly keeps the original glasses.",
+      "recommendation": "Best sunglasses example.",
+      "metrics": {
+        "input": {
+          "psnr": 40.63374014091622,
+          "ssim": 0.9574578355636065,
+          "l2": 0.009296361275787415,
+          "mean_abs": 0.008399007841944695,
+          "max_abs": 0.011764734983444214
+        },
+        "output": {
+          "psnr": 17.825376793443976,
+          "ssim": 0.8254439613235235,
+          "l2": 0.12844912800047426,
+          "mean_abs": 0.045607853680849075,
+          "max_abs": 0.9254902005195618
+        },
+        "delta": {
+          "linf": 0.011764734983444214,
+          "mean_abs": 0.008399411104619503,
+          "epsilon": 0.011764705882352941
+        }
+      },
+      "settings": {
+        "seed": 1234,
+        "max_size": 512,
+        "diffusion_steps": 4,
+        "guidance_scale": 1.0,
+        "epsilon": 0.011764705882352941,
+        "epsilon_255": 3.0,
+        "alpha": 0.00392156862745098,
+        "alpha_255": 1.0,
+        "attack_iters": 8,
+        "attack": "transformer",
+        "objective_timestep": 0,
+        "highpass_sigma": 0.0,
+        "random_start": true
+      },
+      "deepface": {
+        "pre": {
+          "mean_match_percent": 99.88616858136595,
+          "min_match_percent": 99.68279932546375,
+          "max_match_percent": 99.971375,
+          "models": {
+            "SFace": {
+              "match_percent": 99.68279932546375,
+              "verified": true,
+              "distance": 0.003762,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.935,
+              "verified": true,
+              "distance": 0.00013,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.971375,
+              "verified": true,
+              "distance": 0.000229,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 99.9555,
+              "verified": true,
+              "distance": 0.000267,
+              "threshold": 0.3
+            }
+          }
+        },
+        "post": {
+          "mean_match_percent": 74.78375516441821,
+          "min_match_percent": 70.46575,
+          "max_match_percent": 82.589,
+          "models": {
+            "SFace": {
+              "match_percent": 74.80177065767285,
+              "verified": true,
+              "distance": 0.298851,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 71.2785,
+              "verified": true,
+              "distance": 0.057443,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 70.46575,
+              "verified": true,
+              "distance": 0.236274,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 82.589,
+              "verified": true,
+              "distance": 0.104466,
+              "threshold": 0.3
+            }
+          }
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "name": "finalist_05_headshot_identity_drift_men11_eps3",
+      "path": "/workspace/output/mentor_results_20260614_123821/finalists/finalist_05_headshot_identity_drift_men11_eps3",
+      "source": "/workspace/gender_dataset/men/11.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "failure": "identity drift",
+      "why": "Both outputs are headshots, but the perturbed edit changes face shape, hair, and perceived age more than the clean edit.",
+      "recommendation": "Useful backup for identity-drift discussion.",
+      "metrics": {
+        "input": {
+          "psnr": 41.12960553394768,
+          "ssim": 0.9583780978207367,
+          "l2": 0.008780509625090136,
+          "mean_abs": 0.007825393229722977,
+          "max_abs": 0.011764734983444214
+        },
+        "output": {
+          "psnr": 11.877700885272414,
+          "ssim": 0.5878631384192098,
+          "l2": 0.25475044759761584,
+          "mean_abs": 0.15400385856628418,
+          "max_abs": 1.0
+        },
+        "delta": {
+          "linf": 0.011764734983444214,
+          "mean_abs": 0.007824753411114216,
+          "epsilon": 0.011764705882352941
+        }
+      },
+      "settings": {
+        "seed": 2260,
+        "max_size": 512,
+        "diffusion_steps": 4,
+        "guidance_scale": 1.0,
+        "epsilon": 0.011764705882352941,
+        "epsilon_255": 3.0,
+        "alpha": 0.00392156862745098,
+        "alpha_255": 1.0,
+        "attack_iters": 12,
+        "attack": "transformer",
+        "objective_timestep": 0,
+        "highpass_sigma": 0.0,
+        "random_start": true
+      },
+      "deepface": {
+        "pre": {
+          "mean_match_percent": 99.80507887155706,
+          "min_match_percent": 99.6405,
+          "max_match_percent": 99.92416666666666,
+          "models": {
+            "SFace": {
+              "match_percent": 99.76989881956155,
+              "verified": true,
+              "distance": 0.002729,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 99.6405,
+              "verified": true,
+              "distance": 0.000719,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 99.88575,
+              "verified": true,
+              "distance": 0.000914,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 99.92416666666666,
+              "verified": true,
+              "distance": 0.000455,
+              "threshold": 0.3
+            }
+          }
+        },
+        "post": {
+          "mean_match_percent": 57.22227211565486,
+          "min_match_percent": 47.18600000000001,
+          "max_match_percent": 68.86829679595279,
+          "models": {
+            "SFace": {
+              "match_percent": 68.86829679595279,
+              "verified": true,
+              "distance": 0.369222,
+              "threshold": 0.593
+            },
+            "OpenFace": {
+              "match_percent": 47.18600000000001,
+              "verified": false,
+              "distance": 0.105628,
+              "threshold": 0.1
+            },
+            "Facenet": {
+              "match_percent": 49.752125,
+              "verified": false,
+              "distance": 0.401983,
+              "threshold": 0.4
+            },
+            "Facenet512": {
+              "match_percent": 63.08266666666667,
+              "verified": true,
+              "distance": 0.221504,
+              "threshold": 0.3
+            }
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+2026-06-14 17:42:11.330876: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-14 17:42:11.369535: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 AVX_VNNI AMX_TILE AMX_INT8 AMX_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-06-14 17:42:12.521552: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][ALoading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00, 84.82it/s]
+Loading pipeline components...:  80%|████████  | 4/5 [00:00<00:00, 10.74it/s]Loading pipeline components...: 100%|██████████| 5/5 [00:00<00:00, 12.79it/s]
+[1/8] 01_men57_older_rolling_dct_hybrid_2.5px
+[2/8] 02_men57_older_grid_dct_transformer_pred_2.5px
+[3/8] 03_men58_headshot_rolling_dct_hybrid_2.5px
+[4/8] 04_men58_headshot_grid_dct_transformer_pred_2.5px
+[5/8] 05_men51_headshot_rolling_dct_hybrid_2.5px
+[6/8] 06_men51_headshot_grid_dct_transformer_pred_2.5px
+[7/8] 07_men66_sunglasses_rolling_dct_hybrid_2.5px
+[8/8] 08_men66_sunglasses_grid_dct_transformer_pred_2.5px
+{
+  "sheet": "/workspace/output/geo_whitebox_results_20260614_172707/geo_pass2_sheet.jpg",
+  "top": [
+    {
+      "name": "05_men51_headshot_rolling_dct_hybrid_2.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass2/05_men51_headshot_rolling_dct_hybrid_2.5px",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "score": 0.14953985295491756,
+      "input_psnr": 37.21223201943415,
+      "input_ssim": 0.9787184549913869,
+      "output_ssim": 0.9831948987326925,
+      "output_l2": 0.01646388957713751,
+      "max_disp": 0.750669002532959,
+      "mean_disp": 0.2949090898036957,
+      "ok": true,
+      "rank": 1
+    },
+    {
+      "name": "01_men57_older_rolling_dct_hybrid_2.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass2/01_men57_older_rolling_dct_hybrid_2.5px",
+      "source": "/workspace/gender_dataset/men/57.jpg",
+      "prompt": "make the person older",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "score": 0.09379199815011353,
+      "input_psnr": 39.060024271792756,
+      "input_ssim": 0.9837344944501373,
+      "output_ssim": 0.9900166145185993,
+      "output_l2": 0.010771691244902185,
+      "max_disp": 1.2580476999282837,
+      "mean_disp": 0.3738704323768616,
+      "ok": true,
+      "rank": 2
+    },
+    {
+      "name": "02_men57_older_grid_dct_transformer_pred_2.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass2/02_men57_older_grid_dct_transformer_pred_2.5px",
+      "source": "/workspace/gender_dataset/men/57.jpg",
+      "prompt": "make the person older",
+      "methods": "grid,dct",
+      "objective": "transformer_pred",
+      "score": 0.0625306231974501,
+      "input_psnr": 42.184513578775295,
+      "input_ssim": 0.9918688915240761,
+      "output_ssim": 0.993788323347904,
+      "output_l2": 0.0075367833178132315,
+      "max_disp": 1.078749656677246,
+      "mean_disp": 0.2633889615535736,
+      "ok": true,
+      "rank": 3
+    },
+    {
+      "name": "04_men58_headshot_grid_dct_transformer_pred_2.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass2/04_men58_headshot_grid_dct_transformer_pred_2.5px",
+      "source": "/workspace/gender_dataset/men/58.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "grid,dct",
+      "objective": "transformer_pred",
+      "score": 0.0,
+      "input_psnr": Infinity,
+      "input_ssim": 1.0,
+      "output_ssim": 1.0,
+      "output_l2": 0.0,
+      "max_disp": 0.0,
+      "mean_disp": 0.0,
+      "ok": true,
+      "rank": 4
+    },
+    {
+      "name": "06_men51_headshot_grid_dct_transformer_pred_2.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass2/06_men51_headshot_grid_dct_transformer_pred_2.5px",
+      "source": "/workspace/gender_dataset/men/51.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "grid,dct",
+      "objective": "transformer_pred",
+      "score": 0.0,
+      "input_psnr": Infinity,
+      "input_ssim": 1.0,
+      "output_ssim": 1.0,
+      "output_l2": 0.0,
+      "max_disp": 0.0,
+      "mean_disp": 0.0,
+      "ok": true,
+      "rank": 5
+    },
+    {
+      "name": "03_men58_headshot_rolling_dct_hybrid_2.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass2/03_men58_headshot_rolling_dct_hybrid_2.5px",
+      "source": "/workspace/gender_dataset/men/58.jpg",
+      "prompt": "turn the image into a professional headshot",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "score": -999.0,
+      "input_psnr": 35.347660188777816,
+      "input_ssim": 0.9875130793743843,
+      "output_ssim": 0.9944349143117647,
+      "output_l2": 0.008355270820582177,
+      "max_disp": 0.891351580619812,
+      "mean_disp": 0.2999650835990906,
+      "ok": true,
+      "rank": 6
+    },
+    {
+      "name": "07_men66_sunglasses_rolling_dct_hybrid_2.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass2/07_men66_sunglasses_rolling_dct_hybrid_2.5px",
+      "source": "/workspace/gender_dataset/men/66.jpg",
+      "prompt": "add sunglasses",
+      "methods": "rolling,dct",
+      "objective": "hybrid",
+      "score": -999.0,
+      "input_psnr": 34.065131459599826,
+      "input_ssim": 0.9684059823013298,
+      "output_ssim": 0.9694157003566385,
+      "output_l2": 0.01792748870306212,
+      "max_disp": 1.2915422916412354,
+      "mean_disp": 0.4279539883136749,
+      "ok": true,
+      "rank": 7
+    },
+    {
+      "name": "08_men66_sunglasses_grid_dct_transformer_pred_2.5px",
+      "output_dir": "/workspace/output/geo_whitebox_results_20260614_172707/search/geo_pass2/08_men66_sunglasses_grid_dct_transformer_pred_2.5px",
+      "source": "/workspace/gender_dataset/men/66.jpg",
+      "prompt": "add sunglasses",
+      "methods": "grid,dct",
+      "objective": "transformer_pred",
+      "score": -999.0,
+      "input_psnr": 35.808810121762995,
+      "input_ssim": 0.9742527877007374,
+      "output_ssim": 0.971477722173975,
+      "output_l2": 0.0181010074414616,
+      "max_disp": 1.232222080230713,
+      "mean_disp": 0.36320260167121887,
+      "ok": true,
+      "rank": 8
+    }
+  ]
+}
