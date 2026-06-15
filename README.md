@@ -24,9 +24,25 @@ The scripts were run from `/workspace/geometric-v1` on branch `loss3`, using:
 
 Most scripts expect the original repo to be importable and the dataset to exist at `/workspace/gender_dataset`.
 
+For reproducible setup, this archive now includes:
+
+- `.python-version`: Python 3.11.
+- `requirements.txt`: one global dependency set for all archived scripts.
+- `linux-gpu/install_a6000.sh`: A6000-oriented installer adapted from `geometric-v1`.
+- `linux-gpu/constraints-a6000.txt`: resolver constraints copied from `geometric-v1`.
+- `linux-gpu/verification.md`: import/compiler verification notes from this machine.
+
+Install on an A6000 machine with:
+
+```bash
+cd /path/to/experiment
+bash linux-gpu/install_a6000.sh
+```
+
+If `geometric-v1` is not next to this archive, pass `GEOMETRIC_V1_PATH=/path/to/geometric-v1`.
+
 ## Reproduction Notes
 
 Use the `effective_config.json`, `report.json`, summaries, and per-candidate notes in each `out/` folder to reproduce a run. The important parameters are preserved there: source image, prompt, seed, method list, max displacement/epsilon, objective, iterations, guidance scale, diffusion steps, and visual metrics.
 
 The `*.pt` files were optimizer state snapshots. To exactly resume from a saved tensor state they would be useful, but for reproducing from config or evaluating existing images they are not required.
-
