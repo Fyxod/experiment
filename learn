@@ -1,0 +1,163 @@
+Study Roadmap
+
+  1. Python + NumPy Image Basics
+     Learn image arrays as H x W x C, RGB channels, pixel ranges [0,255] vs [0,1], resizing, clipping, saving PNGs.
+
+  2. PyTorch Tensor Basics
+     Shapes like B x C x H x W, GPU tensors, dtype, .to(device), .detach(), .requires_grad_().
+
+  3. Autograd
+     This is essential. Learn how PyTorch records operations, computes gradients with loss.backward(), and stores gradients in parameters.
+
+  4. Optimization With Gradients
+     Study gradient descent, Adam, learning rate, gradient clipping, projection/clamping.
+     In our code, Adam changes geometry parameters, not Flux weights.
+
+  5. Image Similarity Metrics
+     Study MSE, L2, PSNR, SSIM, mean absolute error. These measure whether perturbed.png still looks like original.png.
+
+  6. Latent Space / Embeddings
+     A latent is a compressed learned representation. Instead of operating directly on pixels, diffusion models often operate on latent tensors produced by a VAE.
+
+  7. VAE Basics
+     Learn encoder, decoder, latent representation, reconstruction.
+     In our attack, one objective compares Flux image-conditioning VAE latents between clean and perturbed images.
+
+  8. Text Embeddings / Prompt Embeddings
+     Text prompts are converted into vectors/tensors that guide the model.
+     In code this is pipe.encode_prompt(...).
+
+  9. Stable Diffusion Architecture
+     Study this before Flux: text encoder, VAE, denoising network, scheduler, latents, classifier-free guidance.
+
+  10. Diffusion Denoising Objective
+     Learn noise prediction, timestep, scheduler, latent denoising.
+     Even though Flux is not exactly classic SD U-Net diffusion, this gives the right mental model.
+
+  11. Flow Matching / Rectified Flow Basics
+     Flux-style models are closer to flow-matching transformer systems than old SD U-Nets. Learn how a model predicts a direction/update through latent space.
+
+  12. Flux Architecture
+     Focus on these pieces: text encoder, VAE/image conditioning, transformer, latent IDs, timesteps, scheduler, guidance scale.
+     You do not need every implementation detail first. You need to know what goes into the transformer and what comes out.
+
+  13. Diffusers Pipeline API
+     Learn how Hugging Face Diffusers wraps models. In our scripts, Flux2KleinPipeline gives access to vae, text_encoder, transformer, scheduler, prompt encoding, image
+     latents, and final generation.
+
+  14. White-Box vs Black-Box Attacks
+     White-box means we use internal model outputs and gradients. Black-box means we only inspect final generated images.
+
+  15. Adversarial Attacks / PGD
+     Study pixel PGD first because it is simpler: add small pixel noise, compute a model-disruption loss, update noise by gradient sign, clamp by epsilon.
+     See experiment/adversarial_perturbation/scripts/stealth_flux_attack.py:217.
+
+  16. Geometric Perturbations
+     Instead of changing pixel colors directly, we move coordinates slightly: each output pixel samples from a nearby input location.
+
+  17. grid_sample
+     This is the core geometry tool. It takes an image and a sampling grid, then produces a warped image.
+     Study normalized coordinates [-1,1], align_corners=True, bilinear sampling, padding modes.
+     See experiment/next_methods/geometric_whitebox/scripts/geo_whitebox_attack.py:713.
+
+  18. Displacement Fields
+     Learn dx, dy fields in pixels. A field says “move this pixel by this many pixels horizontally/vertically.”
+
+  19. Rolling Shutter Warp
+     Row-dependent horizontal shift: sine wave + shear + acceleration.
+     See experiment/next_methods/geometric_whitebox/scripts/geo_whitebox_attack.py:552.
+
+  20. Low-Resolution Grid / Free-Form Deformation
+     Learnable small grid, upsampled to full image. Smooth, controllable geometry.
+     See experiment/next_methods/geometric_whitebox/scripts/geo_whitebox_attack.py:592.
+
+  21. DCT / Spectral Coordinate Warp
+     Smooth displacement built from low-frequency cosine basis functions. Very important for subtle geometry.
+     See experiment/next_methods/geometric_whitebox/scripts/geo_whitebox_attack.py:330.
+
+  22. TPS / Thin Plate Spline
+     Sparse control points produce a smooth global warp.
+     See experiment/next_methods/geometric_whitebox/scripts/geo_whitebox_attack.py:347.
+
+  23. RBF Interpolation
+     Another way to spread sparse control-point movements smoothly over the image.
+
+  24. Delaunay / Piecewise Affine Warps
+     Fixed triangle mesh, optimized vertex offsets, barycentric interpolation.
+     See experiment/next_methods/geometric_whitebox/scripts/geo_whitebox_attack.py:376.
+
+  25. Face Masks / Local Warps
+     Warps can be restricted around face, eyes, mouth, jaw, etc. This matters because humans notice face distortion quickly.
+
+  26. Method Gates
+     Gates let the optimizer reduce some methods toward zero. This is how the attack can “choose” which perturbation families matter.
+
+  27. Regularization
+     Learn why we penalize visible distortion: visual MSE, displacement size, smoothness, foldovers, method L1, gate L1.
+
+  28. Jacobian / Foldover Penalty
+     A warp can become invalid if it folds the image over itself. The Jacobian determinant detects that.
+     See experiment/next_methods/geometric_whitebox/scripts/geo_whitebox_attack.py:765.
+
+  29. Feature Hooks
+     PyTorch forward hooks capture hidden transformer activations during a forward pass. We used these for hidden-feature and attention-proxy losses.
+
+  30. DeepFace / Identity Metrics
+     Study SFace, OpenFace, Facenet, Facenet512 only after the attack basics. These are evaluation tools, not the main attack.
+
+  The Exact Loss Idea
+
+  In experiment/next_methods/geometric_whitebox/scripts/geo_whitebox_attack.py:937, Flux is frozen. The optimizer only changes geometry parameters theta.
+
+  The attack creates:
+
+  warped = T_theta(original)
+
+  Then it maximizes Flux disruption while penalizing visible geometry:
+
+  loss =
+    - FluxObjective(clean, warped)
+    + lambda_visual * image_mse
+    + lambda_disp * displacement_size
+    + lambda_smooth * total_variation
+    + lambda_fold * foldover_penalty
+    + lambda_method_l1 * method_displacement_l1
+    + lambda_gate_l1 * gate_l1
+
+  Because Adam minimizes loss, the negative sign means it maximizes the Flux objective.
+
+  Flux objectives used:
+
+  vae:
+    MSE(clean_image_condition_latents, warped_image_condition_latents)
+
+  transformer_pred:
+    MSE(clean_noise_prediction, warped_noise_prediction)
+
+  hidden_feature:
+    MSE(clean_transformer_hidden_features, warped_transformer_hidden_features)
+
+  attention_proxy:
+    same idea, but hooks attention-like modules
+
+  hybrid:
+    transformer_pred + small VAE term
+
+  hybrid_hidden:
+
+  denoise_latent:
+    compare clean vs warped latent trajectory after several denoising steps
+
+  1. experiment/adversarial_perturbation/scripts/stealth_flux_attack.py:217
+     Read pixel PGD first. It is simpler.
+
+
+  3. experiment/next_methods/geometric_whitebox/scripts/geo_whitebox_attack.py:185
+  4. experiment/next_methods/geometric_whitebox/scripts/geo_whitebox_attack.py:254
+     Read feature-hook objective.
+     Read GeometryAttack.
+
+
+  7. experiment/next_methods/geometric_whitebox/scripts/geo_whitebox_attack.py:713
+  8. experiment/next_methods/geometric_whitebox/scripts/geo_whitebox_attack.py:937
+     Read the optimization loop.
