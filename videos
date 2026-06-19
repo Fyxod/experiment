@@ -1,0 +1,155 @@
+Core Playlist
+
+     Goal: understand layers, activations, weights.
+     https://www.youtube.com/watch?v=aircAruvnKk
+
+  2. Gradient descent
+     Watch: 3Blue1Brown, “Gradient descent, how neural networks learn”
+     Goal: understand why parameters change step by step.
+     https://www.youtube.com/watch?v=IHZwWFHWa-w
+
+  3. Backpropagation intuition/calculus
+     Watch: 3Blue1Brown, “Backpropagation calculus”
+     Goal: understand what loss.backward() is doing.
+     https://www.youtube.com/watch?v=tIeHLnjs5U8
+
+  4. Backprop from code
+     Watch: Andrej Karpathy, “building micrograd”
+     Goal: understand autograd from scratch. This directly helps with our attack loop.
+     https://www.youtube.com/watch?v=VMj-3S1tku0
+
+  5. PyTorch autograd
+     Watch: PyTorch, “The Fundamentals of Autograd”
+     Goal: connect theory to .requires_grad, .backward(), .grad, optimizer steps.
+     https://www.youtube.com/watch?v=M0fX15_-xrY
+
+  6. Embeddings
+     Watch: StatQuest, “Word Embedding and Word2Vec, Clearly Explained”
+     Goal: understand text/prompt embeddings as vectors.
+     https://www.youtube.com/watch?v=viZrOnJclY0
+
+  7. Text/image embeddings + CLIP
+     Watch: “OpenAI CLIP Embeddings: Walkthrough + Insights”
+     Goal: understand how text and images become comparable vectors.
+     https://www.youtube.com/watch?v=l7-JAzVPGJI
+
+  8. Autoencoders
+     Watch: “Autoencoders | Deep Learning Animated”
+     Goal: encoder, decoder, bottleneck, compressed representation.
+     https://www.youtube.com/watch?v=hZ4a4NgM3u0
+
+  9. Variational autoencoders / latent space
+     Watch: “Variational Autoencoders | Generative AI Animated”
+     Goal: understand latent distributions.
+     https://www.youtube.com/watch?v=qJeaCHQ1k2w
+
+  10. VAE loss more deeply
+     Watch: Umar Jamil, “Variational Autoencoder - Model, ELBO, loss function”
+     Goal: understand why VAE latents can be used in a loss.
+  11. AI image generation overview
+     Watch: Jay Alammar, “AI Art Explained”
+     Goal: high-level Stable Diffusion intuition.
+     https://www.youtube.com/watch?v=MXmacOUJUaw
+
+  12. Stable Diffusion components
+     Watch: “How text to image generation works using U-Net Noise Predictor”
+     Goal: VAE, latent space, text encoder, U-Net, scheduler.
+     https://www.youtube.com/watch?v=q9GGF_g1vbk
+
+  13. Diffusion from scratch
+     Watch: “Diffusion models from scratch in PyTorch”
+     Goal: forward noise process, reverse denoising, timestep.
+     https://www.youtube.com/watch?v=a4Yfz2FxXiY
+
+  14. Stable Diffusion architecture
+     Watch: “Stable Diffusion Model Architecture”
+     Goal: VAE + U-Net + cross-attention + prompt conditioning.
+     https://www.youtube.com/watch?v=QC9yun0HbNE
+
+  15. Stable Diffusion code-level deep dive
+     Watch: Umar Jamil, “Coding Stable Diffusion from scratch in PyTorch”
+     Goal: best single video for connecting architecture to code.
+     https://www.youtube.com/watch?v=ZBKpAp_6TGI
+
+  16. Transformers
+     Watch: 3Blue1Brown, “Transformers, the tech behind LLMs”
+     Goal: tokens, attention blocks, transformer representations.
+     https://www.youtube.com/watch?v=wjZofJX0v4M
+
+  17. Attention
+     Watch: 3Blue1Brown, “Attention in transformers, step-by-step”
+     Goal: understand attention features/hooks in our Flux loss.
+     https://www.youtube.com/watch?v=eMlx5fFNoYc
+
+  18. Cross-attention
+     Watch: “Cross Attention | Method Explanation”
+     Goal: understand text-image conditioning.
+     https://www.youtube.com/watch?v=aw3H-wPuRcw
+
+     Goal: understand guidance_scale.
+     https://www.youtube.com/watch?v=90GlJcpMrm8
+
+  20. Diffusion transformers
+     Watch: Stanford CS25, “Transformers in Diffusion Models”
+     Goal: bridge from Stable Diffusion U-Net to Flux-style transformer diffusion.
+     https://www.youtube.com/watch?v=vXtapCFctTI
+
+  21. SD3 / MMDiT / rectified flow transformers
+     Watch: “Stable Diffusion 3 and MM-DiT”
+     Goal: closest conceptual bridge to Flux architecture.
+     https://www.youtube.com/watch?v=zaOZ0mx_lRI
+
+  22. Flow matching
+     Watch: “Flow-Matching vs Diffusion Models explained side by side”
+     Goal: understand why Flux-like models are not exactly old DDPM.
+     https://www.youtube.com/watch?v=firXjwZ_6KI
+
+  23. Flux-specific talk
+     Watch: Robin Rombach, “FLUX: Flow Matching for Content Creation at Scale”
+     Goal: Flux-level architecture/research context.
+     https://www.youtube.com/watch?v=nrKKLJXBSw0
+
+  24. Adversarial attacks
+     Watch: “Gradient with respect to input in PyTorch - FGSM attack”
+     Goal: understand attacks that optimize the input instead of model weights.
+     https://www.youtube.com/watch?v=5lFiZTSsp40
+
+  25. PGD attacks
+     Watch: “FGSM vs PGD Attacks in PyTorch”
+     Goal: understand iterative adversarial optimization.
+     https://www.youtube.com/watch?v=uX7IkTlyfuc
+
+  26. Spatial transformer networks / differentiable warping
+     Watch: “Spatial Transformer Networks | Lecture 12”
+     Goal: understand grid_sample, image warping, differentiable geometry.
+     https://www.youtube.com/watch?v=25dO4fLhEMY
+
+  27. DCT / cosine basis
+     Watch: Computerphile, “JPEG DCT, Discrete Cosine Transform”
+     Goal: understand why DCT gives smooth low-frequency coordinate warps.
+     https://www.youtube.com/watch?v=Q2aEzeMDHMA
+
+  28. Delaunay triangulation
+     Watch: “Math for Game Developers - Delauney Triangulation”
+     Goal: understand the piecewise/Delaunay warp.
+     https://www.youtube.com/watch?v=_XwSjJyGy58
+
+  29. Thin plate splines
+     Watch: “thin plate splines”
+     Goal: understand smooth control-point warping.
+     https://www.youtube.com/watch?v=mOyuu6oQnOA
+
+  30. Jacobian determinant
+     Watch: “What is Jacobian?”
+     Goal: understand foldover penalty and why warped images can become invalid.
+     https://www.youtube.com/watch?v=wCZ1VEmVjVo
+
+  Important Note
+
+  There are not many exact “Flux.2 Klein architecture” videos yet. So study it through this chain:
+
+  Stable Diffusion -> Diffusion Transformers -> MMDiT/SD3 -> Flow Matching -> Flux
+
+  Then read our script. The attack becomes much clearer once you understand this sentence:
+
+  Flux is frozen; we optimize only the perturbation parameters so Flux internals change while the input image still looks almost identical.
